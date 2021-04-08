@@ -82,6 +82,20 @@ using ProyectoFinal.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+using ProyectoFinal.Data.Repositorio;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+using ProyectoFinal.Models;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -90,6 +104,7 @@ using ProyectoFinal.Shared;
         {
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos VehiculosDb { get; set; }
     }
 }
 #pragma warning restore 1591

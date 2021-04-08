@@ -82,6 +82,20 @@ using ProyectoFinal.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+using ProyectoFinal.Data.Repositorio;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+using ProyectoFinal.Models;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998

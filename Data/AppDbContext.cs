@@ -1,0 +1,14 @@
+  
+using System;
+using Microsoft.EntityFrameworkCore;
+using ProyectoFinal.Models;
+
+namespace ProyectoFinal.Data{
+    public class AppDbContext : DbContext{
+        public AppDbContext(DbContextOptions options) : base(options){
+
+        }
+
+        public DbSet<VehiculosDb> vehiculos {get; set;}
+    }
+}
