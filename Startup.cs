@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using ProyectoFinal.Data;
 using ProyectoFinal.Data.Repositorio;
+using MudBlazor.Services;
 
 namespace ProyectoFinal
 {
@@ -34,6 +35,7 @@ namespace ProyectoFinal
                 optionsAction => optionsAction.UseSqlServer(Configuration.GetConnectionString("Conexion"))
                 );
             services.AddScoped<IVehiculos, Vehiculos>();
+            services.AddMudServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -96,6 +96,13 @@ using ProyectoFinal.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+using MudBlazor;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -104,7 +111,6 @@ using ProyectoFinal.Models;
         {
         }
         #pragma warning restore 1998
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos VehiculosDb { get; set; }
     }
 }
 #pragma warning restore 1591
