@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace ProyectoFinal
+namespace ProyectoFinal.Pages
 {
     #line hidden
     using System;
@@ -110,13 +110,26 @@ using ProyectoFinal.Theme;
 #line default
 #line hidden
 #nullable disable
-    public partial class App : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/registrarvehiculo")]
+    public partial class GestionVehiculos : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 54 "C:\Users\danny\Desktop\ProyectoFinal\Pages\GestionVehiculos.razor"
+      
+    
+    VehiculosDb oVehiculos = new VehiculosDb();
+    public double? Amount { get; set; }
+    public int? Weight { get; set; }
+    public string Search { get; set;}
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

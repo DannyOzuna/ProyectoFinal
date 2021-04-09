@@ -1,0 +1,63 @@
+@page "/registrarvehiculo"
+
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="alert alert-info">Gestión de vehículos</h1>
+    </div>
+</div>
+<div class="row justify-content-center mt-md-2">
+    <div class="card col-10 shadow p-3 mb-5 bg-body rounded">
+      @* <div class="card-header">
+        <div class="navbar navbar-light bg-light p-0">
+          <div class="container-fluid">
+            <a class="navbar-brand">Buscar Registro</a>
+            <MudItem xs="12" sm="6" md="4">
+                <MudTextField  @bind-Value="Search" Label="Search" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.Search" AdornmentColor="Color.Secondary" />
+            </MudItem>
+          </div>
+        </div>
+      </div> *@
+      <EditForm Model="oVehiculos">
+          <div class="card-body">
+            <MudGrid>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudTextField @bind-Value="Weight" Label="Marca" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.CarRental" AdornmentColor="Color.Info" />
+                </MudItem>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudTextField @bind-Value="Weight" Label="Modelo" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.CarRental" AdornmentColor="Color.Info" />
+                </MudItem>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudSelect T="string" @bind-Value="Search" Label="Año" Variant="Variant.Outlined" OffsetY="true">
+                        @for(int i=2021; i >= 1900; i--){
+                            <MudSelectItem Value="@(i.ToString())" />
+                        }
+                    </MudSelect>
+                </MudItem>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudTextField @bind-Value="Amount" Label="Amount" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.AttachMoney" AdornmentColor="Color.Warning" />
+                </MudItem>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudTextField @bind-Value="Weight" Label="Weight" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Kg" AdornmentColor="Color.Info" />
+                </MudItem>
+            </MudGrid>
+          </div>
+          <div class="card-footer">
+              <div class="row justify-content-center">
+                  <button type="submit" class="btn btn-outline-primary col-8 bn-lg">Guardar</button>
+              </div>
+          </div>
+      </EditForm>
+    </div>
+</div>
+
+
+@code{
+    
+    VehiculosDb oVehiculos = new VehiculosDb();
+    public double? Amount { get; set; }
+    public int? Weight { get; set; }
+    public string Search { get; set;}
+}
+
+
+
