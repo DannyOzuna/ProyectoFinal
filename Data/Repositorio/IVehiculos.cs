@@ -6,5 +6,7 @@ using ProyectoFinal.Models;
 namespace ProyectoFinal.Data.Repositorio{
     public interface IVehiculos{
         public Task<List<VehiculosDb>> GetVehiculos();
+
+        public Task<VehiculosDb> AddVehiculos(VehiculosDb oVehiculo);
     }
 }

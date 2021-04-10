@@ -119,17 +119,44 @@ using ProyectoFinal.Theme;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 54 "C:\Users\danny\Desktop\ProyectoFinal\Pages\GestionVehiculos.razor"
+#line 77 "C:\Users\danny\Desktop\ProyectoFinal\Pages\GestionVehiculos.razor"
       
     
     VehiculosDb oVehiculos = new VehiculosDb();
-    public double? Amount { get; set; }
-    public int? Weight { get; set; }
-    public string Search { get; set;}
+
+    protected override void OnInitialized()
+        {
+            var rx = js.InvokeAsync<object>("loading");
+        }
+
+
+
+    
+
+    
+
+    private async Task GuardarDatos(){
+        oVehiculos.foto = "url";
+        oVehiculos.latitud = "123";
+        oVehiculos.longitud = "456";
+        
+        var rx = js.InvokeAsync<object>("loading");
+        
+        var crear = await Vehiculos.AddVehiculos(oVehiculos);
+
+        var rs = js.InvokeAsync<object>("msjAlert", "Registrado Correctamente!", "success");
+        NavigationManager.NavigateTo("/");
+        
+    }
+
+    
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos Vehiculos { get; set; }
     }
 }
 #pragma warning restore 1591

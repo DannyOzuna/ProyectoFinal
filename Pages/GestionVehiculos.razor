@@ -1,4 +1,7 @@
 @page "/registrarvehiculo"
+@inject IVehiculos Vehiculos
+@inject IJSRuntime js
+@inject NavigationManager NavigationManager
 
 <div class="row justify-content-center">
     <div class="col-md-8 text-center">
@@ -17,27 +20,47 @@
           </div>
         </div>
       </div> *@
-      <EditForm Model="oVehiculos">
+      <EditForm Model="oVehiculos" OnValidSubmit="@(() => GuardarDatos())">
           <div class="card-body">
             <MudGrid>
                 <MudItem xs="12" sm="6" md="4">
-                    <MudTextField @bind-Value="Weight" Label="Marca" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.CarRental" AdornmentColor="Color.Info" />
+                    <MudTextField @bind-Value="oVehiculos.marca" Label="Marca" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.DirectionsCar" AdornmentColor="Color.Info" />
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
-                    <MudTextField @bind-Value="Weight" Label="Modelo" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.CarRental" AdornmentColor="Color.Info" />
+                    <MudTextField @bind-Value="oVehiculos.modelo" Label="Modelo" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.DirectionsCar" AdornmentColor="Color.Info" />
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
-                    <MudSelect T="string" @bind-Value="Search" Label="Año" Variant="Variant.Outlined" OffsetY="true">
+                    <MudSelect T="string" @bind-Value="oVehiculos.anio" Label="Año" Variant="Variant.Outlined" OffsetY="true">
                         @for(int i=2021; i >= 1900; i--){
                             <MudSelectItem Value="@(i.ToString())" />
                         }
                     </MudSelect>
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
-                    <MudTextField @bind-Value="Amount" Label="Amount" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.AttachMoney" AdornmentColor="Color.Warning" />
+                    <MudTextField @bind-Value="oVehiculos.color" Label="Color" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.Palette" AdornmentColor="Color.Info" />
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
-                    <MudTextField @bind-Value="Weight" Label="Weight" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Kg" AdornmentColor="Color.Info" />
+                    <MudTextField @bind-Value="oVehiculos.precio" Label="Precio por día" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.AttachMoney" AdornmentColor="Color.Info" />
+                </MudItem>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudSelect T="string" @bind-Value="oVehiculos.tipo" Label="Tipo" Variant="Variant.Outlined" OffsetY="true">
+                        <MudSelectItem Value="@("Carro")" />
+                        <MudSelectItem Value="@("Camioneta")" />
+                        <MudSelectItem Value="@("Nave")" />
+                        <MudSelectItem Value="@("Jeepeta")" />
+                    </MudSelect>
+                </MudItem>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudTextField @bind-Value="oVehiculos.capacidad" Label="Capacidad de carga" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Kg" AdornmentColor="Color.Info" />
+                </MudItem>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudTextField @bind-Value="oVehiculos.pasajeros" Label="Pasajeros" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Num" AdornmentColor="Color.Info" />
+                </MudItem>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudTextField @bind-Value="oVehiculos.matricula" Label="Matricula" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.FiberPin" AdornmentColor="Color.Info" />
+                </MudItem>
+                <MudItem xs="12" sm="6" md="4">
+                    <MudTextField @bind-Value="oVehiculos.nro_seguro" Label="Nro Seguro" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.LocalPolice" AdornmentColor="Color.Info" />
                 </MudItem>
             </MudGrid>
           </div>
@@ -54,10 +77,33 @@
 @code{
     
     VehiculosDb oVehiculos = new VehiculosDb();
-    public double? Amount { get; set; }
-    public int? Weight { get; set; }
-    public string Search { get; set;}
+
+    protected override void OnInitialized()
+        {
+            var rx = js.InvokeAsync<object>("loading");
+        }
+
+
+
+    
+
+    
+
+    private async Task GuardarDatos(){
+        oVehiculos.foto = "url";
+        oVehiculos.latitud = "123";
+        oVehiculos.longitud = "456";
+        
+        var rx = js.InvokeAsync<object>("loading");
+        
+        var crear = await Vehiculos.AddVehiculos(oVehiculos);
+
+        var rs = js.InvokeAsync<object>("msjAlert", "Registrado Correctamente!", "success");
+        NavigationManager.NavigateTo("/");
+        
+    }
+
+    
 }
 
-
-
+        
