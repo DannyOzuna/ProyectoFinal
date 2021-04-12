@@ -13,98 +13,98 @@ namespace ProyectoFinal.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 1 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 2 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 3 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 4 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 5 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 6 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 7 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 8 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 9 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using ProyectoFinal;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 10 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using ProyectoFinal.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 11 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using ProyectoFinal.Data.Repositorio;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 12 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using ProyectoFinal.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 13 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using MudBlazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 14 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
 using ProyectoFinal.Theme;
 
 #line default
@@ -118,6 +118,30 @@ using ProyectoFinal.Theme;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 140 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Index.razor"
+       
+
+    EarningReport[] earningReports = new EarningReport[]
+    {
+        new EarningReport { Name = "Lunees", Title = "Reactor Engineer", Avatar = "https://avatars2.githubusercontent.com/u/71094850?s=460&u=66c16f5bb7d27dc751f6759a82a3a070c8c7fe4b&v=4", Salary = "$0.99", Severity = Color.Success, SeverityTitle = "Low"},
+        new EarningReport { Name = "Mikes-gh", Title = "Developer", Avatar = "https://avatars.githubusercontent.com/u/16208742?s=120&v=4", Salary = "$19.12K", Severity = Color.Secondary, SeverityTitle = "Medium"},
+        new EarningReport { Name = "Garderoben", Title = "CSS Magician", Avatar = "https://avatars2.githubusercontent.com/u/10367109?s=460&amp;u=2abf95f9e01132e8e2915def42895ffe99c5d2c6&amp;v=4", Salary = "$1337", Severity = Color.Primary, SeverityTitle = "High"},
+    };
+
+    class EarningReport
+    {
+        public string Avatar;
+        public string Name;
+        public string Title;
+        public Color Severity;
+        public string SeverityTitle;
+        public string Salary;
+    }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

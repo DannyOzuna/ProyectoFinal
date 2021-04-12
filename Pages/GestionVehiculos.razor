@@ -1,4 +1,5 @@
 @page "/registrarvehiculo"
+@page "/registrarvehiculo/editarvehiculo/{id:int}"
 @inject IVehiculos Vehiculos
 @inject IJSRuntime js
 @inject NavigationManager NavigationManager
@@ -21,13 +22,16 @@
         </div>
       </div> *@
       <EditForm Model="oVehiculos" OnValidSubmit="@(() => GuardarDatos())">
+          <DataAnnotationsValidator/>
           <div class="card-body">
             <MudGrid>
                 <MudItem xs="12" sm="6" md="4">
                     <MudTextField @bind-Value="oVehiculos.marca" Label="Marca" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.DirectionsCar" AdornmentColor="Color.Info" />
+                    <ValidationMessage For="() => oVehiculos.marca"/>
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
                     <MudTextField @bind-Value="oVehiculos.modelo" Label="Modelo" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.DirectionsCar" AdornmentColor="Color.Info" />
+                    <ValidationMessage For="() => oVehiculos.modelo"/>
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
                     <MudSelect T="string" @bind-Value="oVehiculos.anio" Label="Año" Variant="Variant.Outlined" OffsetY="true">
@@ -35,12 +39,15 @@
                             <MudSelectItem Value="@(i.ToString())" />
                         }
                     </MudSelect>
+                    <ValidationMessage For="() => oVehiculos.anio"/>
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
                     <MudTextField @bind-Value="oVehiculos.color" Label="Color" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.Palette" AdornmentColor="Color.Info" />
+                    <ValidationMessage For="() => oVehiculos.color"/>
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
                     <MudTextField @bind-Value="oVehiculos.precio" Label="Precio por día" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.AttachMoney" AdornmentColor="Color.Info" />
+                    <ValidationMessage For="() => oVehiculos.precio"/>
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
                     <MudSelect T="string" @bind-Value="oVehiculos.tipo" Label="Tipo" Variant="Variant.Outlined" OffsetY="true">
@@ -49,18 +56,23 @@
                         <MudSelectItem Value="@("Nave")" />
                         <MudSelectItem Value="@("Jeepeta")" />
                     </MudSelect>
+                    <ValidationMessage For="() => oVehiculos.tipo"/>
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
                     <MudTextField @bind-Value="oVehiculos.capacidad" Label="Capacidad de carga" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Kg" AdornmentColor="Color.Info" />
+                    <ValidationMessage For="() => oVehiculos.capacidad"/>
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
                     <MudTextField @bind-Value="oVehiculos.pasajeros" Label="Pasajeros" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Num" AdornmentColor="Color.Info" />
+                    <ValidationMessage For="() => oVehiculos.pasajeros"/>
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
                     <MudTextField @bind-Value="oVehiculos.matricula" Label="Matricula" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.FiberPin" AdornmentColor="Color.Info" />
+                    <ValidationMessage For="() => oVehiculos.matricula"/>
                 </MudItem>
                 <MudItem xs="12" sm="6" md="4">
                     <MudTextField @bind-Value="oVehiculos.nro_seguro" Label="Nro Seguro" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.LocalPolice" AdornmentColor="Color.Info" />
+                    <ValidationMessage For="() => oVehiculos.nro_seguro"/>
                 </MudItem>
             </MudGrid>
           </div>
@@ -75,31 +87,34 @@
 
 
 @code{
+    [Parameter]
+    public int id {get; set;}
     
     VehiculosDb oVehiculos = new VehiculosDb();
 
-    protected override void OnInitialized()
-        {
-            var rx = js.InvokeAsync<object>("loading");
+   protected async override Task OnInitializedAsync()
+    {
+        //var rx = js.InvokeAsync<object>("loading");
+        if(id != 0){
+            oVehiculos = await Vehiculos.GetVehiculos(id);
         }
-
-
-
-    
-
-    
+    }
 
     private async Task GuardarDatos(){
         oVehiculos.foto = "url";
         oVehiculos.latitud = "123";
         oVehiculos.longitud = "456";
-        
-        var rx = js.InvokeAsync<object>("loading");
-        
+
         var crear = await Vehiculos.AddVehiculos(oVehiculos);
 
-        var rs = js.InvokeAsync<object>("msjAlert", "Registrado Correctamente!", "success");
-        NavigationManager.NavigateTo("/");
+        if(crear == null){
+            await Vehiculos.UpdateVehiculo(oVehiculos.id, oVehiculos);
+            var rs = js.InvokeAsync<object>("msjAlert", "Modificación Exitosa!", "success");
+        }else{
+            var rs = js.InvokeAsync<object>("msjAlert", "Registrado Exitoso!", "success");
+        }
+
+        NavigationManager.NavigateTo("/vistavehiculos");
         
     }
 

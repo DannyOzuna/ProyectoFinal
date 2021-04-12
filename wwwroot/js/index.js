@@ -38,7 +38,7 @@ function loading(){
     Swal.fire({
         imageUrl: './image/spinner.gif',
         imageWidth: 400,
-        imageHeight: 200,
+        imageHeight: 300,
         imageAlt: 'Custom image',
         showConfirmButton: false,
       })
