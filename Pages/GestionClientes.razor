@@ -1,0 +1,51 @@
+@page "/registrarcliente"
+
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="alert alert-info">Gestión de Clientes</h1>
+    </div>
+</div>
+
+
+<div class="row justify-content-center mt-md-2">
+    <div class="col-10">
+                <MudCard Elevation="25">
+                    <MudCardContent>
+                        <MudGrid>
+                            <MudItem xs="12" md="6">
+                                <MudTextField @bind-Value="FirstName" Label="First Name" Variant="Variant.Outlined" />
+                            </MudItem>
+                            <MudItem xs="12" md="6">
+                                <MudTextField @bind-Value="LastName" Label="First Name" Variant="Variant.Outlined" />
+                            </MudItem>
+                            <MudItem xs="12" md="6">
+                                <MudTextField @bind-Value="JobTitle" Label="Job Title" Variant="Variant.Outlined" />
+                            </MudItem>
+                            <MudItem xs="12" md="6">
+                                <MudTextField @bind-Value="Email" Label="Email" Variant="Variant.Outlined" HelperText="Dont worry, we shall not spam!" InputType="InputType.Email" />
+                            </MudItem>
+                            <MudItem xs="12">
+                                <MudText>
+                                    <b>Visible Only To Friends</b>
+                                </MudText>
+                                <MudText Typo="Typo.body2">
+                                    Means that only your friends will be able to see your contact details.
+                                </MudText>
+                                <MudSwitch @bind-Checked="@FriendSwitch" Color="Color.Secondary" />
+                            </MudItem>
+                        </MudGrid>
+                    </MudCardContent>
+                    <MudCardActions Class="pb-4 pl-4">
+                        @* <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" @onclick="@(() => SaveChanges("Profile details saved", Severity.Success))">Save Changes</MudButton> *@
+                    </MudCardActions>
+                </MudCard>
+    </div>
+</div>
+
+@code{
+    public string FirstName { get; set; } = "Jonny";
+    public string LastName { get; set; } = "Larsson";
+    public string JobTitle { get; set; } = "IT Consultant";
+    public string Email { get; set; } = "Youcanprobably@findout.com";
+    public bool FriendSwitch { get; set; } = true;
+}

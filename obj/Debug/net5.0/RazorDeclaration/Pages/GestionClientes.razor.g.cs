@@ -110,9 +110,8 @@ using ProyectoFinal.Theme;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/registrarvehiculo")]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/registrarvehiculo/editarvehiculo/{id:int}")]
-    public partial class GestionVehiculos : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/registrarcliente")]
+    public partial class GestionClientes : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -120,48 +119,17 @@ using ProyectoFinal.Theme;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 82 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/GestionVehiculos.razor"
+#line 45 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/GestionClientes.razor"
       
-    [Parameter]
-    public int id {get; set;}
-
-    VehiculosDb oVehiculos = new VehiculosDb();
-
-   protected async override Task OnInitializedAsync()
-    {
-        //var rx = js.InvokeAsync<object>("loading");
-        if(id != 0){
-            oVehiculos = await Vehiculos.GetVehiculos(id);
-        }
-    }
-
-    private async Task GuardarDatos(){
-        oVehiculos.foto = "url";
-        oVehiculos.latitud = "123";
-        oVehiculos.longitud = "456";
-        oVehiculos.estado = 1;
-
-        var crear = await Vehiculos.AddVehiculos(oVehiculos);
-
-        if(crear == null){
-            await Vehiculos.UpdateVehiculo(oVehiculos.id, oVehiculos);
-            var rs = js.InvokeAsync<object>("msjAlert", "Modificación Exitosa!", "success");
-        }else{
-            var rs = js.InvokeAsync<object>("msjAlert", "Registrado Exitoso!", "success");
-        }
-
-        NavigationManager.NavigateTo("/vistavehiculos");
-        
-    }
-
-    
+    public string FirstName { get; set; } = "Jonny";
+    public string LastName { get; set; } = "Larsson";
+    public string JobTitle { get; set; } = "IT Consultant";
+    public string Email { get; set; } = "Youcanprobably@findout.com";
+    public bool FriendSwitch { get; set; } = true;
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos Vehiculos { get; set; }
     }
 }
 #pragma warning restore 1591
