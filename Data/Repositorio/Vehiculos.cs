@@ -51,6 +51,7 @@ namespace ProyectoFinal.Data.Repositorio{
             VehiculoDd.foto = oVehiculo.foto;
             VehiculoDd.latitud = oVehiculo.latitud;
             VehiculoDd.longitud = oVehiculo.longitud;
+            VehiculoDd.estado  = oVehiculo.estado;
 
             await context.SaveChangesAsync();
             return oVehiculo;

@@ -19,7 +19,7 @@ namespace ProyectoFinal.Theme
 
             LayoutProperties = new LayoutProperties()
             {
-                DefaultBorderRadius = "3px"
+                DefaultBorderRadius = "15px"
             };
 
             Typography = new Typography()

@@ -10,86 +10,79 @@
     </div>
 </div>
 <div class="row justify-content-center mt-md-2">
-    <div class="card col-10 shadow p-3 mb-5 bg-body rounded">
-      @* <div class="card-header">
-        <div class="navbar navbar-light bg-light p-0">
-          <div class="container-fluid">
-            <a class="navbar-brand">Buscar Registro</a>
-            <MudItem xs="12" sm="6" md="4">
-                <MudTextField  @bind-Value="Search" Label="Search" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.Search" AdornmentColor="Color.Secondary" />
-            </MudItem>
-          </div>
-        </div>
-      </div> *@
-      <EditForm Model="oVehiculos" OnValidSubmit="@(() => GuardarDatos())">
-          <DataAnnotationsValidator/>
-          <div class="card-body">
-            <MudGrid>
-                <MudItem xs="12" sm="6" md="4">
-                    <MudTextField @bind-Value="oVehiculos.marca" Label="Marca" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.DirectionsCar" AdornmentColor="Color.Info" />
-                    <ValidationMessage For="() => oVehiculos.marca"/>
-                </MudItem>
-                <MudItem xs="12" sm="6" md="4">
-                    <MudTextField @bind-Value="oVehiculos.modelo" Label="Modelo" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.DirectionsCar" AdornmentColor="Color.Info" />
-                    <ValidationMessage For="() => oVehiculos.modelo"/>
-                </MudItem>
-                <MudItem xs="12" sm="6" md="4">
-                    <MudSelect T="string" @bind-Value="oVehiculos.anio" Label="Año" Variant="Variant.Outlined" OffsetY="true">
-                        @for(int i=2021; i >= 1900; i--){
-                            <MudSelectItem Value="@(i.ToString())" />
-                        }
-                    </MudSelect>
-                    <ValidationMessage For="() => oVehiculos.anio"/>
-                </MudItem>
-                <MudItem xs="12" sm="6" md="4">
-                    <MudTextField @bind-Value="oVehiculos.color" Label="Color" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.Palette" AdornmentColor="Color.Info" />
-                    <ValidationMessage For="() => oVehiculos.color"/>
-                </MudItem>
-                <MudItem xs="12" sm="6" md="4">
-                    <MudTextField @bind-Value="oVehiculos.precio" Label="Precio por día" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.AttachMoney" AdornmentColor="Color.Info" />
-                    <ValidationMessage For="() => oVehiculos.precio"/>
-                </MudItem>
-                <MudItem xs="12" sm="6" md="4">
-                    <MudSelect T="string" @bind-Value="oVehiculos.tipo" Label="Tipo" Variant="Variant.Outlined" OffsetY="true">
-                        <MudSelectItem Value="@("Carro")" />
-                        <MudSelectItem Value="@("Camioneta")" />
-                        <MudSelectItem Value="@("Nave")" />
-                        <MudSelectItem Value="@("Jeepeta")" />
-                    </MudSelect>
-                    <ValidationMessage For="() => oVehiculos.tipo"/>
-                </MudItem>
-                <MudItem xs="12" sm="6" md="4">
-                    <MudTextField @bind-Value="oVehiculos.capacidad" Label="Capacidad de carga" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Kg" AdornmentColor="Color.Info" />
-                    <ValidationMessage For="() => oVehiculos.capacidad"/>
-                </MudItem>
-                <MudItem xs="12" sm="6" md="4">
-                    <MudTextField @bind-Value="oVehiculos.pasajeros" Label="Pasajeros" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Num" AdornmentColor="Color.Info" />
-                    <ValidationMessage For="() => oVehiculos.pasajeros"/>
-                </MudItem>
-                <MudItem xs="12" sm="6" md="4">
-                    <MudTextField @bind-Value="oVehiculos.matricula" Label="Matricula" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.FiberPin" AdornmentColor="Color.Info" />
-                    <ValidationMessage For="() => oVehiculos.matricula"/>
-                </MudItem>
-                <MudItem xs="12" sm="6" md="4">
-                    <MudTextField @bind-Value="oVehiculos.nro_seguro" Label="Nro Seguro" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.LocalPolice" AdornmentColor="Color.Info" />
-                    <ValidationMessage For="() => oVehiculos.nro_seguro"/>
-                </MudItem>
-            </MudGrid>
-          </div>
-          <div class="card-footer">
-              <div class="row justify-content-center">
-                  <button type="submit" class="btn btn-outline-primary col-8 bn-lg">Guardar</button>
-              </div>
-          </div>
-      </EditForm>
+    <div class="col-10">
+        <EditForm Model="oVehiculos" OnValidSubmit="@(() => GuardarDatos())">
+            <DataAnnotationsValidator/>
+                <MudCard  Elevation="25">
+                    <MudCardContent>
+                        <MudGrid>
+                            <MudItem xs="12" sm="6" md="4">
+                                <MudTextField @bind-Value="oVehiculos.marca" Label="Marca" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.DirectionsCar" AdornmentColor="Color.Info" />
+                                <ValidationMessage For="() => oVehiculos.marca"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6" md="4">
+                                <MudTextField @bind-Value="oVehiculos.modelo" Label="Modelo" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.DirectionsCar" AdornmentColor="Color.Info" />
+                                <ValidationMessage For="() => oVehiculos.modelo"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6" md="4">
+                                <MudSelect T="string" @bind-Value="oVehiculos.anio" Label="Año" Variant="Variant.Outlined" OffsetY="true">
+                                    @for(int i=2021; i >= 1900; i--){
+                                        <MudSelectItem Value="@(i.ToString())" />
+                                    }
+                                </MudSelect>
+                                <ValidationMessage For="() => oVehiculos.anio"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6" md="4">
+                                <MudTextField @bind-Value="oVehiculos.color" Label="Color" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.Palette" AdornmentColor="Color.Info" />
+                                <ValidationMessage For="() => oVehiculos.color"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6" md="4">
+                                <MudTextField @bind-Value="oVehiculos.precio" Label="Precio por día" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.AttachMoney" AdornmentColor="Color.Info" />
+                                <ValidationMessage For="() => oVehiculos.precio"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6" md="4">
+                                <MudSelect T="string" @bind-Value="oVehiculos.tipo" Label="Tipo" Variant="Variant.Outlined" OffsetY="true">
+                                    <MudSelectItem Value="@("Carro")" />
+                                    <MudSelectItem Value="@("Camioneta")" />
+                                    <MudSelectItem Value="@("Nave")" />
+                                    <MudSelectItem Value="@("Jeepeta")" />
+                                </MudSelect>
+                                <ValidationMessage For="() => oVehiculos.tipo"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6" md="4">
+                                <MudTextField @bind-Value="oVehiculos.capacidad" Label="Capacidad de carga" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Kg" AdornmentColor="Color.Info" />
+                                <ValidationMessage For="() => oVehiculos.capacidad"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6" md="4">
+                                <MudTextField @bind-Value="oVehiculos.pasajeros" Label="Pasajeros" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Num" AdornmentColor="Color.Info" />
+                                <ValidationMessage For="() => oVehiculos.pasajeros"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6" md="4">
+                                <MudTextField @bind-Value="oVehiculos.matricula" Label="Matricula" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.FiberPin" AdornmentColor="Color.Info" />
+                                <ValidationMessage For="() => oVehiculos.matricula"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6" md="4">
+                                <MudTextField @bind-Value="oVehiculos.nro_seguro" Label="Nro Seguro" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.LocalPolice" AdornmentColor="Color.Info" />
+                                <ValidationMessage For="() => oVehiculos.nro_seguro"/>
+                            </MudItem>
+                        </MudGrid>
+                    </MudCardContent>
+                    <div class="row justify-content-center">
+                        <button type="submit" class="btn btn-outline-primary col-8 bn-lg mb-4">Guardar</button>
+                    </div>
+                </MudCard>
+        </EditForm>
     </div>
 </div>
+
+
+
 
 
 @code{
     [Parameter]
     public int id {get; set;}
-    
+
     VehiculosDb oVehiculos = new VehiculosDb();
 
    protected async override Task OnInitializedAsync()
@@ -104,6 +97,7 @@
         oVehiculos.foto = "url";
         oVehiculos.latitud = "123";
         oVehiculos.longitud = "456";
+        oVehiculos.estado = 1;
 
         var crear = await Vehiculos.AddVehiculos(oVehiculos);
 
