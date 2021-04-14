@@ -12,6 +12,59 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": -683445658,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.GestionVehiculos",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GestionVehiculos"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionVehiculos"
+        }
+      },
+      {
+        "HashCode": 608018686,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.GestionVehiculos",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyectoFinal.Pages.GestionVehiculos"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionVehiculos",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1836172413,
         "Kind": "Components.Component",
         "Name": "ProyectoFinal.Pages.Index",
@@ -78,55 +131,35 @@
         }
       },
       {
-        "HashCode": -683445658,
+        "HashCode": -330086290,
         "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionVehiculos",
+        "Name": "ProyectoFinal.Pages.ObtenerDatos",
         "AssemblyName": "ProyectoFinal",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GestionVehiculos"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
+            "TagName": "ObtenerDatos"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionVehiculos"
+          "Common.TypeName": "ProyectoFinal.Pages.ObtenerDatos"
         }
       },
       {
-        "HashCode": 608018686,
+        "HashCode": -623423268,
         "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionVehiculos",
+        "Name": "ProyectoFinal.Pages.ObtenerDatos",
         "AssemblyName": "ProyectoFinal",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ProyectoFinal.Pages.GestionVehiculos"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
+            "TagName": "ProyectoFinal.Pages.ObtenerDatos"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionVehiculos",
+          "Common.TypeName": "ProyectoFinal.Pages.ObtenerDatos",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -193,6 +226,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "ProyectoFinal.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1781849090,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Shared.NavMenu",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": -1792183817,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Shared.NavMenu",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyectoFinal.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -289,39 +355,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "ProyectoFinal.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1781849090,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Shared.NavMenu",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": -1792183817,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Shared.NavMenu",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyectoFinal.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -61092,6 +61125,11 @@
     {
       "FilePath": "/Users/dannyozuna/Documents/ProyectoFinal/Pages/GestionVehiculos.razor",
       "TargetPath": "Pages\\GestionVehiculos.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/dannyozuna/Documents/ProyectoFinal/Pages/ObtenerDatos.razor",
+      "TargetPath": "Pages\\ObtenerDatos.razor",
       "FileKind": "component"
     },
     {

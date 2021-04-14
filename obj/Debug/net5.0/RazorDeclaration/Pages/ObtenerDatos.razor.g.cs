@@ -110,8 +110,8 @@ using ProyectoFinal.Theme;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/registrarcliente")]
-    public partial class GestionClientes : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/ObtenerDatos")]
+    public partial class ObtenerDatos : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -119,19 +119,9 @@ using ProyectoFinal.Theme;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 74 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/GestionClientes.razor"
+#line 17 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/ObtenerDatos.razor"
       
-
-    bool cargarDatos = false;
-    public string cedula {get; set;}
-    public string FirstName { get; set; } = "Jonny";
-    public string LastName { get; set; } = "Larsson";
-    public string JobTitle { get; set; } = "IT Consultant";
-    public string Email { get; set; } = "Youcanprobably@findout.com";
-    public bool FriendSwitch { get; set; } = true;
-    private void buscarDatos(){
-
-    }
+    public string FirstName {get; set;}
 
 #line default
 #line hidden

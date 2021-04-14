@@ -193,3 +193,5 @@ C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.pdb
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.genruntimeconfig.cache
 /Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionClientes.razor.g.cs
 /Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionClientes.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ObtenerDatos.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ObtenerDatos.razor.g.cs
