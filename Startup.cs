@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using ProyectoFinal.Data;
 using ProyectoFinal.Data.Repositorio;
 using MudBlazor.Services;
+using System.Net.Http;
 
 namespace ProyectoFinal
 {
@@ -31,6 +32,7 @@ namespace ProyectoFinal
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddSingleton<HttpClient>();
             services.AddDbContext<AppDbContext>(
                 optionsAction => optionsAction.UseSqlServer(Configuration.GetConnectionString("Conexion"))
                 );

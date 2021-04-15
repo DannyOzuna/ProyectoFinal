@@ -31,8 +31,10 @@
 
 
 
-insert into vehiculos values ('Honda', 'CR-V', '2017', 'Gris', 300.00, 'Jeepeta', 23.4, 4,'DO1001','FULL',null,null,null);
+insert into vehiculos values ('Honda', 'CR-V', '2017', 'Gris', 300.00, 'Jeepeta', 23.4, 4,'DO1001','FULL','url','123','456', 0);
 
 
 select * from vehiculos
 
+
+update vehiculos set estado = 1;
