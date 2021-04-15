@@ -7,7 +7,7 @@ using System.Linq;
 namespace ProyectoFinal.Data.Repositorio{
     public class Vehiculos : IVehiculos{
         
-        public readonly AppDbContext context;
+        private readonly AppDbContext context;
         public Vehiculos(AppDbContext context){
             this.context = context;
         }

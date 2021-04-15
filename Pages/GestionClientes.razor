@@ -38,29 +38,42 @@
 
 @if(cargarDatos == true){
     <div class="row justify-content-center mt-md-2">
-        <div class="col-10">
+        <div class="col-8">
             <EditForm Model="oCliente">
                 <DataAnnotationsValidator/>
                 <MudCard Elevation="25">
                     <MudCardContent>
                         <MudGrid>
-                            <MudItem xs="12" sm="6" md="4">
-                                <MudTextField @bind-Value="FirstName" Label="Nombre" Variant="Variant.Outlined" />
+                            <MudItem xs="12" sm="6">
+                                <MudTextField @bind-Value="oCliente.nombre" Label="Nombre" Variant="Variant.Outlined" />
                             </MudItem>
-                            <MudItem xs="12" sm="6" md="4">
-                                <MudTextField @bind-Value="LastName" Label="Apellido" Variant="Variant.Outlined" />
+                            <MudItem xs="12" sm="6">
+                                <MudTextField @bind-Value="oCliente.apellido" Label="Apellido" Variant="Variant.Outlined" />
                             </MudItem>
-                            <MudItem xs="12" sm="6" md="4">
-                                <MudTextField @bind-Value="JobTitle" Label="Cédula" Variant="Variant.Outlined" />
+                            <MudItem xs="12" sm="6">
+                                <MudTextField @bind-Value="oCliente.cedula" Label="Cédula" Variant="Variant.Outlined" />
                             </MudItem>
-                            <MudItem xs="12" sm="6" md="4">
-                                <MudTextField @bind-Value="Email" Label="Correo" Variant="Variant.Outlined" HelperText="Dont worry, we shall not spam!" InputType="InputType.Email" />
+                            <MudItem xs="12" sm="6">
+                                <MudTextField @bind-Value="oCliente.correo" Label="Correo" Variant="Variant.Outlined" InputType="InputType.Email" />
                             </MudItem>
-                            <MudItem xs="12" sm="6" md="4">
-                                <MudTextField @bind-Value="JobTitle" Label="Licencia de Conducir" Variant="Variant.Outlined" />
+                            <MudItem xs="12" sm="6">
+                                <MudTextField @bind-Value="oCliente.licencia" Label="Licencia de Conducir" Variant="Variant.Outlined" />
                             </MudItem>
-                            <MudItem xs="12" sm="6" md="4">
-                                <MudTextField @bind-Value="JobTitle" Label="Nacionalidad" Variant="Variant.Outlined" />
+                            <MudItem xs="12" sm="6">
+                                <MudTextField @bind-Value="oCliente.nacionalidad" Label="Nacionalidad" Variant="Variant.Outlined" />
+                            </MudItem>
+                            <MudItem xs="12" sm="6">
+                                <MudSelect T="string" @bind-Value="oCliente.tipo_sangre" Label="Tipo" Variant="Variant.Outlined" OffsetY="true">
+                                    <MudSelectItem Value="@("+A")" />
+                                    <MudSelectItem Value="@("+B")" />
+                                    <MudSelectItem Value="@("+AB")" />
+                                    <MudSelectItem Value="@("+O")" />
+                                    <MudSelectItem Value="@("-A")" />
+                                    <MudSelectItem Value="@("-B")" />
+                                    <MudSelectItem Value="@("-AB")" />
+                                    <MudSelectItem Value="@("-O")" />
+                                </MudSelect>
+                                <ValidationMessage For="() => oCliente.tipo_sangre"/>
                             </MudItem>
                         </MudGrid>
                     </MudCardContent>
@@ -73,7 +86,6 @@
     </div>
 }
 
-
 @code{
 
     
@@ -82,11 +94,7 @@
 
     public bool cargarDatos {get; set;} = false;
     public string cedula {get; set;}
-    public string FirstName { get; set; } = "Jonny";
-    public string LastName { get; set; } = "Larsson";
-    public string JobTitle { get; set; } = "IT Consultant";
-    public string Email { get; set; } = "Youcanprobably@findout.com";
-    public bool FriendSwitch { get; set; } = true;
+
     private async Task buscarDatos(int buscar){
         if(buscar == 1){
             if(cedula != null){
@@ -95,6 +103,9 @@
 
                 if(oCedula.ok){
                     cargarDatos = true;
+                    oCliente.nombre = oCedula.Nombres;
+                    oCliente.apellido = oCedula.Apellido1 + " " + oCedula.Apellido1;
+                    oCliente.cedula = oCedula.Cedula;
 
                 }else{
                     var msj =  await Js.InvokeAsync<object>("msjAlert", "Cédula no Encotrada", "error");
