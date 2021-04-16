@@ -126,7 +126,7 @@ using System.Net.Http.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 89 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/GestionClientes.razor"
+#line 104 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/GestionClientes.razor"
       
 
     
@@ -134,11 +134,13 @@ using System.Net.Http.Json;
     DatosCedula oCedula = null;
 
     public bool cargarDatos {get; set;} = false;
+    public bool loading {get; set;} = false;
     public string cedula {get; set;}
 
     private async Task buscarDatos(int buscar){
         if(buscar == 1){
             if(cedula != null){
+                loading = true;
                 var Url = "https://api.adamix.net/apec/cedula/" + cedula;
                 oCedula = await Http.GetFromJsonAsync<DatosCedula>(Url);
 
@@ -152,6 +154,7 @@ using System.Net.Http.Json;
                     var msj =  await Js.InvokeAsync<object>("msjAlert", "Cédula no Encotrada", "error");
                     cargarDatos = true;
                 }
+                loading = false;
             }else{
                 var msj =  await Js.InvokeAsync<object>("msjAlert", "Campo Cédula Vacío", "error");
             }
@@ -161,9 +164,25 @@ using System.Net.Http.Json;
         
     } 
 
+    private void GuardarDatos(){
+        cargarDatos = false;
+        loading = true;
+
+        oCliente.foto_persona = "url";
+        oCliente.foto_licencia = "url";
+        oCliente.estado = 1;
+
+        var crear = clientes.AddCliente(oCliente);
+        var msj = Js.InvokeAsync<object>("msjAlert", "Registro Existo", "success");
+        NavigationManager.NavigateTo("/");
+
+    }
+
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientes clientes { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime Js { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }

@@ -126,14 +126,15 @@ using System.Net.Http.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 76 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/VistaVehiculos.razor"
+#line 82 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/VistaVehiculos.razor"
       
-
+  public bool loading {get; set;} = true;
   List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
 
   protected async override Task OnInitializedAsync()
   {
       lsVehiculos = await Vehiculos.GetVehiculos();
+      loading = false;
   }
 
   public async Task Delete(int id){

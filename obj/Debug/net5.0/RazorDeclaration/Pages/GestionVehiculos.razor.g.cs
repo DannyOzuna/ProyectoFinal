@@ -127,22 +127,24 @@ using System.Net.Http.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 82 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/GestionVehiculos.razor"
+#line 89 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/GestionVehiculos.razor"
       
     [Parameter]
     public int id {get; set;}
+
+    public bool loading {get; set;} = false;
 
     VehiculosDb oVehiculos = new VehiculosDb();
 
    protected async override Task OnInitializedAsync()
     {
-        //var rx = js.InvokeAsync<object>("loading");
         if(id != 0){
             oVehiculos = await Vehiculos.GetVehiculos(id);
         }
     }
 
     private async Task GuardarDatos(){
+        loading = true;
         oVehiculos.foto = "url";
         oVehiculos.latitud = "123";
         oVehiculos.longitud = "456";

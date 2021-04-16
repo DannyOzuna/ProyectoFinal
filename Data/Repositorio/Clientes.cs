@@ -17,8 +17,8 @@ namespace ProyectoFinal.Data.Repositorio{
 
         public async Task<ClientesDb> AddCliente(ClientesDb oCliente){
             if(oCliente != null){
-                await context.clientes.AddAsync(oCliente);
-                await context.clientes.SaveChangesAsync();
+                await context.AddAsync(oCliente);
+                await context.SaveChangesAsync();
                 return oCliente;
             }else{
                 return new ClientesDb();

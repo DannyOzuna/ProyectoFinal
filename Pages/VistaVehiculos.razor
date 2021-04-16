@@ -5,54 +5,60 @@
 <div class="row justify-content-center">
     <div class="col-md-8 text-center">
         <h1 class="alert alert-info">Vista de Vehículos</h1>
+        @if(loading == true){
+            <div class="spinner-border text-primary" style="width: 7rem; height: 7rem; margin-top:10rem;" role="status">
+              <span class="visually-hidden"></span>
+            </div>
+        }
     </div>
 </div>
 
-
-<div class="row">
-  @if(lsVehiculos != null){
-    @foreach (var item in lsVehiculos)
-    { 
-      <div class="col-12 col-sm-2">
-        <MudCard Elevation="25">
-          <MudCardContent>
-            <MudGrid>
-              @if(item.estado == 1){
-                <MudChip Label="true" Color="Color.Success" Size="Size.Medium" Class="mr-auto mud-elevation-25">Disponible</MudChip>
-              }else{
-                <MudChip Label="true" Color="Color.Error" Size="Size.Medium" Class="mr-auto mud-elevation-25">No Disponible</MudChip>
-              }
-              <img src="https://www.motor.com.co/files/article_multimedia/uploads/2018/07/19/5b50eafc9e808.jpeg" class="card-img-top " alt="...">
-              <div class="card-body">
-                <h3 class="card-title text-center">@item.marca @item.modelo</h3>
-                <p class="card-text">
-                  <table class="table tablePer">
-                    <tbody>
-                      <tr>
-                        <th>Año:</th>
-                        <td>@item.anio</td>    
-                      </tr>
-                      <tr>
-                        <th>Matricula:</th>
-                        <td>@item.matricula</td>  
-                      </tr>
-                    </tbody>
-                  </table>
-                  <h5 class="text-center" style="font-weight: bold;">DOP $@item.precio</h5>
-                </p>
-                  <div class="text-center">
-                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#divview"><i class="oi oi-eye"></i></button>
-                    <a href="/registrarvehiculo/editarvehiculo/@item.id" class="btn btn-primary"><i class="oi oi-pencil"></i></a>
-                    <button class="btn btn-danger" @onclick="(() => Delete(item.id))"><i class="oi oi-trash"></i></button>
-                  </div>
-              </div>
-            </MudGrid>
-          </MudCardContent>
-        </MudCard>
-      </div> 
+@if(loading == false){
+  <div class="row">
+    @if(lsVehiculos != null){
+      @foreach (var item in lsVehiculos)
+      { 
+        <div class="col-12 col-sm-2">
+          <MudCard Elevation="25">
+            <MudCardContent>
+              <MudGrid>
+                @if(item.estado == 1){
+                  <MudChip Label="true" Color="Color.Success" Size="Size.Medium" Class="mr-auto mud-elevation-25">Disponible</MudChip>
+                }else{
+                  <MudChip Label="true" Color="Color.Error" Size="Size.Medium" Class="mr-auto mud-elevation-25">No Disponible</MudChip>
+                }
+                <img src="https://www.motor.com.co/files/article_multimedia/uploads/2018/07/19/5b50eafc9e808.jpeg" class="card-img-top " alt="...">
+                <div class="card-body">
+                  <h3 class="card-title text-center">@item.marca @item.modelo</h3>
+                  <p class="card-text">
+                    <table class="table tablePer">
+                      <tbody>
+                        <tr>
+                          <th>Año:</th>
+                          <td>@item.anio</td>    
+                        </tr>
+                        <tr>
+                          <th>Matricula:</th>
+                          <td>@item.matricula</td>  
+                        </tr>
+                      </tbody>
+                    </table>
+                    <h5 class="text-center" style="font-weight: bold;">DOP $@item.precio</h5>
+                  </p>
+                    <div class="text-center">
+                      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#divview"><i class="oi oi-eye"></i></button>
+                      <a href="/registrarvehiculo/editarvehiculo/@item.id" class="btn btn-primary"><i class="oi oi-pencil"></i></a>
+                      <button class="btn btn-danger" @onclick="(() => Delete(item.id))"><i class="oi oi-trash"></i></button>
+                    </div>
+                </div>
+              </MudGrid>
+            </MudCardContent>
+          </MudCard>
+        </div> 
+      }
     }
-  }
-</div>
+  </div>
+}
 
 
 <!-- Modal -->
@@ -74,12 +80,13 @@
 </div>
 
 @code{
-
+  public bool loading {get; set;} = true;
   List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
 
   protected async override Task OnInitializedAsync()
   {
       lsVehiculos = await Vehiculos.GetVehiculos();
+      loading = false;
   }
 
   public async Task Delete(int id){

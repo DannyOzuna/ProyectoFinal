@@ -37,6 +37,7 @@ namespace ProyectoFinal
                 optionsAction => optionsAction.UseSqlServer(Configuration.GetConnectionString("Conexion"))
                 );
             services.AddScoped<IVehiculos, Vehiculos>();
+            services.AddScoped<IClientes, Clientes>();
             services.AddMudServices();
         }
 

@@ -1,15 +1,23 @@
 @page "/registrarcliente"
 @inject HttpClient Http
 @inject IJSRuntime Js
+@inject IClientes clientes
+@inject NavigationManager NavigationManager
 
 
 <div class="row justify-content-center">
     <div class="col-md-8 text-center">
         <h1 class="alert alert-info">Gestión de Clientes</h1>
+        @if(loading == true){
+            <div class="spinner-border text-primary" style="width: 7rem; height: 7rem; margin-top:10rem;" role="status">
+              <span class="visually-hidden"></span>
+            </div>
+        }
     </div>
 </div>
 
-@if(cargarDatos == false){
+
+@if(cargarDatos == false && loading ==  false){
     <div class="row justify-content-center mt-md-2">
         <div class="col-12 col-sm-6 col-md-4">
             <MudCard>
@@ -39,28 +47,34 @@
 @if(cargarDatos == true){
     <div class="row justify-content-center mt-md-2">
         <div class="col-8">
-            <EditForm Model="oCliente">
+            <EditForm Model="oCliente" OnValidSubmit="(() => GuardarDatos())">
                 <DataAnnotationsValidator/>
                 <MudCard Elevation="25">
                     <MudCardContent>
                         <MudGrid>
                             <MudItem xs="12" sm="6">
                                 <MudTextField @bind-Value="oCliente.nombre" Label="Nombre" Variant="Variant.Outlined" />
+                                 <ValidationMessage For="() => oCliente.nombre"/>
                             </MudItem>
                             <MudItem xs="12" sm="6">
                                 <MudTextField @bind-Value="oCliente.apellido" Label="Apellido" Variant="Variant.Outlined" />
+                                <ValidationMessage For="() => oCliente.apellido"/>
                             </MudItem>
                             <MudItem xs="12" sm="6">
                                 <MudTextField @bind-Value="oCliente.cedula" Label="Cédula" Variant="Variant.Outlined" />
+                                <ValidationMessage For="() => oCliente.cedula"/>
                             </MudItem>
                             <MudItem xs="12" sm="6">
                                 <MudTextField @bind-Value="oCliente.correo" Label="Correo" Variant="Variant.Outlined" InputType="InputType.Email" />
+                                <ValidationMessage For="() => oCliente.correo"/>
                             </MudItem>
                             <MudItem xs="12" sm="6">
                                 <MudTextField @bind-Value="oCliente.licencia" Label="Licencia de Conducir" Variant="Variant.Outlined" />
+                                <ValidationMessage For="() => oCliente.licencia"/>
                             </MudItem>
                             <MudItem xs="12" sm="6">
                                 <MudTextField @bind-Value="oCliente.nacionalidad" Label="Nacionalidad" Variant="Variant.Outlined" />
+                                <ValidationMessage For="() => oCliente.nacionalidad"/>
                             </MudItem>
                             <MudItem xs="12" sm="6">
                                 <MudSelect T="string" @bind-Value="oCliente.tipo_sangre" Label="Tipo" Variant="Variant.Outlined" OffsetY="true">
@@ -84,6 +98,7 @@
             </EditForm>
         </div>
     </div>
+
 }
 
 @code{
@@ -93,11 +108,13 @@
     DatosCedula oCedula = null;
 
     public bool cargarDatos {get; set;} = false;
+    public bool loading {get; set;} = false;
     public string cedula {get; set;}
 
     private async Task buscarDatos(int buscar){
         if(buscar == 1){
             if(cedula != null){
+                loading = true;
                 var Url = "https://api.adamix.net/apec/cedula/" + cedula;
                 oCedula = await Http.GetFromJsonAsync<DatosCedula>(Url);
 
@@ -111,6 +128,7 @@
                     var msj =  await Js.InvokeAsync<object>("msjAlert", "Cédula no Encotrada", "error");
                     cargarDatos = true;
                 }
+                loading = false;
             }else{
                 var msj =  await Js.InvokeAsync<object>("msjAlert", "Campo Cédula Vacío", "error");
             }
@@ -119,4 +137,18 @@
         }
         
     } 
+
+    private void GuardarDatos(){
+        cargarDatos = false;
+        loading = true;
+
+        oCliente.foto_persona = "url";
+        oCliente.foto_licencia = "url";
+        oCliente.estado = 1;
+
+        var crear = clientes.AddCliente(oCliente);
+        var msj = Js.InvokeAsync<object>("msjAlert", "Registro Existo", "success");
+        NavigationManager.NavigateTo("/");
+
+    }
 }
