@@ -92,9 +92,11 @@
   public async Task Delete(int id){
     var confimacion = await js.InvokeAsync<bool>("msjConfim", "Confimar", "Seguro de borrar el Vehículo?", "question");
     if(confimacion){
+      loading = true;
       await Vehiculos.DeleteVehiculo(id);
       await js.InvokeAsync<object>("msjAlert", "Eliminación Exitosa", "success");
       lsVehiculos = await Vehiculos.GetVehiculos();
+      loading = false;
     }
   }
 

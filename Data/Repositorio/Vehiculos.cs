@@ -22,7 +22,7 @@ namespace ProyectoFinal.Data.Repositorio{
 
         public async Task<VehiculosDb> AddVehiculos(VehiculosDb oVehiculo){
             if(oVehiculo != null){
-                var crear = await context.vehiculos.FirstOrDefaultAsync(v => v.id == oVehiculo.id);
+                var crear = await context.vehiculos.FirstOrDefaultAsync(v => v.id == oVehiculo.id || v.matricula == oVehiculo.matricula);
 
                 if(crear != null){
                     return null;

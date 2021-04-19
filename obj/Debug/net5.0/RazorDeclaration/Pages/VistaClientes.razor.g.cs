@@ -117,8 +117,8 @@ using System.Net.Http.Json;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/vistavehiculos")]
-    public partial class VistaVehiculos : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/vistaclientes")]
+    public partial class VistaClientes : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -126,34 +126,38 @@ using System.Net.Http.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 82 "C:\Users\danny\Desktop\ProyectoFinal\Pages\VistaVehiculos.razor"
-      
-  public bool loading {get; set;} = true;
-  List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
+#line 81 "C:\Users\danny\Desktop\ProyectoFinal\Pages\VistaClientes.razor"
+       
+    public bool loading {get; set;} = true;
+    List<ClientesDb> lsClientes = new List<ClientesDb>();
+    ClientesDb oCliente = new ClientesDb();
 
-  protected async override Task OnInitializedAsync()
-  {
-      lsVehiculos = await Vehiculos.GetVehiculos();
-      loading = false;
-  }
-
-  public async Task Delete(int id){
-    var confimacion = await js.InvokeAsync<bool>("msjConfim", "Confimar", "Seguro de borrar el Vehículo?", "question");
-    if(confimacion){
-      loading = true;
-      await Vehiculos.DeleteVehiculo(id);
-      await js.InvokeAsync<object>("msjAlert", "Eliminación Exitosa", "success");
-      lsVehiculos = await Vehiculos.GetVehiculos();
-      loading = false;
+    protected async override Task OnInitializedAsync(){
+        lsClientes = await clientes.GetClientes();
+        loading = false;
     }
-  }
 
+    private async Task Delete(int id){
+      var confimacion = await js.InvokeAsync<bool>("msjConfim", "Confimar", "Seguro de borrar el Cliente?", "question");
+      if(confimacion){
+        loading = true;
+        await clientes.DeleteCliente(id);
+        await js.InvokeAsync<object>("msjAlert", "Eliminación Exitosa", "success");
+        lsClientes = await clientes.GetClientes();
+        loading = false;
+        
+      }
+    }
+
+    private async Task verCliente(int id){
+      oCliente = await clientes.GetClientes(id);
+    }
 
 #line default
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos Vehiculos { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientes clientes { get; set; }
     }
 }
 #pragma warning restore 1591
