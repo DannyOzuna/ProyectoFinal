@@ -127,7 +127,7 @@ using System.Net.Http.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 105 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/GestionClientes.razor"
+#line 113 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/GestionClientes.razor"
       
     ClientesDb oCliente = new ClientesDb();
     DatosCedula oCedula = null;
@@ -138,12 +138,20 @@ using System.Net.Http.Json;
     public bool loading {get; set;} = false;
     public string cedula {get; set;}
 
+    public string estado {get; set;}
+
      protected async override Task OnInitializedAsync(){
          if(id != 0){
              loading = true;
              oCliente = await clientes.GetClientes(id);
              cargarDatos = true;
              loading = false;
+
+             if(oCliente.estado == 1){
+                 estado = "Activo";
+             }else{
+                 estado = "Inactivo";
+             }
          }
      }
 
@@ -180,7 +188,11 @@ using System.Net.Http.Json;
         loading = true;    
         
         oCliente.foto_licencia = "url";
-        oCliente.estado = 1;
+        if(estado == "Activo"){
+            oCliente.estado = 1;
+        }else{
+            oCliente.estado = 0;
+        }
 
         var crear = await clientes.AddCliente(oCliente);
 

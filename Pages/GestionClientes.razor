@@ -90,6 +90,14 @@
                                 </MudSelect>
                                 <ValidationMessage For="() => oCliente.tipo_sangre"/>
                             </MudItem>
+                            @if(id != 0){
+                                <MudItem xs="12" sm="2">
+                                    <MudSelect T="string" @bind-Value="estado" Label="Estado" Variant="Variant.Outlined" OffsetY="true">
+                                        <MudSelectItem Value="@("Activo")" />
+                                        <MudSelectItem Value="@("Inactivo")" />
+                                    </MudSelect>
+                                </MudItem>
+                            }
                         </MudGrid>
                     </MudCardContent>
                         <div class="row justify-content-center">
@@ -112,12 +120,20 @@
     public bool loading {get; set;} = false;
     public string cedula {get; set;}
 
+    public string estado {get; set;}
+
      protected async override Task OnInitializedAsync(){
          if(id != 0){
              loading = true;
              oCliente = await clientes.GetClientes(id);
              cargarDatos = true;
              loading = false;
+
+             if(oCliente.estado == 1){
+                 estado = "Activo";
+             }else{
+                 estado = "Inactivo";
+             }
          }
      }
 
@@ -154,7 +170,11 @@
         loading = true;    
         
         oCliente.foto_licencia = "url";
-        oCliente.estado = 1;
+        if(estado == "Activo"){
+            oCliente.estado = 1;
+        }else{
+            oCliente.estado = 0;
+        }
 
         var crear = await clientes.AddCliente(oCliente);
 

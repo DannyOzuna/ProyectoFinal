@@ -17,9 +17,9 @@
     <MudTable Items="@lsClientes" Hover="true" Breakpoint="Breakpoint.Sm">
         <HeaderContent>
             <MudTh>Id</MudTh>
-            <MudTh>Nombre</MudTh>
-            <MudTh>Apellido</MudTh>
+            <MudTh>Cliente</MudTh>
             <MudTh>Cédula</MudTh>
+            <MudTh>Estado</MudTh>
             <MudTh>Tipo Sangre</MudTh>
             <MudTh>Nacionalidad</MudTh>
             <MudTh>Licencia</MudTh>
@@ -27,9 +27,16 @@
         </HeaderContent>
         <RowTemplate>
             <MudTd DataLabel="Id">@context.id</MudTd>
-            <MudTd DataLabel="Nombre">@context.nombre</MudTd>
-            <MudTd DataLabel="Apellido">@context.apellido</MudTd>
+            <MudTd DataLabel="Cliente">@context.nombre @context.apellido</MudTd>
             <MudTd DataLabel="Cédula">@context.cedula</MudTd>
+            <MudTd DataLabel="">
+              @if(context.estado == 0){
+                <MudChip Label="true" Color="Color.Error" Size="Size.Small" Class="ml-auto mud-elevation-25">Inactivo</MudChip>
+              }else{
+                <MudChip Label="true" Color="Color.Success" Size="Size.Small" Class="ml-auto mud-elevation-25">Activo</MudChip>
+              }
+
+            </MudTd>
             <MudTd DataLabel="Tipo Sangre">@context.tipo_sangre</MudTd>
             <MudTd DataLabel="Nacionalidad">@context.nacionalidad</MudTd>
             <MudTd DataLabel="Licencia">@context.licencia</MudTd>
@@ -59,8 +66,11 @@
             </div>
             <div class="col-8 alert alert-info">
                 <p style="font-size: 13pt;"><span style="font-weight: bold;">Cliente: </span> @oCliente.nombre  @oCliente.apellido</p>  
-                <p style="font-size: 13pt;"><span style="font-weight: bold;">Fecha de Nacimiento: </span> prueba</p>  
-                <p style="font-size: 13pt;"><span style="font-weight: bold;">Signo del Zodiaco: </span> prueba</p>  
+                <p style="font-size: 13pt;"><span style="font-weight: bold;">Cédula: </span> @oCliente.cedula</p>  
+                <p style="font-size: 13pt;"><span style="font-weight: bold;">Tipo de Sangre: </span> @oCliente.tipo_sangre</p>  
+                <p style="font-size: 13pt;"><span style="font-weight: bold;">Licencia: </span> @oCliente.licencia</p>  
+                <p style="font-size: 13pt;"><span style="font-weight: bold;">Correo: </span> @oCliente.correo</p>   
+                <p style="font-size: 13pt;"><span style="font-weight: bold;">Nacionalidad: </span> @oCliente.nacionalidad</p>  
             </div>
             <div></div>
         </div>

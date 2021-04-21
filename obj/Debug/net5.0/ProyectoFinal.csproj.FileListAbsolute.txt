@@ -205,3 +205,5 @@ C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Vis
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaClientes.razor.g.cs
 /Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaClientes.razor.g.cs
 /Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaClientes.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionReserva.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionReserva.razor.g.cs
