@@ -141,10 +141,20 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 89 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/GestionVehiculos.razor"
+#line 93 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/GestionVehiculos.razor"
       
     [Parameter]
     public int id {get; set;}
+
+    IFileListEntry file;
+
+    async Task HandleFileSelected(IFileListEntry[] files){
+        file = files.FirstOrDefault();
+
+        if(file != null){
+            await cargarArchivo.Cargar(file);
+        }
+    }
 
     public bool loading {get; set;} = false;
 
@@ -159,10 +169,13 @@ using ProyectoFinal.Services;
 
     private async Task GuardarDatos(){
         loading = true;
-        oVehiculos.foto = "url";
         oVehiculos.latitud = "123";
         oVehiculos.longitud = "456";
         oVehiculos.estado = 1;
+
+        if(file != null){
+            oVehiculos.foto = @file.Name;
+        }
 
         var crear = await Vehiculos.AddVehiculos(oVehiculos);
 
@@ -189,6 +202,7 @@ using ProyectoFinal.Services;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICargarArchivo cargarArchivo { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos Vehiculos { get; set; }

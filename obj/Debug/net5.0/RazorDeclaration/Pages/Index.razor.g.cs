@@ -140,18 +140,8 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 160 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Index.razor"
+#line 140 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Index.razor"
        
-
-    IFileListEntry file;
-
-    async Task HandleFileSelected(IFileListEntry[] files){
-        file = files.FirstOrDefault();
-
-        if(file != null){
-            await cargarArchivo.Cargar(file);
-        }
-    }
 
     EarningReport[] earningReports = new EarningReport[]
     {
@@ -173,7 +163,6 @@ using ProyectoFinal.Services;
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICargarArchivo cargarArchivo { get; set; }
     }
 }
 #pragma warning restore 1591

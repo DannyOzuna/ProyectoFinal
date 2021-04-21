@@ -1,5 +1,4 @@
 @page "/"
-@inject ICargarArchivo cargarArchivo
 
 <MudText Typo="Typo.h5" Color="Color.Primary" Class="mb-4">Dashboard</MudText>
 <MudGrid>
@@ -138,36 +137,7 @@
     </MudItem>
 </MudGrid>
 
-<BlazorInputFile.InputFile id="fileInput112" OnChange="HandleFileSelected" hidden multiple accept=".jpg, .jpeg, .png" />
-
-<MudButton HtmlTag="label"
-           Variant="Variant.Filled"
-           Color="Color.Primary"
-           StartIcon="@Icons.Filled.CloudUpload"
-           for="fileInput112">
-    Upload your images
-</MudButton>
-
-@if (file != null)
-{
-   <span>Nombre: @file.Name</span>
-   <br>
-   <span>Tamaño: @file.Size</span>
-   <br>
-   <span>Tipo: @file.Type</span> 
-}
-
 @code {
-
-    IFileListEntry file;
-
-    async Task HandleFileSelected(IFileListEntry[] files){
-        file = files.FirstOrDefault();
-
-        if(file != null){
-            await cargarArchivo.Cargar(file);
-        }
-    }
 
     EarningReport[] earningReports = new EarningReport[]
     {

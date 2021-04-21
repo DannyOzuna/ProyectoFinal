@@ -3,6 +3,7 @@
 @inject IVehiculos Vehiculos
 @inject IJSRuntime js
 @inject NavigationManager NavigationManager
+@inject ICargarArchivo cargarArchivo
 
 <div class="row justify-content-center">
     <div class="col-md-8 text-center">
@@ -71,6 +72,13 @@
                                     <MudTextField @bind-Value="oVehiculos.nro_seguro" Label="Nro Seguro" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.LocalPolice" AdornmentColor="Color.Info" />
                                     <ValidationMessage For="() => oVehiculos.nro_seguro"/>
                                 </MudItem>
+                                <MudItem xs="12" sm="6" md="4">
+                                    <BlazorInputFile.InputFile id="fileInput112" OnChange="HandleFileSelected" hidden multiple accept=".jpg, .jpeg, .png" />
+                                    <MudFab HtmlTag="label" Color="Color.Success" Icon="@Icons.Filled.AttachFile" for="fileInput112" />
+                                    @if(file != null){
+                                        <label>&nbsp; &nbsp; @file.Name</label>
+                                    }
+                                </MudItem>
                             </MudGrid>
                         </MudCardContent>
                         <div class="row justify-content-center">
@@ -82,13 +90,19 @@
     </div>
 }
 
-
-
-
-
 @code{
     [Parameter]
     public int id {get; set;}
+
+    IFileListEntry file;
+
+    async Task HandleFileSelected(IFileListEntry[] files){
+        file = files.FirstOrDefault();
+
+        if(file != null){
+            await cargarArchivo.Cargar(file);
+        }
+    }
 
     public bool loading {get; set;} = false;
 
@@ -103,10 +117,13 @@
 
     private async Task GuardarDatos(){
         loading = true;
-        oVehiculos.foto = "url";
         oVehiculos.latitud = "123";
         oVehiculos.longitud = "456";
         oVehiculos.estado = 1;
+
+        if(file != null){
+            oVehiculos.foto = @file.Name;
+        }
 
         var crear = await Vehiculos.AddVehiculos(oVehiculos);
 
