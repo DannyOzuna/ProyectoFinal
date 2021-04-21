@@ -37,24 +37,28 @@ namespace ProyectoFinal.Data.Repositorio{
         }
 
         public async Task<VehiculosDb> UpdateVehiculo(int id,VehiculosDb oVehiculo){
-            var VehiculoDd = await context.vehiculos.FindAsync(id);
-            VehiculoDd.marca = oVehiculo.marca;
-            VehiculoDd.modelo = oVehiculo.modelo;
-            VehiculoDd.anio = oVehiculo.anio;
-            VehiculoDd.color = oVehiculo.color;
-            VehiculoDd.precio = oVehiculo.precio;
-            VehiculoDd.tipo = oVehiculo.tipo;
-            VehiculoDd.capacidad = oVehiculo.capacidad;
-            VehiculoDd.pasajeros = oVehiculo.pasajeros;
-            VehiculoDd.matricula = oVehiculo.matricula;
-            VehiculoDd.nro_seguro = oVehiculo.nro_seguro;
-            VehiculoDd.foto = oVehiculo.foto;
-            VehiculoDd.latitud = oVehiculo.latitud;
-            VehiculoDd.longitud = oVehiculo.longitud;
-            VehiculoDd.estado  = oVehiculo.estado;
+            if(id != 0){
+                var VehiculoDd = await context.vehiculos.FindAsync(id);
+                VehiculoDd.marca = oVehiculo.marca;
+                VehiculoDd.modelo = oVehiculo.modelo;
+                VehiculoDd.anio = oVehiculo.anio;
+                VehiculoDd.color = oVehiculo.color;
+                VehiculoDd.precio = oVehiculo.precio;
+                VehiculoDd.tipo = oVehiculo.tipo;
+                VehiculoDd.capacidad = oVehiculo.capacidad;
+                VehiculoDd.pasajeros = oVehiculo.pasajeros;
+                VehiculoDd.matricula = oVehiculo.matricula;
+                VehiculoDd.nro_seguro = oVehiculo.nro_seguro;
+                VehiculoDd.foto = oVehiculo.foto;
+                VehiculoDd.latitud = oVehiculo.latitud;
+                VehiculoDd.longitud = oVehiculo.longitud;
+                VehiculoDd.estado  = oVehiculo.estado;
 
-            await context.SaveChangesAsync();
-            return oVehiculo;
+                await context.SaveChangesAsync();
+                return oVehiculo;
+            }else{
+                return null;
+            }
         }
 
         public async Task DeleteVehiculo(int id){

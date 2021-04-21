@@ -2,6 +2,25 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "BlazorInputFile/0.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.0-preview3.19555.2",
+          "Microsoft.AspNetCore.Components.Web": "3.1.0-preview3.19555.2"
+        },
+        "compile": {
+          "lib/netstandard2.1/BlazorInputFile.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/BlazorInputFile.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorInputFile.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorInputFile.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/5.0.3": {
         "type": "package",
         "dependencies": {
@@ -714,6 +733,24 @@
     }
   },
   "libraries": {
+    "BlazorInputFile/0.2.0": {
+      "sha512": "wsPTwoA9fkHOxjEh0W0brNeTaVBaMCFwfBLehbRhfW+RzlIrYtlJ5qFpT5f377Ej6ELk+xeoUrkDBx9c8JF7DQ==",
+      "type": "package",
+      "path": "blazorinputfile/0.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazorinputfile.0.2.0.nupkg.sha512",
+        "blazorinputfile.nuspec",
+        "build/BlazorInputFile.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/BlazorInputFile.props",
+        "buildTransitive/BlazorInputFile.props",
+        "lib/netstandard2.0/BlazorInputFile.dll",
+        "lib/netstandard2.1/BlazorInputFile.dll",
+        "staticwebassets/inputfile.js"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/5.0.3": {
       "sha512": "yMX0DKFtLOiWsRfBJKTTRXCv2s//H801R5fP9uyf7/IjgGwUsnLWo/SUnB475SoFNFvurPRzW/J0UYPHWw9lrA==",
       "type": "package",
@@ -2114,6 +2151,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "BlazorInputFile >= 0.2.0",
       "Microsoft.AspNetCore.Blazor.HttpClient >= 3.2.0-preview3.20168.3",
       "Microsoft.EntityFrameworkCore >= 6.0.0-preview.2.21154.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0-preview.2.21154.2",
@@ -2121,19 +2159,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/dannyozuna/.nuget/packages/": {}
+    "C:\\Users\\danny\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dannyozuna/Documents/ProyectoFinal/ProyectoFinal.csproj",
+      "projectUniqueName": "C:\\Users\\danny\\Desktop\\ProyectoFinal\\ProyectoFinal.csproj",
       "projectName": "ProyectoFinal",
-      "projectPath": "/Users/dannyozuna/Documents/ProyectoFinal/ProyectoFinal.csproj",
-      "packagesPath": "/Users/dannyozuna/.nuget/packages/",
-      "outputPath": "/Users/dannyozuna/Documents/ProyectoFinal/obj/",
+      "projectPath": "C:\\Users\\danny\\Desktop\\ProyectoFinal\\ProyectoFinal.csproj",
+      "packagesPath": "C:\\Users\\danny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\danny\\Desktop\\ProyectoFinal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/dannyozuna/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\danny\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -2157,6 +2195,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "BlazorInputFile": {
+            "target": "Package",
+            "version": "[0.2.0, )"
+          },
           "Microsoft.AspNetCore.Blazor.HttpClient": {
             "target": "Package",
             "version": "[3.2.0-preview3.20168.3, )"
@@ -2192,7 +2234,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
