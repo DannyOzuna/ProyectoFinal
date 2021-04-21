@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uFJRhJJWEUxiv2l3mCtuFaJJZuKohNovnMaAs8dWk3HbhiZHTunA1Yf6ESG03tJgyoDASASnE09CHfUvmGkOig==",
+  "dgSpecHash": "3m8DgSkakFm3hb5R8QlUAwEa12Wli6gKbHpEUBEgDYSwoCklJkHgPAn7kjhIJPVL03AX09noEn0RvS9+UfrD8g==",
   "success": true,
   "projectFilePath": "/Users/dannyozuna/Documents/ProyectoFinal/ProyectoFinal.csproj",
   "expectedPackageFiles": [
+    "/Users/dannyozuna/.nuget/packages/blazorinputfile/0.2.0/blazorinputfile.0.2.0.nupkg.sha512",
     "/Users/dannyozuna/.nuget/packages/microsoft.aspnetcore.authorization/5.0.3/microsoft.aspnetcore.authorization.5.0.3.nupkg.sha512",
     "/Users/dannyozuna/.nuget/packages/microsoft.aspnetcore.blazor.httpclient/3.2.0-preview3.20168.3/microsoft.aspnetcore.blazor.httpclient.3.2.0-preview3.20168.3.nupkg.sha512",
     "/Users/dannyozuna/.nuget/packages/microsoft.aspnetcore.components/5.0.3/microsoft.aspnetcore.components.5.0.3.nupkg.sha512",

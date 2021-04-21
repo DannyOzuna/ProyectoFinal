@@ -117,6 +117,20 @@ using System.Net.Http.Json;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
+using ProyectoFinal.Services;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/registrarvehiculo")]
     [Microsoft.AspNetCore.Components.RouteAttribute("/registrarvehiculo/editarvehiculo/{id:int}")]
     public partial class GestionVehiculos : Microsoft.AspNetCore.Components.ComponentBase
@@ -153,14 +167,21 @@ using System.Net.Http.Json;
         var crear = await Vehiculos.AddVehiculos(oVehiculos);
 
         if(crear == null){
-            await Vehiculos.UpdateVehiculo(oVehiculos.id, oVehiculos);
-            var rs = js.InvokeAsync<object>("msjAlert", "Modificación Exitosa!", "success");
+            var update = await Vehiculos.UpdateVehiculo(oVehiculos.id, oVehiculos);
+            
+            if(update == null){
+                var rs = js.InvokeAsync<object>("msjAlert", "Registro Existente!", "error");
+                loading = false;
+                
+            }else{
+                var rs = js.InvokeAsync<object>("msjAlert", "Modificación Exitosa!", "success");
+                NavigationManager.NavigateTo("/vistavehiculos");
+            }
+
         }else{
             var rs = js.InvokeAsync<object>("msjAlert", "Registrado Exitoso!", "success");
+            NavigationManager.NavigateTo("/vistavehiculos");
         }
-
-        NavigationManager.NavigateTo("/vistavehiculos");
-        
     }
 
     

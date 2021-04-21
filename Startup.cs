@@ -14,6 +14,7 @@ using ProyectoFinal.Data;
 using ProyectoFinal.Data.Repositorio;
 using MudBlazor.Services;
 using System.Net.Http;
+using ProyectoFinal.Services;
 
 namespace ProyectoFinal
 {
@@ -38,6 +39,7 @@ namespace ProyectoFinal
                 );
             services.AddScoped<IVehiculos, Vehiculos>();
             services.AddScoped<IClientes, Clientes>();
+            services.AddScoped<ICargarArchivo, CargarArchivo>();
             services.AddMudServices();
         }
 

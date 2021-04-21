@@ -19,7 +19,7 @@ namespace ProyectoFinal.Data.Repositorio{
 
         public async Task<ClientesDb> AddCliente(ClientesDb oCliente){
             if(oCliente != null){
-                var crear = await context.clientes.FirstOrDefaultAsync(c => c.id == oCliente.id );
+                var crear = await context.clientes.FirstOrDefaultAsync(c => c.id == oCliente.id || c.cedula == oCliente.cedula);
                 if(crear != null){
                     return null;
                 }else{
@@ -33,19 +33,23 @@ namespace ProyectoFinal.Data.Repositorio{
         }
 
         public async Task<ClientesDb> UpdateCliente(int id, ClientesDb oCliente){
-            var clienteDb = await context.clientes.FindAsync(id);
-            clienteDb.nombre = oCliente.nombre;
-            clienteDb.apellido = oCliente.apellido;
-            clienteDb.cedula = oCliente.cedula;
-            clienteDb.correo = oCliente.correo;
-            clienteDb.licencia = oCliente.licencia;
-            clienteDb.nacionalidad = oCliente.nacionalidad;
-            clienteDb.tipo_sangre = oCliente.tipo_sangre;
-            clienteDb.foto_licencia = oCliente.foto_licencia;
-            clienteDb.foto_persona = oCliente.foto_persona;
-            clienteDb.estado = oCliente.estado;
-            await context.SaveChangesAsync();
-            return oCliente;
+            if(id != 0){
+                var clienteDb = await context.clientes.FindAsync(id);
+                clienteDb.nombre = oCliente.nombre;
+                clienteDb.apellido = oCliente.apellido;
+                clienteDb.cedula = oCliente.cedula;
+                clienteDb.correo = oCliente.correo;
+                clienteDb.licencia = oCliente.licencia;
+                clienteDb.nacionalidad = oCliente.nacionalidad;
+                clienteDb.tipo_sangre = oCliente.tipo_sangre;
+                clienteDb.foto_licencia = oCliente.foto_licencia;
+                clienteDb.foto_persona = oCliente.foto_persona;
+                clienteDb.estado = oCliente.estado;
+                await context.SaveChangesAsync();
+                return oCliente;
+            }else{
+                return null;
+            }
         }
 
         public async Task DeleteCliente(int id){

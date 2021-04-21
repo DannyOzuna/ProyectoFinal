@@ -180,18 +180,23 @@
 
         if(crear == null){
 
-            await clientes.UpdateCliente(oCliente.id, oCliente);
-            var msj = Js.InvokeAsync<object>("msjAlert", "Modificación Existosa", "success");
+            var update = await clientes.UpdateCliente(oCliente.id, oCliente);
+            if(update == null){
+                cargarDatos = true;
+                loading = false;
+                var msj = Js.InvokeAsync<object>("msjAlert", "Registro Existente!   ", "error");
+
+            }else{
+                var msj = Js.InvokeAsync<object>("msjAlert", "Modificación Existosa", "success");
+                NavigationManager.NavigateTo("/vistaclientes");
+            }
 
         }else{
 
             var msj = Js.InvokeAsync<object>("msjAlert", "Registro Existo", "success");
+                NavigationManager.NavigateTo("/vistaclientes");
 
-        }
-
-        NavigationManager.NavigateTo("/vistaclientes");
-
-        
+        } 
 
     }
 }

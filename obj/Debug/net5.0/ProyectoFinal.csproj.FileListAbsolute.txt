@@ -99,6 +99,12 @@
 /Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ObtenerDatos.razor.g.cs
 /Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ObtenerDatos.razor.g.cs
 /Users/dannyozuna/Documents/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Blazor.HttpClient.dll
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaClientes.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaClientes.razor.g.cs
+<<<<<<< HEAD
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionReserva.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionReserva.razor.g.cs
+=======
 C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/appsettings.Development.json
 C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/appsettings.json
 C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.StaticWebAssets.xml
@@ -168,6 +174,7 @@ C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Ges
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionVehiculos.razor.g.cs
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ObtenerDatos.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaClientes.razor.g.cs
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaVehiculos.razor.g.cs
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Shared/NavMenu.razor.g.cs
@@ -182,6 +189,7 @@ C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionCliente
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionVehiculos.razor.g.cs
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ObtenerDatos.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaClientes.razor.g.cs
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaVehiculos.razor.g.cs
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Shared/NavMenu.razor.g.cs
@@ -201,9 +209,6 @@ C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.dll
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ref/ProyectoFinal.dll
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.pdb
 C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.genruntimeconfig.cache
-C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaClientes.razor.g.cs
-C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaClientes.razor.g.cs
-/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaClientes.razor.g.cs
-/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaClientes.razor.g.cs
-/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionReserva.razor.g.cs
-/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionReserva.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/BlazorInputFile.dll
+>>>>>>> 2cf9fd7a0b97dac4896f4234db9c1c8169ea7581
+/Users/dannyozuna/Documents/ProyectoFinal/bin/Debug/net5.0/BlazorInputFile.dll

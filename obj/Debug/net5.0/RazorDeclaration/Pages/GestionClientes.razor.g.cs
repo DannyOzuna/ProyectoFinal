@@ -117,6 +117,20 @@ using System.Net.Http.Json;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
+using ProyectoFinal.Services;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/registrarcliente")]
     [Microsoft.AspNetCore.Components.RouteAttribute("/registrarcliente/editar/{id:int}")]
     public partial class GestionClientes : Microsoft.AspNetCore.Components.ComponentBase
@@ -198,18 +212,23 @@ using System.Net.Http.Json;
 
         if(crear == null){
 
-            await clientes.UpdateCliente(oCliente.id, oCliente);
-            var msj = Js.InvokeAsync<object>("msjAlert", "Modificación Existosa", "success");
+            var update = await clientes.UpdateCliente(oCliente.id, oCliente);
+            if(update == null){
+                cargarDatos = true;
+                loading = false;
+                var msj = Js.InvokeAsync<object>("msjAlert", "Registro Existente!   ", "error");
+
+            }else{
+                var msj = Js.InvokeAsync<object>("msjAlert", "Modificación Existosa", "success");
+                NavigationManager.NavigateTo("/vistaclientes");
+            }
 
         }else{
 
             var msj = Js.InvokeAsync<object>("msjAlert", "Registro Existo", "success");
+                NavigationManager.NavigateTo("/vistaclientes");
 
-        }
-
-        NavigationManager.NavigateTo("/vistaclientes");
-
-        
+        } 
 
     }
 

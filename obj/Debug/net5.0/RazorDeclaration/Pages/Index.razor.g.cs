@@ -117,6 +117,20 @@ using System.Net.Http.Json;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "/Users/dannyozuna/Documents/ProyectoFinal/_Imports.razor"
+using ProyectoFinal.Services;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -126,8 +140,18 @@ using System.Net.Http.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 140 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Index.razor"
+#line 160 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Index.razor"
        
+
+    IFileListEntry file;
+
+    async Task HandleFileSelected(IFileListEntry[] files){
+        file = files.FirstOrDefault();
+
+        if(file != null){
+            await cargarArchivo.Cargar(file);
+        }
+    }
 
     EarningReport[] earningReports = new EarningReport[]
     {
@@ -149,6 +173,7 @@ using System.Net.Http.Json;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICargarArchivo cargarArchivo { get; set; }
     }
 }
 #pragma warning restore 1591
