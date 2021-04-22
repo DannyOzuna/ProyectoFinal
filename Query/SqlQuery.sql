@@ -30,6 +30,16 @@
 )*/
 
 
+/*create table reservas(
+	id int primary key identity(1,1),
+	id_vehiculo int FOREIGN KEY REFERENCES vehiculos (id),
+	id_cliente int FOREIGN KEY REFERENCES clientes (id),
+	fecha_inicia date,
+	fecha_fin date,
+	estado int
+)*/
+
+
 
 insert into vehiculos values ('Honda', 'CR-V', '2017', 'Gris', 300.00, 'Jeepeta', 23.4, 4,'DO1001','FULL','url','123','456', 0);
 

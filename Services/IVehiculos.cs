@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ProyectoFinal.Models;
 
-namespace ProyectoFinal.Data.Repositorio{
+namespace ProyectoFinal.Services{
     public interface IVehiculos{
         public Task<List<VehiculosDb>> GetVehiculos();
         public Task<VehiculosDb> GetVehiculos(int id);

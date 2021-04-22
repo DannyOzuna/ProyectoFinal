@@ -1,1 +1,81 @@
 @page "/reserva"
+@inject IReserva reservas
+@inject IClientes clientes
+@inject IVehiculos vehiculos
+
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="alert alert-info">Gestión de Reserva</h1>
+        @if(loading == true){
+            <div class="spinner-border text-primary" style="width: 7rem; height: 7rem; margin-top:10rem;" role="status">
+              <span class="visually-hidden"></span>
+            </div>
+        }
+    </div>
+</div>
+
+@if(loading == false){
+    <div class="row justify-content-center mt-md-2">
+        <div class="col-7">
+            <EditForm Model="oReserva">
+                <DataAnnotationsValidator/>
+                <MudCard Elevation="25">
+                    <MudCardContent>
+                        <MudGrid>
+                            <MudItem xs="12" sm="6">
+                                <MudSelect @bind-Value="oReserva.id_cliente" Label="Cliente" Variant="Variant.Outlined">
+                                    <MudSelectItem Value="0">Seleccione...</MudSelectItem>
+                                    @if(lsClientes != null){
+                                        foreach(var item in lsClientes){
+                                            <MudSelectItem Value="@(item.id)">@item.nombre @item.apellido</MudSelectItem>
+                                        }
+                                    }
+                                </MudSelect>
+                                <ValidationMessage For="() => oReserva.id_cliente"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6">
+                                <MudSelect @bind-Value="oReserva.id_vehiculo" Label="Vehículos" Variant="Variant.Outlined">
+                                    <MudSelectItem Value="0">Seleccione...</MudSelectItem>
+                                    @if(lsVehiculos != null){
+                                        foreach(var item in lsVehiculos){
+                                            <MudSelectItem Value="@(item.id)">@item.marca @item.modelo</MudSelectItem>
+                                        }
+                                    }
+                                </MudSelect>
+                                <ValidationMessage For="() => oReserva.id_vehiculo"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6">
+                                <MudDatePicker PickerVariant="PickerVariant.Dialog" Label="Fecha de Inicio" @bind-Date="oReserva.fecha_inicia" DateFormat="dd/MM/yyyy" Color="Color.Success" Rounded="true"/>
+                                <ValidationMessage For="() => oReserva.fecha_inicia"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6">
+                                <MudDatePicker PickerVariant="PickerVariant.Dialog" Label="Fecha Final" @bind-Date="oReserva.fecha_fin" DateFormat="dd/MM/yyyy" Color="Color.Success" Rounded="true"/>
+                                <ValidationMessage For="() => oReserva.fecha_fin"/>
+                            </MudItem>
+                        </MudGrid>
+                    </MudCardContent>
+                        <div class="row justify-content-center">
+                            <button type="submit" class="btn btn-outline-primary col-8 bn-lg mb-4">Guardar</button>
+                        </div>
+                </MudCard>
+            </EditForm>
+        </div>
+    </div> 
+}
+
+@code{
+
+    ReservesDb oReserva = new ReservesDb();
+    List<ClientesDb> lsClientes = new List<ClientesDb>();
+    List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
+    public bool loading {get; set;} = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //oReserva = await reserva.GetReserves();
+        oReserva.fecha_inicia = DateTime.Now;
+        oReserva.fecha_fin = DateTime.Now;
+        lsClientes = await clientes.GetClientes();
+        lsVehiculos =  await vehiculos.GetVehiculos();
+    }
+}

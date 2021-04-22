@@ -2,9 +2,10 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ProyectoFinal.Models;
+using ProyectoFinal.Services;
 using System.Linq;
 
-namespace ProyectoFinal.Data.Repositorio{
+namespace ProyectoFinal.Data{
     public class Vehiculos : IVehiculos{
         
         private readonly AppDbContext context;

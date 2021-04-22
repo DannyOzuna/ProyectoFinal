@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using ProyectoFinal.Services;
 using ProyectoFinal.Models;
-namespace ProyectoFinal.Data.Repositorio{
+namespace ProyectoFinal.Data{
     public class Clientes : IClientes{
         private readonly AppDbContext context;
 

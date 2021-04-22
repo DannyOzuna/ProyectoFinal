@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dannyozuna/Documents/ProyectoFinal/ProyectoFinal.csproj": {}
+    "C:\\Users\\danny\\Desktop\\ProyectoFinal\\ProyectoFinal.csproj": {}
   },
   "projects": {
-    "/Users/dannyozuna/Documents/ProyectoFinal/ProyectoFinal.csproj": {
+    "C:\\Users\\danny\\Desktop\\ProyectoFinal\\ProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dannyozuna/Documents/ProyectoFinal/ProyectoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\danny\\Desktop\\ProyectoFinal\\ProyectoFinal.csproj",
         "projectName": "ProyectoFinal",
-        "projectPath": "/Users/dannyozuna/Documents/ProyectoFinal/ProyectoFinal.csproj",
-        "packagesPath": "/Users/dannyozuna/.nuget/packages/",
-        "outputPath": "/Users/dannyozuna/Documents/ProyectoFinal/obj/",
+        "projectPath": "C:\\Users\\danny\\Desktop\\ProyectoFinal\\ProyectoFinal.csproj",
+        "packagesPath": "C:\\Users\\danny\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danny\\Desktop\\ProyectoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/dannyozuna/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\danny\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

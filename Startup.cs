@@ -11,7 +11,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using ProyectoFinal.Data;
-using ProyectoFinal.Data.Repositorio;
 using MudBlazor.Services;
 using System.Net.Http;
 using ProyectoFinal.Services;
@@ -40,6 +39,7 @@ namespace ProyectoFinal
             services.AddScoped<IVehiculos, Vehiculos>();
             services.AddScoped<IClientes, Clientes>();
             services.AddScoped<ICargarArchivo, CargarArchivo>();
+            services.AddScoped<IReserva, Reservas>();
             services.AddMudServices();
         }
 
