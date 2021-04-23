@@ -134,7 +134,7 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 93 "C:\Users\danny\Desktop\ProyectoFinal\Pages\GestionVehiculos.razor"
+#line 94 "C:\Users\danny\Desktop\ProyectoFinal\Pages\GestionVehiculos.razor"
       
     [Parameter]
     public int id {get; set;}
@@ -158,17 +158,24 @@ using ProyectoFinal.Services;
         if(id != 0){
             oVehiculos = await Vehiculos.GetVehiculos(id);
         }
+        
     }
 
     private async Task GuardarDatos(){
         loading = true;
-        oVehiculos.latitud = "123";
-        oVehiculos.longitud = "456";
         oVehiculos.estado = 1;
+
 
         if(file != null){
             oVehiculos.foto = @file.Name;
         }
+
+        var datos = http.GetFromJsonAsync<Localicacion>("http://ip-api.com/json/");
+        var ubicacion = datos.Result;
+
+        oVehiculos.latitud = ubicacion.lat.ToString();
+        oVehiculos.longitud = ubicacion.lon.ToString();
+
 
         var crear = await Vehiculos.AddVehiculos(oVehiculos);
 
@@ -195,6 +202,7 @@ using ProyectoFinal.Services;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient http { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICargarArchivo cargarArchivo { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }

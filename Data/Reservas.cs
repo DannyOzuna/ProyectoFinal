@@ -14,6 +14,16 @@ namespace ProyectoFinal.Data{
         }
         public async Task<List<ReservesDb>> GetReserves(){
            return await context.reservas.ToListAsync();
+        }
+
+        public async Task<ReservesDb> AddReserves(ReservesDb oReserves){
+            if(oReserves != null){
+                await context.reservas.AddAsync(oReserves);
+                await context.SaveChangesAsync();
+                return oReserves;
+            }else{
+                return new ReservesDb();
+            }
         }   
     }
 }

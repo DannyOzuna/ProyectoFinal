@@ -12,6 +12,59 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": -1745325154,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.GestionClientes",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GestionClientes"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionClientes"
+        }
+      },
+      {
+        "HashCode": 152756937,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.GestionClientes",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyectoFinal.Pages.GestionClientes"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionClientes",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 101026326,
         "Kind": "Components.Component",
         "Name": "ProyectoFinal.Pages.Index",
@@ -78,6 +131,39 @@
         }
       },
       {
+        "HashCode": -601396637,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.VistaClientes",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VistaClientes"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.VistaClientes"
+        }
+      },
+      {
+        "HashCode": 785568448,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.VistaClientes",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyectoFinal.Pages.VistaClientes"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.VistaClientes",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1568510578,
         "Kind": "Components.Component",
         "Name": "ProyectoFinal.Pages.VistaVehiculos",
@@ -111,88 +197,35 @@
         }
       },
       {
-        "HashCode": -1745325154,
+        "HashCode": -1084760739,
         "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionClientes",
+        "Name": "ProyectoFinal.Pages.GestionReserva",
         "AssemblyName": "ProyectoFinal",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GestionClientes"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
+            "TagName": "GestionReserva"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionClientes"
+          "Common.TypeName": "ProyectoFinal.Pages.GestionReserva"
         }
       },
       {
-        "HashCode": 152756937,
+        "HashCode": 1379661360,
         "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionClientes",
+        "Name": "ProyectoFinal.Pages.GestionReserva",
         "AssemblyName": "ProyectoFinal",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ProyectoFinal.Pages.GestionClientes"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
+            "TagName": "ProyectoFinal.Pages.GestionReserva"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionClientes",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -601396637,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.VistaClientes",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VistaClientes"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.VistaClientes"
-        }
-      },
-      {
-        "HashCode": 785568448,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.VistaClientes",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyectoFinal.Pages.VistaClientes"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.VistaClientes",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionReserva",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -246,39 +279,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "ProyectoFinal.Pages.GestionVehiculos",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1084760739,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionReserva",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GestionReserva"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionReserva"
-        }
-      },
-      {
-        "HashCode": 1379661360,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionReserva",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyectoFinal.Pages.GestionReserva"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionReserva",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

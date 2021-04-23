@@ -4,6 +4,7 @@
 @inject IJSRuntime js
 @inject NavigationManager NavigationManager
 @inject ICargarArchivo cargarArchivo
+@inject HttpClient http
 
 <div class="row justify-content-center">
     <div class="col-md-8 text-center">
@@ -73,8 +74,8 @@
                                     <ValidationMessage For="() => oVehiculos.nro_seguro"/>
                                 </MudItem>
                                 <MudItem xs="12" sm="6" md="4">
-                                    <BlazorInputFile.InputFile id="fileInput112" OnChange="HandleFileSelected" hidden multiple accept=".jpg, .jpeg, .png" />
-                                    <MudFab HtmlTag="label" Color="Color.Success" Icon="@Icons.Filled.AttachFile" for="fileInput112" />
+                                    <BlazorInputFile.InputFile id="fileCargar" OnChange="HandleFileSelected" hidden multiple accept=".jpg, .jpeg, .png" />
+                                    <MudFab HtmlTag="label" Color="Color.Success" Icon="@Icons.Filled.AttachFile" for="fileCargar" />
                                     @if(file != null){
                                         <label>&nbsp; &nbsp; @file.Name</label>
                                     }
@@ -113,17 +114,24 @@
         if(id != 0){
             oVehiculos = await Vehiculos.GetVehiculos(id);
         }
+        
     }
 
     private async Task GuardarDatos(){
         loading = true;
-        oVehiculos.latitud = "123";
-        oVehiculos.longitud = "456";
         oVehiculos.estado = 1;
+
 
         if(file != null){
             oVehiculos.foto = @file.Name;
         }
+
+        var datos = http.GetFromJsonAsync<Localicacion>("http://ip-api.com/json/");
+        var ubicacion = datos.Result;
+
+        oVehiculos.latitud = ubicacion.lat.ToString();
+        oVehiculos.longitud = ubicacion.lon.ToString();
+
 
         var crear = await Vehiculos.AddVehiculos(oVehiculos);
 
