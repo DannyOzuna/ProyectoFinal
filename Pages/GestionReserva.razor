@@ -2,6 +2,8 @@
 @inject IReserva reservas
 @inject IClientes clientes
 @inject IVehiculos vehiculos
+@inject NavigationManager NavigationManager
+@inject IJSRuntime js
 
 <div class="row justify-content-center">
     <div class="col-md-8 text-center">
@@ -17,7 +19,7 @@
 @if(loading == false){
     <div class="row justify-content-center mt-md-2">
         <div class="col-7">
-            <EditForm Model="oReserva">
+            <EditForm Model="oReserva" OnValidSubmit="( () => Guardar())">
                 <DataAnnotationsValidator/>
                 <MudCard Elevation="25">
                     <MudCardContent>
@@ -49,7 +51,7 @@
                                 <ValidationMessage For="() => oReserva.fecha_inicia"/>
                             </MudItem>
                             <MudItem xs="12" sm="6">
-                                <MudDatePicker PickerVariant="PickerVariant.Dialog" Label="Fecha Final" @bind-Date="oReserva.fecha_fin" DateFormat="dd/MM/yyyy" Color="Color.Success" Rounded="true"/>
+                                <MudDatePicker MinDate="DateTime.Now" PickerVariant="PickerVariant.Dialog" Label="Fecha Final" @bind-Date="oReserva.fecha_fin" DateFormat="dd/MM/yyyy" Color="Color.Success" Rounded="true"/>
                                 <ValidationMessage For="() => oReserva.fecha_fin"/>
                             </MudItem>
                         </MudGrid>
@@ -63,6 +65,7 @@
     </div> 
 }
 
+
 @code{
 
     ReservesDb oReserva = new ReservesDb();
@@ -70,12 +73,30 @@
     List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
     public bool loading {get; set;} = false;
 
+    private bool error = false;
+
     protected override async Task OnInitializedAsync()
     {
         //oReserva = await reserva.GetReserves();
         oReserva.fecha_inicia = DateTime.Now;
         oReserva.fecha_fin = DateTime.Now;
-        lsClientes = await clientes.GetClientes();
-        lsVehiculos =  await vehiculos.GetVehiculos();
+        lsClientes = await clientes.GetSelectCliente();
+        lsVehiculos =  await vehiculos.GetSelect(oReserva.fecha_inicia);
+    }
+    
+    private async Task Guardar(){
+        oReserva.estado = 1;
+
+        if(oReserva.id_cliente == 0 || oReserva.id_vehiculo == 0){
+            error =  true;
+        }
+
+        if(error == false){
+            await reservas.AddReserves(oReserva);
+            var rs = js.InvokeAsync<object>("msjAlert", "Registrado Exitoso!", "success");
+            NavigationManager.NavigateTo("/");
+        }
+
+
     }
 }

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NLJ7YqGPTj8gDs7gM4BK4NO2rbFpDw5f2WjUBVa1YOtPsMK3O4LOtoTImXQJpRdq6U3I+kBJaVvEdRPCUrGS0Q==",
+  "dgSpecHash": "PlHEEJfC1QqjFqzuzrMu0+hBxuk8vf020kh6RL2n+kjSj8Wwd2vUbU13GGDF5NztCwTjTNiVSVb2x4fIwjK3LA==",
   "success": true,
   "projectFilePath": "C:\\Users\\danny\\Desktop\\ProyectoFinal\\ProyectoFinal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danny\\.nuget\\packages\\blazorinputfile\\0.2.0\\blazorinputfile.0.2.0.nupkg.sha512",
+    "C:\\Users\\danny\\.nuget\\packages\\blazorleaflet\\0.4.0-alpha\\blazorleaflet.0.4.0-alpha.nupkg.sha512",
     "C:\\Users\\danny\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.3\\microsoft.aspnetcore.authorization.5.0.3.nupkg.sha512",
     "C:\\Users\\danny\\.nuget\\packages\\microsoft.aspnetcore.blazor.httpclient\\3.2.0-preview3.20168.3\\microsoft.aspnetcore.blazor.httpclient.3.2.0-preview3.20168.3.nupkg.sha512",
     "C:\\Users\\danny\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.3\\microsoft.aspnetcore.components.5.0.3.nupkg.sha512",

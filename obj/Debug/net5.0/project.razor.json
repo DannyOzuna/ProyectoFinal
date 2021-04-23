@@ -12,6 +12,39 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": -601396637,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.VistaClientes",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VistaClientes"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.VistaClientes"
+        }
+      },
+      {
+        "HashCode": 785568448,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.VistaClientes",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyectoFinal.Pages.VistaClientes"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.VistaClientes",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1745325154,
         "Kind": "Components.Component",
         "Name": "ProyectoFinal.Pages.GestionClientes",
@@ -65,35 +98,35 @@
         }
       },
       {
-        "HashCode": 101026326,
+        "HashCode": 1568510578,
         "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.Index",
+        "Name": "ProyectoFinal.Pages.VistaVehiculos",
         "AssemblyName": "ProyectoFinal",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "VistaVehiculos"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.Index"
+          "Common.TypeName": "ProyectoFinal.Pages.VistaVehiculos"
         }
       },
       {
-        "HashCode": 437297279,
+        "HashCode": -953479529,
         "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.Index",
+        "Name": "ProyectoFinal.Pages.VistaVehiculos",
         "AssemblyName": "ProyectoFinal",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ProyectoFinal.Pages.Index"
+            "TagName": "ProyectoFinal.Pages.VistaVehiculos"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.Index",
+          "Common.TypeName": "ProyectoFinal.Pages.VistaVehiculos",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -131,101 +164,35 @@
         }
       },
       {
-        "HashCode": -601396637,
+        "HashCode": 101026326,
         "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.VistaClientes",
+        "Name": "ProyectoFinal.Pages.Index",
         "AssemblyName": "ProyectoFinal",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "VistaClientes"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.VistaClientes"
+          "Common.TypeName": "ProyectoFinal.Pages.Index"
         }
       },
       {
-        "HashCode": 785568448,
+        "HashCode": 437297279,
         "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.VistaClientes",
+        "Name": "ProyectoFinal.Pages.Index",
         "AssemblyName": "ProyectoFinal",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ProyectoFinal.Pages.VistaClientes"
+            "TagName": "ProyectoFinal.Pages.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.VistaClientes",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1568510578,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.VistaVehiculos",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VistaVehiculos"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.VistaVehiculos"
-        }
-      },
-      {
-        "HashCode": -953479529,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.VistaVehiculos",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyectoFinal.Pages.VistaVehiculos"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.VistaVehiculos",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1084760739,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionReserva",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GestionReserva"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionReserva"
-        }
-      },
-      {
-        "HashCode": 1379661360,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionReserva",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyectoFinal.Pages.GestionReserva"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionReserva",
+          "Common.TypeName": "ProyectoFinal.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -279,6 +246,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "ProyectoFinal.Pages.GestionVehiculos",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1084760739,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.GestionReserva",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GestionReserva"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionReserva"
+        }
+      },
+      {
+        "HashCode": 1379661360,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.GestionReserva",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyectoFinal.Pages.GestionReserva"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionReserva",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -45197,6 +45197,91 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "MudBlazor.Internal.MudInputAdornment",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 353569361,
+        "Kind": "Components.Component",
+        "Name": "BlazorLeaflet.LeafletMap",
+        "AssemblyName": "BlazorLeaflet",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "LeafletMap"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Map",
+            "TypeName": "BlazorLeaflet.Map",
+            "Metadata": {
+              "Common.PropertyName": "Map"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InitialPosition",
+            "TypeName": "System.Drawing.PointF",
+            "Metadata": {
+              "Common.PropertyName": "InitialPosition"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InitialZoom",
+            "TypeName": "System.Single",
+            "Metadata": {
+              "Common.PropertyName": "InitialZoom"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorLeaflet.LeafletMap"
+        }
+      },
+      {
+        "HashCode": 79473193,
+        "Kind": "Components.Component",
+        "Name": "BlazorLeaflet.LeafletMap",
+        "AssemblyName": "BlazorLeaflet",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorLeaflet.LeafletMap"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Map",
+            "TypeName": "BlazorLeaflet.Map",
+            "Metadata": {
+              "Common.PropertyName": "Map"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InitialPosition",
+            "TypeName": "System.Drawing.PointF",
+            "Metadata": {
+              "Common.PropertyName": "InitialPosition"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "InitialZoom",
+            "TypeName": "System.Single",
+            "Metadata": {
+              "Common.PropertyName": "InitialZoom"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorLeaflet.LeafletMap",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

@@ -158,12 +158,12 @@ using ProyectoFinal.Services;
         if(id != 0){
             oVehiculos = await Vehiculos.GetVehiculos(id);
         }
-        
     }
 
     private async Task GuardarDatos(){
         loading = true;
         oVehiculos.estado = 1;
+        oVehiculos.matricula = oVehiculos.matricula.ToUpper();
 
 
         if(file != null){

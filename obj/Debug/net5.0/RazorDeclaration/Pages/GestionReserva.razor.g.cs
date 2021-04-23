@@ -133,7 +133,7 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 66 "C:\Users\danny\Desktop\ProyectoFinal\Pages\GestionReserva.razor"
+#line 69 "C:\Users\danny\Desktop\ProyectoFinal\Pages\GestionReserva.razor"
       
 
     ReservesDb oReserva = new ReservesDb();
@@ -141,18 +141,38 @@ using ProyectoFinal.Services;
     List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
     public bool loading {get; set;} = false;
 
+    private bool error = false;
+
     protected override async Task OnInitializedAsync()
     {
         //oReserva = await reserva.GetReserves();
         oReserva.fecha_inicia = DateTime.Now;
         oReserva.fecha_fin = DateTime.Now;
-        lsClientes = await clientes.GetClientes();
-        lsVehiculos =  await vehiculos.GetVehiculos();
+        lsClientes = await clientes.GetSelectCliente();
+        lsVehiculos =  await vehiculos.GetSelect(oReserva.fecha_inicia);
+    }
+    
+    private async Task Guardar(){
+        oReserva.estado = 1;
+
+        if(oReserva.id_cliente == 0 || oReserva.id_vehiculo == 0){
+            error =  true;
+        }
+
+        if(error == false){
+            await reservas.AddReserves(oReserva);
+            var rs = js.InvokeAsync<object>("msjAlert", "Registrado Exitoso!", "success");
+            NavigationManager.NavigateTo("/");
+        }
+
+
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos vehiculos { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientes clientes { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IReserva reservas { get; set; }

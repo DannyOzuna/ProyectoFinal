@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +20,16 @@ namespace ProyectoFinal.Data{
 
         public async Task<VehiculosDb> GetVehiculos(int id){
             return await context.vehiculos.FirstOrDefaultAsync(v => v.id == id);
+        }
+
+        public async Task<List<VehiculosDb>> GetSelect(DateTime? time){
+
+            return await (from v in context.vehiculos
+                            join r in context.reservas
+                            on v.id equals r.id_vehiculo into joined
+                            from r in joined.DefaultIfEmpty()
+                            where v.estado == 1 || r.fecha_fin > time
+                            select v).ToListAsync();
         }
 
         public async Task<VehiculosDb> AddVehiculos(VehiculosDb oVehiculo){

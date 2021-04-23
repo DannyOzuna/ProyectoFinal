@@ -21,6 +21,25 @@
           "buildMultiTargeting/BlazorInputFile.props": {}
         }
       },
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/5.0.3": {
         "type": "package",
         "dependencies": {
@@ -749,6 +768,23 @@
         "lib/netstandard2.0/BlazorInputFile.dll",
         "lib/netstandard2.1/BlazorInputFile.dll",
         "staticwebassets/inputfile.js"
+      ]
+    },
+    "BlazorLeaflet/0.4.0-alpha": {
+      "sha512": "zwx7kvkfkiW8JyDGojOpZqRsV6UB2SXH4yEiO/EeZgkzy+AP7fLRCe445P8nNwukAFnVG8HEZzNn50Wf3S6Gpg==",
+      "type": "package",
+      "path": "blazorleaflet/0.4.0-alpha",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazorleaflet.0.4.0-alpha.nupkg.sha512",
+        "blazorleaflet.nuspec",
+        "build/BlazorLeaflet.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/BlazorLeaflet.props",
+        "buildTransitive/BlazorLeaflet.props",
+        "lib/netstandard2.0/BlazorLeaflet.dll",
+        "staticwebassets/leafletBlazorInterops.js"
       ]
     },
     "Microsoft.AspNetCore.Authorization/5.0.3": {
@@ -2152,6 +2188,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "BlazorInputFile >= 0.2.0",
+      "BlazorLeaflet >= 0.4.0-alpha",
       "Microsoft.AspNetCore.Blazor.HttpClient >= 3.2.0-preview3.20168.3",
       "Microsoft.EntityFrameworkCore >= 6.0.0-preview.2.21154.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0-preview.2.21154.2",
@@ -2198,6 +2235,10 @@
           "BlazorInputFile": {
             "target": "Package",
             "version": "[0.2.0, )"
+          },
+          "BlazorLeaflet": {
+            "target": "Package",
+            "version": "[0.4.0-alpha, )"
           },
           "Microsoft.AspNetCore.Blazor.HttpClient": {
             "target": "Package",

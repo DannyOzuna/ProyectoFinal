@@ -8,6 +8,8 @@ namespace ProyectoFinal.Services{
         public Task<List<VehiculosDb>> GetVehiculos();
         public Task<VehiculosDb> GetVehiculos(int id);
 
+        public Task<List<VehiculosDb>> GetSelect(DateTime? time);
+
         public Task<VehiculosDb> AddVehiculos(VehiculosDb oVehiculo);
         public Task<VehiculosDb> UpdateVehiculo(int id,VehiculosDb oVehiculo);
 

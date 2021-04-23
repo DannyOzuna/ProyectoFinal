@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ProyectoFinal.Services;
 using ProyectoFinal.Models;
+using System.Linq;
+
 namespace ProyectoFinal.Data{
     public class Clientes : IClientes{
         private readonly AppDbContext context;
@@ -17,6 +19,11 @@ namespace ProyectoFinal.Data{
         public async Task<ClientesDb> GetClientes(int id){
             return await context.clientes.FirstOrDefaultAsync(c => c.id == id);
         }
+
+        public async Task<List<ClientesDb>> GetSelectCliente(){
+            return await context.clientes.Where(c => c.estado == 1).ToListAsync();
+        }
+
 
         public async Task<ClientesDb> AddCliente(ClientesDb oCliente){
             if(oCliente != null){

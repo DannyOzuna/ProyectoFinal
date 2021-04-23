@@ -17,6 +17,7 @@
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)mudblazor\5.0.7\buildTransitive\MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor\5.0.7\buildTransitive\MudBlazor.props')" />
+    <Import Project="$(NuGetPackageRoot)blazorleaflet\0.4.0-alpha\buildTransitive\BlazorLeaflet.props" Condition="Exists('$(NuGetPackageRoot)blazorleaflet\0.4.0-alpha\buildTransitive\BlazorLeaflet.props')" />
     <Import Project="$(NuGetPackageRoot)blazorinputfile\0.2.0\buildTransitive\BlazorInputFile.props" Condition="Exists('$(NuGetPackageRoot)blazorinputfile\0.2.0\buildTransitive\BlazorInputFile.props')" />
   </ImportGroup>
 </Project>
