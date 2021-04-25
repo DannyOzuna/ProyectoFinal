@@ -44,7 +44,16 @@
 insert into vehiculos values ('Honda', 'CR-V', '2017', 'Gris', 300.00, 'Jeepeta', 23.4, 4,'DO1001','FULL','url','123','456', 0);
 
 
-select * from clientes
+select * from reservas
+
+truncate table reservas
+
+select * from Login
+
+
+select v.estado, r.fecha_inicia
+		from reservas r
+		right join vehiculos v on r.id_vehiculo = v.id; 
 
 
 update vehiculos set estado = 1;
