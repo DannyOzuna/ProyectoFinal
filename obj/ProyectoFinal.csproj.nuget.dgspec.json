@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danny\\Desktop\\ProyectoFinal\\ProyectoFinal.csproj": {}
+    "E:\\Sexto cuatrimeste\\Programacion 3\\Final\\ProyectoFinal\\ProyectoFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danny\\Desktop\\ProyectoFinal\\ProyectoFinal.csproj": {
+    "E:\\Sexto cuatrimeste\\Programacion 3\\Final\\ProyectoFinal\\ProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danny\\Desktop\\ProyectoFinal\\ProyectoFinal.csproj",
+        "projectUniqueName": "E:\\Sexto cuatrimeste\\Programacion 3\\Final\\ProyectoFinal\\ProyectoFinal.csproj",
         "projectName": "ProyectoFinal",
-        "projectPath": "C:\\Users\\danny\\Desktop\\ProyectoFinal\\ProyectoFinal.csproj",
-        "packagesPath": "C:\\Users\\danny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danny\\Desktop\\ProyectoFinal\\obj\\",
+        "projectPath": "E:\\Sexto cuatrimeste\\Programacion 3\\Final\\ProyectoFinal\\ProyectoFinal.csproj",
+        "packagesPath": "C:\\Users\\acost\\.nuget\\packages\\",
+        "outputPath": "E:\\Sexto cuatrimeste\\Programacion 3\\Final\\ProyectoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\danny\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\acost\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,6 +63,10 @@
             "MudBlazor": {
               "target": "Package",
               "version": "[5.0.7, )"
+            },
+            "newtonsoft.json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

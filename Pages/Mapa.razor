@@ -1,0 +1,49 @@
+@page "/mapa"
+@using Newtonsoft.Json;
+@inject IJSRuntime JsRuntine
+@inject IVehiculos Vehiculos
+
+
+<br> <br>
+<div id="Map" style="width: 1100px; height: 500px;">
+
+</div>
+
+
+@code{
+ 
+ List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
+ [JSInvokable]
+
+
+ public async Task<string> Marcadores(){
+
+ 
+    lsVehiculos = await Vehiculos.GetVehiculos();
+    string json= JsonConvert.SerializeObject(lsVehiculos);
+    
+     return json;  
+    }
+ protected async Task mostrar(){
+
+  await JsRuntine.InvokeVoidAsync("accessDOMElement", 
+  DotNetObjectReference.Create(this));
+  
+  }
+    
+ protected override async Task 
+  OnAfterRenderAsync(bool firstRender)
+   {
+    if(firstRender){
+      try{
+       
+         await mostrar();
+      }
+      catch(Exception){
+          throw;
+      }
+
+     }
+   }
+ 
+}

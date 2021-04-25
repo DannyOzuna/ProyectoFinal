@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace ProyectoFinal
+namespace ProyectoFinal.Pages
 {
     #line hidden
     using System;
@@ -124,13 +124,65 @@ using ProyectoFinal.Services;
 #line default
 #line hidden
 #nullable disable
-    public partial class _Imports : System.Object
+#nullable restore
+#line 2 "E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\Pages\Mapa.razor"
+using Newtonsoft.Json;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/mapa")]
+    public partial class Mapa : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
-        protected void Execute()
+        protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 13 "E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\Pages\Mapa.razor"
+      
+ 
+ List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
+ [JSInvokable]
+
+
+ public async Task<string> Marcadores(){
+
+ 
+    lsVehiculos = await Vehiculos.GetVehiculos();
+    string json= JsonConvert.SerializeObject(lsVehiculos);
+    
+     return json;  
+    }
+ protected async Task mostrar(){
+
+  await JsRuntine.InvokeVoidAsync("accessDOMElement", 
+  DotNetObjectReference.Create(this));
+  
+  }
+    
+ protected override async Task 
+  OnAfterRenderAsync(bool firstRender)
+   {
+    if(firstRender){
+      try{
+       
+         await mostrar();
+      }
+      catch(Exception){
+          throw;
+      }
+
+     }
+   }
+ 
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos Vehiculos { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntine { get; set; }
     }
 }
 #pragma warning restore 1591

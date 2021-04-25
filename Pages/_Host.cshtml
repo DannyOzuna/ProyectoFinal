@@ -17,6 +17,7 @@
     <link href="ProyectoFinal.styles.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+    <link href="_content/Radzen.Blazor/css/default-base.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
       integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
       crossorigin="" />
@@ -46,6 +47,49 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="_content/BlazorLeaflet/leafletBlazorInterops.js"></script>
     <script src="js/index.js"></script>
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+    <script>
 
+        
+        function accessDOMElement(dotnetHelper){
+                dotnetHelper.invokeMethodAsync("Marcadores").then(lsVehiculos =>{
+                var json= JSON.parse(lsVehiculos);
+
+
+                 //PARA AGREGAR LA UBICACION INICIAL DEL MAPA
+                 var mymap = L.map('Map').setView([18.47186, -69.89232], 8);
+
+                   //PARA AGREGAR EL MAPA
+                   L.tileLayer('http://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                   maxZoom: 18,
+                   id: 'mapbox/streets-v11',
+                   tileSize: 512,
+                   zoomOffset: -1,
+                   accessToken: 'pk.eyJ1IjoidXN1YXJpb3BhcmF0YXJlYSIsImEiOiJja21oNXl0bjIwMTQwMm5sZmVzMXVndjFlIn0.nfG_MJzF7nZznTEul_-XyQ'
+                   }).addTo(mymap);
+
+
+                     for(var i in json){//latitud
+                    
+                         L.marker([json[i].latitud,json[i].longitud]).addTo(mymap)
+                         .bindPopup(' <img src="img/json[i].foto" class="card-img-top" alt="..."> <br><strong>Marca: </strong>' + json[i].marca + '<br><strong>Modelo: </strong>' + json[i].modelo + '<br><strong>Año: </strong>' + json[i].anio + 
+                          '<br><strong>Color:</strong> ' + json[i].color).openPopup();
+
+                     }
+
+                     
+
+            })
+        }
+    </script>
 </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Vehiculos</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="css\site.css">
+
+
 </html>
