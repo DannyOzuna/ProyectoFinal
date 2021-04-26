@@ -1,18 +1,103 @@
-@page "/listaVehiculos"
+﻿@page "/listaVehiculos"
+@inject IVehiculos vehiculos
 
 <div class="row justify-content-center">
     <div class="col-md-8 text-center">
-        <h1 class="alert alert-info">Lista de Beneficios</h1>
-        @if(loading == true){
-            <div class="spinner-border text-primary" style="width: 7rem; height: 7rem; margin-top:10rem;" role="status">
-              <span class="visually-hidden"></span>
-            </div>
-        }
+        <h1 class="alert alert-info">Lista de Vehículos</h1>
+        @if (loading == true)
+        {
+<div class="spinner-border text-primary" style="width: 7rem; height: 7rem; margin-top:10rem;" role="status">
+    <span class="visually-hidden"></span>
+</div>}
     </div>
 </div>
 
+<div class="justify-content-center mt-md-2">
+    <div class="col-12">
+        <MudCard>
+            <MudCardHeader>
+                <CardHeaderContent>
+                    <MudText>Filtrar Registros</MudText>
+                </CardHeaderContent>
+            </MudCardHeader>
+            <MudCardContent>
+                <MudGrid>
+                    <MudItem xs="12" sm="6">
+                        <MudDatePicker PickerVariant="PickerVariant.Dialog" Label="Fecha de Inicio" @bind-Date="fechaInicar" DateFormat="dd/MM/yyyy" Color="Color.Success" Rounded="true" />
+                    </MudItem>
+                    <MudItem xs="12" sm="6">
+                        <MudDatePicker MinDate="DateTime.Now" PickerVariant="PickerVariant.Dialog" Label="Fecha Final" @bind-Date="fechafinal" DateFormat="dd/MM/yyyy" Color="Color.Success" Rounded="true" />
+                    </MudItem>
+                </MudGrid>
+            </MudCardContent>
+            <MudCardActions Class="pb-4 pl-4">
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" @onclick="@(() => buscarDatos())">Buscar</MudButton>
+            </MudCardActions>
+        </MudCard>
+    </div>
+</div>
 
-@code{
-    private bool loading {get; set;} = false;
-    
-}
+<div class="row mt-3">
+    @if (lsVehiculos != null)
+    {
+@foreach (var item in lsVehiculos)
+{
+<div class="col-12 col-sm-3">
+    <MudCard Elevation="25">
+        <MudCardContent>
+            <MudGrid>
+                <img src="img/@item.foto" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title text-center">@item.marca @item.modelo</h3>
+                    <p class="card-text">
+                        <table class="table tablePer">
+                            <tbody>
+                                <tr>
+                                    <th>Fecha de Inicio:</th>
+                                    <td>@item.fecha_inicia</td>
+                                </tr>
+                                <tr>
+                                    <th>Fecha de Fin:</th>
+                                    <td>@item.fecha_fin</td>
+                                </tr>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <td>@item.tipo</td>
+                                </tr>
+                                <tr>
+                                    <th>Marca</th>
+                                    <td>@item.marca</td>
+                                </tr>
+                                <tr>
+                                    <th>Modelo</th>
+                                    <td>@item.modelo</td>
+                                </tr>
+                                <tr>
+                                    <th>Color</th>
+                                    <td>@item.color</td>
+                                </tr>
+                                <tr>
+                                    <th>Año</th>
+                                    <td>@item.anio</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                </div>
+            </MudGrid>
+        </MudCardContent>
+    </MudCard>
+</div>}}
+</div>
+
+
+
+@code{ private bool loading { get; set; } = false;
+            private DateTime? fechaInicar = DateTime.Now;
+            private DateTime? fechafinal = DateTime.Now;
+            List<JoinVehiculosReserva> lsVehiculos = new List<JoinVehiculosReserva>();
+
+            private async Task buscarDatos()
+            {
+                lsVehiculos = await vehiculos.getRangoVehiculos(fechaInicar, fechafinal);
+            } }

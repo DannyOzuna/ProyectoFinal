@@ -446,3 +446,5 @@ C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\P
 C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ref\ProyectoFinal.dll
 C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.pdb
 C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.genruntimeconfig.cache
+C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ListaVehiculo.razor.g.cs
+C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ListaVehiculo.razor.g.cs

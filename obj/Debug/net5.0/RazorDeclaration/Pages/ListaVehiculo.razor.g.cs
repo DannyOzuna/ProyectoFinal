@@ -124,30 +124,13 @@ using ProyectoFinal.Services;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/listaVehiculos")]
-    public partial class ListaVehiculos : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class ListaVehiculo : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 95 "C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\Pages\ListaVehiculos.razor"
-       private bool loading { get; set; } = false;
-            private DateTime? fechaInicar = DateTime.Now;
-            private DateTime? fechafinal = DateTime.Now;
-            List<JoinVehiculosReserva> lsVehiculos = new List<JoinVehiculosReserva>();
-
-            private async Task buscarDatos()
-            {
-                lsVehiculos = await vehiculos.getRangoVehiculos(fechaInicar, fechafinal);
-            } 
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos vehiculos { get; set; }
     }
 }
 #pragma warning restore 1591
