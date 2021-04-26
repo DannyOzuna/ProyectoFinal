@@ -11,5 +11,8 @@ namespace ProyectoFinal.Services{
         public Task<VehiculosDb> AddVehiculos(VehiculosDb oVehiculo);
         public Task<VehiculosDb> UpdateVehiculo(int id,VehiculosDb oVehiculo);
         public Task DeleteVehiculo(int id);
+
+        public Task<List<JoinVehiculosReserva>> getRangoVehiculos(DateTime? fechaInicio, DateTime? fechaFinal);
+
     }
 }
