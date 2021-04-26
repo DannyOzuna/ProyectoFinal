@@ -87,7 +87,39 @@ namespace ProyectoFinal.Data{
                 await context.SaveChangesAsync();
             }
         }
-        
+
+        public int ContarVehiculo() 
+        {
+
+            var query =  (from x in context.vehiculos
+                          where x.estado == 1
+                        select x).Count();
+
+            return query;
+
+
+        }
+
+
+
+        public int VehiculosActivos()
+        {
+            var query = (from x in context.vehiculos
+                         where x.estado == 0
+                         select x).Count();
+
+            return query;
+        }
+        public int TotalVehiculos()
+        {
+            var query = (from x in context.vehiculos
+                         select x).Count();
+
+            return query;
+        }
+
+
+
 
 
     }

@@ -8,6 +8,6 @@ namespace ProyectoFinal.Services
 {
     public interface Ilogin
     {
-        public List<LoginDb> buscar(LoginDb login);
+        public bool buscar(LoginDb login);
     }
 }

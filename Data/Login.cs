@@ -16,20 +16,30 @@ namespace ProyectoFinal.Data
             this.context = context;
         }
 
-        public List<LoginDb> buscar(LoginDb datosLogin)
+        public bool buscar(LoginDb datosLogin)
         {
 
-            var query = context.loginDbs.Where(x => x.Contrasena == datosLogin.Contrasena && x.Usuario == datosLogin.Usuario);
 
-            //var query = (from x in context.loginDbs
-            //             where x.Usuario == datosLogin.Usuario &&
-            //             x.Contrasena == datosLogin.Contrasena
-            //             select x).ToList();
-            if (query == null)
+            if (datosLogin.Usuario != "" || datosLogin.Contrasena != "")
             {
-                return null;
+            var query = context.loginDbs.Where(x => x.Contrasena == datosLogin.Contrasena && x.Usuario ==
+            datosLogin.Usuario);
+                if (query == null)
+                {
+                    return false;
+                }
+
             }
-            return query.ToList();
+
+            else
+            {
+                return false;
+            }
+
+           
+
+            return true;
+
         }
     }
 }
