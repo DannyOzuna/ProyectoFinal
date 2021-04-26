@@ -7,3 +7,4 @@ Programación III
  2- Pamela Natali Hernández Torres 2019-7824 <br>
  3- Danny Ozuna Vasquez 2019-7992 (Lider) <br>
  4- Gustavo Ernesto Sanchez Amador
+ 5- Ronny Florian Herasme
