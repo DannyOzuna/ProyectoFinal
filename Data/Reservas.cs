@@ -29,6 +29,10 @@ namespace ProyectoFinal.Data{
             }else{
                 return new ReservasDb();
             }
-        }  
+        }
+
+        public async Task<List<FacturacionDb>> GetFacturacions(){
+            return await context.facturaciones.ToListAsync();
+        } 
     }
 }

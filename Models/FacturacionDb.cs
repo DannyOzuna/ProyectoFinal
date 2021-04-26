@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 namespace ProyectoFinal.Models{
-    public class Facturacion{
+    public class FacturacionDb{
         [Key]
         public int id { get; set;}
         public int id_reserva {get; set;}
