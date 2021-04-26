@@ -124,22 +124,13 @@ using ProyectoFinal.Services;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/ObtenerDatos")]
-    public partial class ObtenerDatos : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class ListaVehiculos : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 17 "c:\Users\danny\Desktop\ProyectoFinal\Pages\ObtenerDatos.razor"
-      
-    public string FirstName {get; set;}
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

@@ -124,8 +124,8 @@ using ProyectoFinal.Services;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/ObtenerDatos")]
-    public partial class ObtenerDatos : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/beneficios")]
+    public partial class Beneficios : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -133,9 +133,10 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 17 "c:\Users\danny\Desktop\ProyectoFinal\Pages\ObtenerDatos.razor"
+#line 28 "c:\Users\danny\Desktop\ProyectoFinal\Pages\Beneficios.razor"
       
-    public string FirstName {get; set;}
+    private bool loading {get; set;} = false;
+
 
 #line default
 #line hidden
