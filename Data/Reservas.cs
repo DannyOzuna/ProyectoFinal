@@ -32,7 +32,8 @@ namespace ProyectoFinal.Data{
         }
 
         public async Task<List<FacturacionDb>> GetFacturacions(){
-            return await context.facturaciones.ToListAsync();
+            return await (from f in context.facturaciones
+                            select f).ToListAsync();
         } 
     }
 }

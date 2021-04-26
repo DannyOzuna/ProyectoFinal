@@ -565,3 +565,5 @@ C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoF
 C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ref\ProyectoFinal.dll
 C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.pdb
 C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.genruntimeconfig.cache
+C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ListaDebe.razor.g.cs
+C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ListaDebe.razor.g.cs
