@@ -133,7 +133,7 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\Pages\IniciarSeccion.razor"
+#line 27 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\Pages\IniciarSeccion.razor"
        
 
     LoginDb objlo = new LoginDb();
