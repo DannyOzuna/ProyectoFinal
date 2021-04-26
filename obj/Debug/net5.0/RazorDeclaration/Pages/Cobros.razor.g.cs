@@ -124,8 +124,8 @@ using ProyectoFinal.Services;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/Index")]
-    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Cobros")]
+    public partial class Cobros : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -133,50 +133,43 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 143 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\Pages\Index.razor"
+#line 41 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\Pages\Cobros.razor"
        
 
-    List<VehiculosDb> Carros = new List<VehiculosDb>();
-    VehiculosDb vehi = new VehiculosDb();
-    int activos = 0;
-    int enstock = 0;
-    int enuso = 0;
+    List<ReservasDb> lsReservas = new List<ReservasDb>();
+    ReservasDb objReservas = new ReservasDb();
 
-    protected virtual void OnInitialized()
+    protected async override Task OnInitializedAsync()
     {
-        activos = vehiculos.ContarVehiculo();
-        enstock = vehiculos.TotalVehiculos();
-        enuso = vehiculos.VehiculosActivos();
+        lsReservas = await reservas.GetReservesActivos();
     }
 
 
 
 
-
-
-
-    EarningReport[] earningReports = new EarningReport[]
-{
-        new EarningReport { Name = "Lunees", Title = "Reactor Engineer", Avatar = "https://avatars2.githubusercontent.com/u/71094850?s=460&u=66c16f5bb7d27dc751f6759a82a3a070c8c7fe4b&v=4", Salary = "$0.99", Severity = Color.Success, SeverityTitle = "Low"},
-        new EarningReport { Name = "Mikes-gh", Title = "Developer", Avatar = "https://avatars.githubusercontent.com/u/16208742?s=120&v=4", Salary = "$19.12K", Severity = Color.Secondary, SeverityTitle = "Medium"},
-        new EarningReport { Name = "Garderoben", Title = "CSS Magician", Avatar = "https://avatars2.githubusercontent.com/u/10367109?s=460&amp;u=2abf95f9e01132e8e2915def42895ffe99c5d2c6&amp;v=4", Salary = "$1337", Severity = Color.Primary, SeverityTitle = "High"},
-    };
-
-    class EarningReport
+    public async Task Cobrar(int id)
     {
-        public string Avatar;
-        public string Name;
-        public string Title;
-        public Color Severity;
-        public string SeverityTitle;
-        public string Salary;
+        var actualizar = await reservas.Actualizar(objReservas, id);
+        if (actualizar == null)
+        {
+            await js.InvokeAsync<object>("msjAlert", "Cobrado Correctamente", "success");
+            NavigationManager.NavigateTo("/Cobros");
+
+        }
+
+        //var msj = await js.InvokeAsync<object>("msjAlert", "No se puede Cobrar!   ", "error");
+        await js.InvokeAsync<object>("msjAlert", "Cobrado Correctamente", "success");
+        NavigationManager.NavigateTo("/Obtener");
+
     }
+
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos vehiculos { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IReservas reservas { get; set; }
     }
 }
 #pragma warning restore 1591
