@@ -140,7 +140,7 @@ using ProyectoFinal.Services;
             __builder.AddAttribute(10, "value", Microsoft.AspNetCore.Components.BindConverter.FormatValue(
 #nullable restore
 #line 13 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\Pages\IniciarSeccion.razor"
-                                        usuario
+                                         usuario
 
 #line default
 #line hidden
@@ -149,6 +149,8 @@ using ProyectoFinal.Services;
             __builder.AddAttribute(11, "onchange", Microsoft.AspNetCore.Components.EventCallback.Factory.CreateBinder(this, __value => usuario = __value, usuario));
             __builder.SetUpdatesAttributeName("value");
             __builder.CloseElement();
+            __builder.AddMarkupContent(12, "\r\n        ");
+            __builder.AddMarkupContent(13, "<small id=\"emailHelp\" class=\"form-text text-muted\">We\'ll never share your email with anyone else.</small>");
             __builder.CloseElement();
             __builder.AddMarkupContent(12, "\r\n    ");
             __builder.OpenElement(13, "div");
@@ -188,6 +190,7 @@ using ProyectoFinal.Services;
             __builder.AddContent(28, "Entrar");
             __builder.CloseElement();
             __builder.CloseElement();
+            __builder.AddMarkupContent(31, "\r\n\r\n\r\n\r\n\r\n\r\n}\r\n\r\n\r\n");
         }
         #pragma warning restore 1998
 #nullable restore
