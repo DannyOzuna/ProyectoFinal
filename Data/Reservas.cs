@@ -29,6 +29,35 @@ namespace ProyectoFinal.Data{
             }else{
                 return new ReservasDb();
             }
-        }  
+        }
+
+        public async Task<List<ReservasDb>> GetReservesActivos()
+        {
+
+            var query = await (from x in context.reservas
+                               where x.estado == 1
+                               select x).ToListAsync();
+
+            return query;
+
+        }
+
+        public async Task<ReservasDb> Actualizar(ReservasDb oReserves, int objReservas)
+        {
+
+
+            var Reservass = await context.reservas.FindAsync(objReservas);
+
+            if (Reservass != null)
+            {
+                Reservass.estado = 0;
+                await context.SaveChangesAsync();
+                return oReserves;
+            }
+
+            return oReserves;
+
+        }
+
     }
 }

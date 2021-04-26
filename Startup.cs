@@ -41,6 +41,7 @@ namespace ProyectoFinal
             services.AddScoped<IClientes, Clientes>();
             services.AddScoped<ICargarArchivo, CargarArchivo>();
             services.AddScoped<IReservas, Reservas>();
+            services.AddScoped<Ilogin, Login>();
             services.AddMudServices();
         }
 

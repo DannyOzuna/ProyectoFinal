@@ -1,0 +1,70 @@
+﻿@page "/Cobros"
+@inject IReservas reservas
+@inject IJSRuntime js
+@inject NavigationManager NavigationManager
+
+
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="alert alert-info">Lista de Para Cobros</h1>
+    </div>
+</div>
+
+
+
+<MudTable Items="@lsReservas" Hover="true" Breakpoint="Breakpoint.Sm">
+    <HeaderContent>
+        <MudTh>Id</MudTh>
+        <MudTh>Vehiculo</MudTh>
+        <MudTh>Cliente</MudTh>
+        <MudTh>Fecha de Alquiler</MudTh>
+        <MudTh>Fecha de Entrega</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Id">@context.id</MudTd>
+        <MudTd DataLabel="Cliente">@context.id_vehiculo </MudTd>
+        <MudTd DataLabel="Cédula">@context.id_cliente</MudTd>
+        <MudTd DataLabel="Tipo Sangre">@context.fecha_inicia</MudTd>
+        <MudTd DataLabel="Nacionalidad">@context.fecha_fin</MudTd>
+
+        <MudTd DataLabel="Acción">
+            <button class="btn btn-success" @onclick="(()=>Cobrar(context.id))" data-bs-toggle="modal" data-bs-target="#divview"><i class="oi oi-eye"></i></button>
+
+        </MudTd>
+    </RowTemplate>
+</MudTable>
+
+
+
+
+@code {
+
+    List<ReservasDb> lsReservas = new List<ReservasDb>();
+    ReservasDb objReservas = new ReservasDb();
+
+    protected async override Task OnInitializedAsync()
+    {
+        lsReservas = await reservas.GetReservesActivos();
+    }
+
+
+
+
+    public async Task Cobrar(int id)
+    {
+        var actualizar = await reservas.Actualizar(objReservas, id);
+        if (actualizar == null)
+        {
+            await js.InvokeAsync<object>("msjAlert", "Cobrado Correctamente", "success");
+            NavigationManager.NavigateTo("/Cobros");
+
+        }
+
+        //var msj = await js.InvokeAsync<object>("msjAlert", "No se puede Cobrar!   ", "error");
+        await js.InvokeAsync<object>("msjAlert", "Cobrado Correctamente", "success");
+        NavigationManager.NavigateTo("/Obtener");
+
+    }
+
+}
+

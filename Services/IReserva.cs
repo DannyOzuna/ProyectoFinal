@@ -7,5 +7,7 @@ namespace ProyectoFinal.Services {
     public interface IReservas {
         public Task<List<ReservasDb>> GetReserves();
         public Task<ReservasDb> AddReserves(ReservasDb oReserves);
+        public Task<List<ReservasDb>> GetReservesActivos();
+        public Task<ReservasDb> Actualizar(ReservasDb oReserves, int objReservas);
     }
 }
