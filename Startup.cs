@@ -40,7 +40,7 @@ namespace ProyectoFinal
             services.AddScoped<IVehiculos, Vehiculos>();
             services.AddScoped<IClientes, Clientes>();
             services.AddScoped<ICargarArchivo, CargarArchivo>();
-            services.AddScoped<IReserva, Reservas>();
+            services.AddScoped<IReservas, Reservas>();
             services.AddMudServices();
         }
 

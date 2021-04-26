@@ -1,5 +1,5 @@
 @page "/reserva"
-@inject IReserva reservas
+@inject IReservas reservas
 @inject IClientes clientes
 @inject IVehiculos vehiculos
 @inject NavigationManager NavigationManager
@@ -19,7 +19,7 @@
 @if(loading == false){
     <div class="row justify-content-center mt-md-2">
         <div class="col-7">
-            <EditForm Model="oReserva" OnValidSubmit="( () => Guardar())">
+            <EditForm Model="oReserva" OnValidSubmit="(() => Guardar())">
                 <DataAnnotationsValidator/>
                 <MudCard Elevation="25">
                     <MudCardContent>
@@ -68,7 +68,7 @@
 
 @code{
 
-    ReservesDb oReserva = new ReservesDb();
+    ReservasDb oReserva = new ReservasDb();
     List<ClientesDb> lsClientes = new List<ClientesDb>();
     List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
     public bool loading {get; set;} = false;
@@ -77,11 +77,10 @@
 
     protected override async Task OnInitializedAsync()
     {
-        //oReserva = await reserva.GetReserves();
         oReserva.fecha_inicia = DateTime.Now;
         oReserva.fecha_fin = DateTime.Now;
         lsClientes = await clientes.GetSelectCliente();
-        lsVehiculos =  await vehiculos.GetSelect(oReserva.fecha_inicia);
+        lsVehiculos =  await vehiculos.GetVehiculos();
     }
     
     private async Task Guardar(){
@@ -92,9 +91,21 @@
         }
 
         if(error == false){
-            await reservas.AddReserves(oReserva);
-            var rs = js.InvokeAsync<object>("msjAlert", "Registrado Exitoso!", "success");
-            NavigationManager.NavigateTo("/");
+
+            var validarRegistro = await vehiculos.GetSelect(DateTime.Parse(oReserva.fecha_inicia.Value.ToString("MM/dd/yyyy")), oReserva.id_vehiculo);
+
+            if(validarRegistro == null){
+                var crear = await reservas.AddReserves(oReserva);
+                var rs = js.InvokeAsync<object>("msjAlert", "Registrado Exitoso!", "success");
+                NavigationManager.NavigateTo("/");
+            }else{
+                var rs = js.InvokeAsync<object>("msjAlert", "Vehículo No Disponible!", "error");
+            }
+
+
+        }else{
+            var rs = js.InvokeAsync<object>("msjAlert", "Campos Vacío!", "error");
+            error = false;
         }
 
 

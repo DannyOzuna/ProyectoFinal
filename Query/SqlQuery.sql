@@ -32,12 +32,13 @@
 
 /*create table reservas(
 	id int primary key identity(1,1),
-	id_vehiculo int FOREIGN KEY REFERENCES vehiculos (id),
-	id_cliente int FOREIGN KEY REFERENCES clientes (id),
+	id_vehiculo int,
+	id_cliente int,
 	fecha_inicia date,
 	fecha_fin date,
 	estado int
 )*/
+
 
 
 
@@ -46,10 +47,11 @@ insert into vehiculos values ('Honda', 'CR-V', '2017', 'Gris', 300.00, 'Jeepeta'
 
 select * from reservas
 
+select * from vehiculos
+
 truncate table reservas
 
 select * from Login
-
 
 select v.estado, r.fecha_inicia
 		from reservas r
@@ -57,3 +59,9 @@ select v.estado, r.fecha_inicia
 
 
 update vehiculos set estado = 1;
+
+
+
+select * from reservas where id_cliente = 1
+
+select * from reservas where id_vehiculo = '1' and fecha_fin > '2021-04-25'

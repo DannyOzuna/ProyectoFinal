@@ -171,6 +171,7 @@ using ProyectoFinal.Services;
         {
             Black = "#27272f",
             Background = "#32333d",
+            Primary = Colors.Blue.Darken1,
             BackgroundGrey = "#27272f",
             Surface = "#000000",
             DrawerBackground = "#27272f",

@@ -26,7 +26,9 @@ namespace ProyectoFinal.Models{
         [Required(ErrorMessage = "Campo Vacio")]
         public string nro_seguro {get; set;}
         public string foto {get; set;}
+        [Required(ErrorMessage = "Campo Vacio")]
         public string latitud {get; set;}
+        [Required(ErrorMessage = "Campo Vacio")]
         public string longitud {get; set;}
         public int estado {get; set;}
         

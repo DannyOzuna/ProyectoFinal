@@ -65,39 +65,6 @@
         }
       },
       {
-        "HashCode": -1084760739,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionReserva",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GestionReserva"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionReserva"
-        }
-      },
-      {
-        "HashCode": 1379661360,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionReserva",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyectoFinal.Pages.GestionReserva"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionReserva",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1071447230,
         "Kind": "Components.Component",
         "Name": "ProyectoFinal.Pages.GestionVehiculos",
@@ -180,6 +147,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "ProyectoFinal.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1088111185,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.Mapa",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Mapa"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.Mapa"
+        }
+      },
+      {
+        "HashCode": 221918129,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.Mapa",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyectoFinal.Pages.Mapa"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.Mapa",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -279,6 +279,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "ProyectoFinal.Pages.VistaVehiculos",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1084760739,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.GestionReserva",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GestionReserva"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionReserva"
+        }
+      },
+      {
+        "HashCode": 1379661360,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.GestionReserva",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyectoFinal.Pages.GestionReserva"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionReserva",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -61380,6 +61413,11 @@
       "FilePath": "c:\\Users\\danny\\Desktop\\ProyectoFinal\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\danny\\Desktop\\ProyectoFinal\\Pages\\Mapa.razor",
+      "TargetPath": "Pages\\Mapa.razor",
+      "FileKind": "component"
     },
     {
       "FilePath": "c:\\Users\\danny\\Desktop\\ProyectoFinal\\App.razor",

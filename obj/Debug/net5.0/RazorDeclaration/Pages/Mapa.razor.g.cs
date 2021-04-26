@@ -124,8 +124,15 @@ using ProyectoFinal.Services;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/reserva")]
-    public partial class GestionReserva : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 2 "C:\Users\danny\Desktop\ProyectoFinal\Pages\Mapa.razor"
+using Newtonsoft.Json;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/mapa")]
+    public partial class Mapa : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -133,60 +140,43 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 69 "C:\Users\danny\Desktop\ProyectoFinal\Pages\GestionReserva.razor"
+#line 24 "C:\Users\danny\Desktop\ProyectoFinal\Pages\Mapa.razor"
       
+   List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
+   [JSInvokable]
+   public async Task<string> Marcadores(){
 
-    ReservasDb oReserva = new ReservasDb();
-    List<ClientesDb> lsClientes = new List<ClientesDb>();
-    List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
-    public bool loading {get; set;} = false;
-
-    private bool error = false;
-
-    protected override async Task OnInitializedAsync()
-    {
-        oReserva.fecha_inicia = DateTime.Now;
-        oReserva.fecha_fin = DateTime.Now;
-        lsClientes = await clientes.GetSelectCliente();
-        lsVehiculos =  await vehiculos.GetVehiculos();
-    }
+ 
+    lsVehiculos = await Vehiculos.GetVehiculos();
+    string json= JsonConvert.SerializeObject(lsVehiculos);
     
-    private async Task Guardar(){
-        oReserva.estado = 1;
+     return json;  
+   }
+   protected async Task mostrar(){
 
-        if(oReserva.id_cliente == 0 || oReserva.id_vehiculo == 0){
-            error =  true;
-        }
+   await JsRuntine.InvokeVoidAsync("accessDOMElement", 
+   DotNetObjectReference.Create(this));
+  
+  }
+    
+   protected override async Task OnAfterRenderAsync(bool firstRender){
+    if(firstRender){
+      try{
+         await mostrar();
+      }
+      catch(Exception){
+          throw;
+      }
 
-        if(error == false){
-
-            var validarRegistro = await vehiculos.GetSelect(DateTime.Parse(oReserva.fecha_inicia.Value.ToString("MM/dd/yyyy")), oReserva.id_vehiculo);
-
-            if(validarRegistro == null){
-                var crear = await reservas.AddReserves(oReserva);
-                var rs = js.InvokeAsync<object>("msjAlert", "Registrado Exitoso!", "success");
-                NavigationManager.NavigateTo("/");
-            }else{
-                var rs = js.InvokeAsync<object>("msjAlert", "Vehículo No Disponible!", "error");
-            }
-
-
-        }else{
-            var rs = js.InvokeAsync<object>("msjAlert", "Campos Vacío!", "error");
-            error = false;
-        }
-
-
-    }
+     }
+   }
+ 
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos vehiculos { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientes clientes { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IReservas reservas { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos Vehiculos { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntine { get; set; }
     }
 }
 #pragma warning restore 1591

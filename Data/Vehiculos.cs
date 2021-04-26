@@ -22,14 +22,21 @@ namespace ProyectoFinal.Data{
             return await context.vehiculos.FirstOrDefaultAsync(v => v.id == id);
         }
 
-        public async Task<List<VehiculosDb>> GetSelect(DateTime? time){
+        public async Task<VehiculosDb> GetSelect(DateTime? time, int id){
 
-            return await (from v in context.vehiculos
+            var datos = await (from v in context.vehiculos
                             join r in context.reservas
                             on v.id equals r.id_vehiculo into joined
                             from r in joined.DefaultIfEmpty()
-                            where v.estado == 1 || r.fecha_fin > time
-                            select v).ToListAsync();
+                            orderby r.id descending
+                            where r.id_vehiculo == id && r.fecha_fin > time
+                            select v).LastOrDefaultAsync();
+
+            if(datos == null){
+                return null;
+            }else{
+                return datos;
+            }
         }
 
         public async Task<VehiculosDb> AddVehiculos(VehiculosDb oVehiculo){
@@ -74,9 +81,11 @@ namespace ProyectoFinal.Data{
         }
 
         public async Task DeleteVehiculo(int id){
-           var VehiculoDd =  await context.vehiculos.FindAsync(id);
-           context.Remove(VehiculoDd);
-           await context.SaveChangesAsync();
+            if(id != 0){
+                var VehiculoDd =  await context.vehiculos.FindAsync(id);
+                context.Remove(VehiculoDd);
+                await context.SaveChangesAsync();
+            }
         }
         
 

@@ -18,7 +18,7 @@
     @if(lsVehiculos != null){
       @foreach (var item in lsVehiculos)
       { 
-        <div class="col-12 col-sm-2">
+        <div class="col-12 col-sm-3">
           <MudCard Elevation="25">
             <MudCardContent>
               <MudGrid>
@@ -92,11 +92,13 @@
   public async Task Delete(int id){
     var confimacion = await js.InvokeAsync<bool>("msjConfim", "Confimar", "Seguro de borrar el Vehículo?", "question");
     if(confimacion){
-      loading = true;
-      await Vehiculos.DeleteVehiculo(id);
-      await js.InvokeAsync<object>("msjAlert", "Eliminación Exitosa", "success");
-      lsVehiculos = await Vehiculos.GetVehiculos();
-      loading = false;
+      if(id != 0){
+        loading = true;
+        await Vehiculos.DeleteVehiculo(id);
+        await js.InvokeAsync<object>("msjAlert", "Eliminación Exitosa", "success");
+        lsVehiculos = await Vehiculos.GetVehiculos();
+        loading = false;
+      }
     }
   }
 

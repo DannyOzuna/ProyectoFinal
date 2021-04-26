@@ -74,6 +74,14 @@
                                     <ValidationMessage For="() => oVehiculos.nro_seguro"/>
                                 </MudItem>
                                 <MudItem xs="12" sm="6" md="4">
+                                    <MudTextField @bind-Value="oVehiculos.latitud" Label="Latitud" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Lan" AdornmentColor="Color.Info" />
+                                    <ValidationMessage For="() => oVehiculos.latitud"/>
+                                </MudItem>
+                                <MudItem xs="12" sm="6" md="4">
+                                    <MudTextField @bind-Value="oVehiculos.longitud" Label="Longitud" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Lon" AdornmentColor="Color.Info" />
+                                    <ValidationMessage For="() => oVehiculos.longitud"/>
+                                </MudItem>
+                                <MudItem xs="12" sm="6" md="4">
                                     <BlazorInputFile.InputFile id="fileCargar" OnChange="HandleFileSelected" hidden multiple accept=".jpg, .jpeg, .png" />
                                     <MudFab HtmlTag="label" Color="Color.Success" Icon="@Icons.Filled.AttachFile" for="fileCargar" />
                                     @if(file != null){
@@ -89,6 +97,7 @@
             </EditForm>
         </div>
     </div>
+
 }
 
 @code{
@@ -111,8 +120,13 @@
 
    protected async override Task OnInitializedAsync()
     {
+        var datos = http.GetFromJsonAsync<Localicacion>("http://ip-api.com/json/");
+        var ubicacion = datos.Result;
         if(id != 0){
             oVehiculos = await Vehiculos.GetVehiculos(id);
+        }else{
+            oVehiculos.latitud = ubicacion.lat.ToString();
+            oVehiculos.longitud = ubicacion.lon.ToString();
         }
     }
 
@@ -125,13 +139,6 @@
         if(file != null){
             oVehiculos.foto = @file.Name;
         }
-
-        var datos = http.GetFromJsonAsync<Localicacion>("http://ip-api.com/json/");
-        var ubicacion = datos.Result;
-
-        oVehiculos.latitud = ubicacion.lat.ToString();
-        oVehiculos.longitud = ubicacion.lon.ToString();
-
 
         var crear = await Vehiculos.AddVehiculos(oVehiculos);
 

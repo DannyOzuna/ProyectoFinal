@@ -134,7 +134,7 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 94 "C:\Users\danny\Desktop\ProyectoFinal\Pages\GestionVehiculos.razor"
+#line 103 "C:\Users\danny\Desktop\ProyectoFinal\Pages\GestionVehiculos.razor"
       
     [Parameter]
     public int id {get; set;}
@@ -155,8 +155,13 @@ using ProyectoFinal.Services;
 
    protected async override Task OnInitializedAsync()
     {
+        var datos = http.GetFromJsonAsync<Localicacion>("http://ip-api.com/json/");
+        var ubicacion = datos.Result;
         if(id != 0){
             oVehiculos = await Vehiculos.GetVehiculos(id);
+        }else{
+            oVehiculos.latitud = ubicacion.lat.ToString();
+            oVehiculos.longitud = ubicacion.lon.ToString();
         }
     }
 
@@ -169,13 +174,6 @@ using ProyectoFinal.Services;
         if(file != null){
             oVehiculos.foto = @file.Name;
         }
-
-        var datos = http.GetFromJsonAsync<Localicacion>("http://ip-api.com/json/");
-        var ubicacion = datos.Result;
-
-        oVehiculos.latitud = ubicacion.lat.ToString();
-        oVehiculos.longitud = ubicacion.lon.ToString();
-
 
         var crear = await Vehiculos.AddVehiculos(oVehiculos);
 

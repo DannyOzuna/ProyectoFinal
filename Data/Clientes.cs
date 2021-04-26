@@ -23,6 +23,18 @@ namespace ProyectoFinal.Data{
         public async Task<List<ClientesDb>> GetSelectCliente(){
             return await context.clientes.Where(c => c.estado == 1).ToListAsync();
         }
+        public async Task<ClientesDb> SearchCliente(string cedula){
+            if(cedula != null){
+                var buscar = await context.clientes.FirstOrDefaultAsync(c => c.cedula == cedula);
+                if(buscar != null){
+                    return buscar;
+                }else{
+                    return null;
+                }
+            }else{
+                return new ClientesDb();
+            }
+        }
 
 
         public async Task<ClientesDb> AddCliente(ClientesDb oCliente){

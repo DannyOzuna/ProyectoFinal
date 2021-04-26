@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace ProyectoFinal.Models{
-    public class ReservesDb{
+    public class ReservasDb{
         [Key]
         public int id {get; set;}
         [Required(ErrorMessage = "Campo Vacio")]

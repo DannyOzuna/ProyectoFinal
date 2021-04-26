@@ -166,19 +166,23 @@ using ProyectoFinal.Services;
         if(buscar == 1){
             if(cedula != null){
                 loading = true;
-                var Url = "https://api.adamix.net/apec/cedula/" + cedula;
-                oCedula = await Http.GetFromJsonAsync<DatosCedula>(Url);
-
-                if(oCedula.ok){
+                var buscarDb = await clientes.SearchCliente(cedula);
+                if(buscarDb != null){
+                    oCliente = buscarDb;
                     cargarDatos = true;
-                    oCliente.nombre = oCedula.Nombres;
-                    oCliente.apellido = oCedula.Apellido1 + " " + oCedula.Apellido2;
-                    oCliente.cedula = oCedula.Cedula;
-                    oCliente.foto_persona = oCedula.foto;
-
                 }else{
-                    var msj =  await Js.InvokeAsync<object>("msjAlert", "Cédula no Encotrada", "error");
-                    cargarDatos = true;
+                    var Url = "https://api.adamix.net/apec/cedula/" + cedula;
+                    oCedula = await Http.GetFromJsonAsync<DatosCedula>(Url);
+                    if(oCedula.ok){
+                        cargarDatos = true;
+                        oCliente.nombre = oCedula.Nombres;
+                        oCliente.apellido = oCedula.Apellido1 + " " + oCedula.Apellido2;
+                        oCliente.cedula = oCedula.Cedula;
+                        oCliente.foto_persona = oCedula.foto;
+                    }else{
+                        var msj =  await Js.InvokeAsync<object>("msjAlert", "Cédula no Encotrada", "error");
+                        cargarDatos = true;
+                    }
                 }
                 loading = false;
             }else{
