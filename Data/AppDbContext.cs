@@ -12,6 +12,10 @@ namespace ProyectoFinal.Data{
         public DbSet<VehiculosDb> vehiculos {get; set;}
         public DbSet<ClientesDb> clientes {get; set;}
         public DbSet<ReservasDb> reservas {get; set;}
+<<<<<<< HEAD
         public DbSet<LoginDb> loginDbs { get; set; }
+=======
+        public DbSet<FacturacionDb> facturaciones {get; set;}
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
     }
 }

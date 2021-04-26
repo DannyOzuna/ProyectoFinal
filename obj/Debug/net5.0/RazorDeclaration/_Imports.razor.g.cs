@@ -13,112 +13,176 @@ namespace ProyectoFinal
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
+<<<<<<< HEAD
 #line 1 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 1 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 2 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 2 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 3 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 3 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 4 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 4 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 5 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 5 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 6 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 6 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 7 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 7 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 8 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 8 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 9 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 9 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using ProyectoFinal;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 10 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 10 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using ProyectoFinal.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 11 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 11 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using ProyectoFinal.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 12 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 12 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using MudBlazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 13 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 13 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using ProyectoFinal.Theme;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 14 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 14 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 15 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 15 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 16 "C:\Users\Ernest Sanchez\source\repos\ProyectoFinal\_Imports.razor"
+=======
+#line 16 "C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\_Imports.razor"
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 using ProyectoFinal.Services;
 
 #line default

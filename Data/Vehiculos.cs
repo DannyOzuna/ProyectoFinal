@@ -88,6 +88,7 @@ namespace ProyectoFinal.Data{
             }
         }
 
+<<<<<<< HEAD
         public int ContarVehiculo() 
         {
 
@@ -120,6 +121,28 @@ namespace ProyectoFinal.Data{
 
 
 
+=======
+
+        public async Task<List<JoinVehiculosReserva>> getRangoVehiculos(DateTime? fechaInicio, DateTime? fechaFinal)
+        {
+            return await (from v in context.vehiculos
+                          join r in context.reservas
+                          on v.id equals r.id_vehiculo into joined
+                          from r in joined.DefaultIfEmpty()
+                          where v.estado == 1 || (fechaFinal >= r.fecha_inicia && fechaFinal <= r.fecha_fin)
+                          select new JoinVehiculosReserva
+                          {
+                              fecha_inicia = r.fecha_inicia,
+                              fecha_fin = r.fecha_fin,
+                              foto = v.foto,
+                              modelo = v.modelo,
+                              marca = v.marca,
+                              tipo = v.tipo,
+                              color = v.color,
+                              anio = v.anio
+                          }).ToListAsync();
+        }
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 
 
     }

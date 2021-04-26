@@ -31,6 +31,7 @@ namespace ProyectoFinal.Data{
             }
         }
 
+<<<<<<< HEAD
         public async Task<List<ReservasDb>> GetReservesActivos()
         {
 
@@ -59,5 +60,11 @@ namespace ProyectoFinal.Data{
 
         }
 
+=======
+        public async Task<List<FacturacionDb>> GetFacturacions(){
+            return await (from f in context.facturaciones
+                            select f).ToListAsync();
+        } 
+>>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
     }
 }
