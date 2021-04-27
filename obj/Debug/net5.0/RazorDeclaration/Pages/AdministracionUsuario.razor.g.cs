@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace ProyectoFinal.Shared
+namespace ProyectoFinal.Pages
 {
     #line hidden
     using System;
@@ -124,13 +124,51 @@ using ProyectoFinal.Services;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/administrarUsuario")]
+    public partial class AdministracionUsuario : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 82 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/AdministracionUsuario.razor"
+      
+    public bool loading = false;
+    UsuariosDb oUsuario = new UsuariosDb(); 
+
+
+    MudTextField<string> pwField1;
+
+    private IEnumerable<string> PasswordStrength(string pw)
+    {
+        if (string.IsNullOrWhiteSpace(pw))
+        {
+            yield return "Se requiere contraseña!";
+            yield break;
+        }
+        if (pw.Length < 8)
+            yield return "La contraseña debe tener al menos una longitud de 8";
+    }
+
+    private string PasswordMatch(string arg)
+    {
+        if (pwField1.Value != arg)
+            return "Las contraseñas no coinciden";
+        return null;
+    }
+
+    private async Task GuardarDatos(){
+        await usuarios.AddUsuarios(oUsuario);
+        var msj = js.InvokeAsync<object>("msjAlert", "Registro Existo", "success");
+    } 
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUsuario usuarios { get; set; }
     }
 }
 #pragma warning restore 1591
