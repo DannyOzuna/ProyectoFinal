@@ -133,45 +133,12 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 47 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/AdministracionUsuario.razor"
+#line 82 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/AdministracionUsuario.razor"
       
     public bool loading = false;
     UsuariosDb oUsuario = new UsuariosDb(); 
-    private string prueba {get;set;}
-    public string AvatarImageLink { get; set; } = "images/avatar_jonny.jpg";
-    public string AvatarIcon { get; set; }
-    public string AvatarButtonText { get; set; } = "Delete Picture";
-    public Color AvatarButtonColor { get; set; } = Color.Error;
-    public string FirstName { get; set; } = "Jonny";
-    public string LastName { get; set; } = "Larsson";
-    public string JobTitle { get; set; } = "IT Consultant";
-    public string Email { get; set; } = "Youcanprobably@findout.com";
-    public bool FriendSwitch { get; set; } = true;
-    public bool NotificationEmail_1 { get; set; } = true;
-    public bool NotificationEmail_2 { get; set; }
-    public bool NotificationEmail_3 { get; set; }
-    public bool NotificationEmail_4 { get; set; } = true;
-    public bool NotificationChat_1 { get; set; }
-    public bool NotificationChat_2 { get; set; } = true;
-    public bool NotificationChat_3 { get; set; } = true;
-    public bool NotificationChat_4 { get; set; }
 
-    void DeletePicture()
-    {
-        if(!String.IsNullOrEmpty(AvatarImageLink))
-        {
-            AvatarImageLink = null;
-            AvatarIcon = Icons.Material.Outlined.SentimentVeryDissatisfied;
-            AvatarButtonText = "Upload Picture";
-            AvatarButtonColor = Color.Primary;
-        }
-        else
-        {
-            return;
-        }
-    }
 
-    MudForm form;
     MudTextField<string> pwField1;
 
     private IEnumerable<string> PasswordStrength(string pw)
@@ -192,9 +159,16 @@ using ProyectoFinal.Services;
         return null;
     }
 
+    private async Task GuardarDatos(){
+        await usuarios.AddUsuarios(oUsuario);
+        var msj = js.InvokeAsync<object>("msjAlert", "Registro Existo", "success");
+    } 
+
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUsuario usuarios { get; set; }
     }
 }
 #pragma warning restore 1591

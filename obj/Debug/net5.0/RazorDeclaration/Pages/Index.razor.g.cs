@@ -133,7 +133,7 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 141 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Index.razor"
+#line 131 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Index.razor"
        
 
     EarningReport[] earningReports = new EarningReport[]

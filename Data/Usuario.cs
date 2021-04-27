@@ -16,5 +16,12 @@ namespace ProyectoFinal.Data{
         public async Task<List<UsuariosDb>> GetUsuarios(){
             return await context.usuarios.ToListAsync();
         }
+
+        public async Task<UsuariosDb> AddUsuarios(UsuariosDb oUsuario){
+            await context.usuarios.AddAsync(oUsuario);
+            await context.SaveChangesAsync();
+            return oUsuario;
+            
+        }
     }
 }

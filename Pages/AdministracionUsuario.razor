@@ -1,17 +1,49 @@
 @page "/administrarUsuario"
+@inject IUsuario usuarios
+@inject IJSRuntime js
 
-<div class="row justify-content-center">
-    <div class="col-md-8 text-center">
-        <h1 class="alert alert-info">Administración de Usuarios</h1>
-        @if(loading == true){
-            <div class="spinner-border text-primary" style="width: 7rem; height: 7rem; margin-top:10rem;" role="status">
-              <span class="visually-hidden"></span>
+<MudText Typo="Typo.h5" Color="Color.Primary" Class="mb-4">Administración de Usuarios</MudText>
+<MudTabs Elevation="25" Color="Color.Transparent" Rounded="true" PanelClass="mt-6">
+    <MudTabPanel Text="General">
+    </MudTabPanel>
+    <MudTabPanel Text="Seguridad">
+        <div class="row justify-content-center mt-md-2">
+            <div class="col-4">
+                <EditForm Model="oUsuario">
+                    <DataAnnotationsValidator/>
+                    <MudCard>
+                        <MudCardHeader>
+                            <CardHeaderContent>
+                                <MudText>Credenciales</MudText>
+                            </CardHeaderContent>
+                        </MudCardHeader>
+                        <MudCardContent>
+                            <MudGrid>
+                                <MudItem xs="12">
+                                    <MudTextField T="string" @bind-Value="oUsuario.user_" Label="Usuario" Variant="Variant.Outlined" />
+                                    <ValidationMessage For="() => oUsuario.user_"/>
+                                </MudItem>
+                                <MudItem xs="12">
+                                    <MudTextField T="string" @bind-Value="oUsuario.pass" Label="Contraseña" Variant="Variant.Outlined" InputType="InputType.Password" @ref="pwField1" Validation="@(new Func<string, IEnumerable<string>>(PasswordStrength))" Required="true" RequiredError="Se requiere contreseña!" />
+                                    <ValidationMessage For="() => oUsuario.pass"/>
+                                </MudItem>
+                                <MudItem xs="12">
+                                    <MudTextField T="string" @bind-Value="oUsuario.pass" Label="Confimar Contraseña" Variant="Variant.Outlined" InputType="InputType.Password" Validation="@(new Func<string, string>(PasswordMatch))" />
+                                    <ValidationMessage For="() => oUsuario.pass"/>
+                                </MudItem>
+                            </MudGrid>
+                        </MudCardContent>
+                        <MudCardActions Class="pb-4 pl-4">
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Guardar</MudButton>
+                        </MudCardActions>
+                    </MudCard>
+                </EditForm>
             </div>
-        }
-    </div>
-</div>
+        </div> 
+    </MudTabPanel>
+</MudTabs>
 
-@if(loading == false){
+@* @if(loading == false){
     <div class="row justify-content-center mt-md-2">
         <div class="col-4">
             <EditForm Model="oUsuario">
@@ -19,69 +51,39 @@
                 <MudCard>
                     <MudCardHeader>
                         <CardHeaderContent>
-                            <MudText>Cambiar Credenciales</MudText>
+                            <MudText>Credenciales</MudText>
                         </CardHeaderContent>
                     </MudCardHeader>
                     <MudCardContent>
                         <MudGrid>
                             <MudItem xs="12">
-                                <MudTextField T="string" Label="Usuario" Variant="Variant.Outlined" />
+                                <MudTextField T="string" @bind-Value="oUsuario.user_" Label="Usuario" Variant="Variant.Outlined" />
+                                <ValidationMessage For="() => oUsuario.user_"/>
                             </MudItem>
                             <MudItem xs="12">
-                                <MudTextField T="string" Label="Contraseña" @bind-Value="prueba" Variant="Variant.Outlined" InputType="InputType.Password" @ref="pwField1" Validation="@(new Func<string, IEnumerable<string>>(PasswordStrength))" Required="true" RequiredError="Se requiere contreseña!" />
+                                <MudTextField T="string" @bind-Value="oUsuario.pass" Label="Contraseña" Variant="Variant.Outlined" InputType="InputType.Password" @ref="pwField1" Validation="@(new Func<string, IEnumerable<string>>(PasswordStrength))" Required="true" RequiredError="Se requiere contreseña!" />
+                                <ValidationMessage For="() => oUsuario.pass"/>
                             </MudItem>
                             <MudItem xs="12">
-                                <MudTextField T="string" Label="Confimar Contraseña" Variant="Variant.Outlined" InputType="InputType.Password" Validation="@(new Func<string, string>(PasswordMatch))" />
+                                <MudTextField T="string" @bind-Value="oUsuario.pass" Label="Confimar Contraseña" Variant="Variant.Outlined" InputType="InputType.Password" Validation="@(new Func<string, string>(PasswordMatch))" />
+                                <ValidationMessage For="() => oUsuario.pass"/>
                             </MudItem>
                         </MudGrid>
                     </MudCardContent>
                     <MudCardActions Class="pb-4 pl-4">
-                        <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Cambiar Contraseña</MudButton>
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Guardar</MudButton>
                     </MudCardActions>
                 </MudCard>
             </EditForm>
         </div>
     </div> 
-}
+} *@
 
 @code{
     public bool loading = false;
     UsuariosDb oUsuario = new UsuariosDb(); 
-    private string prueba {get;set;}
-    public string AvatarImageLink { get; set; } = "images/avatar_jonny.jpg";
-    public string AvatarIcon { get; set; }
-    public string AvatarButtonText { get; set; } = "Delete Picture";
-    public Color AvatarButtonColor { get; set; } = Color.Error;
-    public string FirstName { get; set; } = "Jonny";
-    public string LastName { get; set; } = "Larsson";
-    public string JobTitle { get; set; } = "IT Consultant";
-    public string Email { get; set; } = "Youcanprobably@findout.com";
-    public bool FriendSwitch { get; set; } = true;
-    public bool NotificationEmail_1 { get; set; } = true;
-    public bool NotificationEmail_2 { get; set; }
-    public bool NotificationEmail_3 { get; set; }
-    public bool NotificationEmail_4 { get; set; } = true;
-    public bool NotificationChat_1 { get; set; }
-    public bool NotificationChat_2 { get; set; } = true;
-    public bool NotificationChat_3 { get; set; } = true;
-    public bool NotificationChat_4 { get; set; }
 
-    void DeletePicture()
-    {
-        if(!String.IsNullOrEmpty(AvatarImageLink))
-        {
-            AvatarImageLink = null;
-            AvatarIcon = Icons.Material.Outlined.SentimentVeryDissatisfied;
-            AvatarButtonText = "Upload Picture";
-            AvatarButtonColor = Color.Primary;
-        }
-        else
-        {
-            return;
-        }
-    }
 
-    MudForm form;
     MudTextField<string> pwField1;
 
     private IEnumerable<string> PasswordStrength(string pw)
@@ -101,4 +103,9 @@
             return "Las contraseñas no coinciden";
         return null;
     }
+
+    private async Task GuardarDatos(){
+        await usuarios.AddUsuarios(oUsuario);
+        var msj = js.InvokeAsync<object>("msjAlert", "Registro Existo", "success");
+    } 
 }
