@@ -107,471 +107,489 @@
 =======
 >>>>>>> 2cf9fd7a0b97dac4896f4234db9c1c8169ea7581
 /Users/dannyozuna/Documents/ProyectoFinal/bin/Debug/net5.0/BlazorInputFile.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\appsettings.json
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.StaticWebAssets.xml
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.exe
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.deps.json
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.runtimeconfig.json
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.runtimeconfig.dev.json
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\ref\ProyectoFinal.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.pdb
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.Views.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.Views.pdb
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\BlazorInputFile.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Blazor.HttpClient.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Components.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Forms.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Web.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.Identity.Client.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Microsoft.JSInterop.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\MudBlazor.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\System.Collections.Immutable.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\System.ComponentModel.Annotations.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\System.IO.Pipelines.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\System.Runtime.Caching.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.csprojAssemblyReference.cache
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.AssemblyInfoInputs.cache
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.AssemblyInfo.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.csproj.CoreCompileInputs.cache
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorComponent.input.cache
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\GestionClientes.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\GestionReserva.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\GestionVehiculos.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ObtenerDatos.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\VistaClientes.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\VistaVehiculos.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorComponent.output.cache
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\ProyectoFinal.dll
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.TagHelpers.input.cache
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.TagHelpers.output.cache
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorCoreGenerate.cache
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\App.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\GestionClientes.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\GestionReserva.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\GestionVehiculos.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ObtenerDatos.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\VistaClientes.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\VistaVehiculos.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorAssemblyInfo.cache
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorAssemblyInfo.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\staticwebassets\ProyectoFinal.StaticWebAssets.Manifest.cache
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\staticwebassets\ProyectoFinal.StaticWebAssets.xml
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\scopedcss\bundle\ProyectoFinal.styles.css
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorTargetAssemblyInfo.cache
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorTargetAssemblyInfo.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.Views.pdb
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.csproj.CopyComplete
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.dll
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ref\ProyectoFinal.dll
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.pdb
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.genruntimeconfig.cache
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\BlazorLeaflet.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\appsettings.Development.json
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\appsettings.json
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.StaticWebAssets.xml
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.exe
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.deps.json
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.runtimeconfig.json
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.runtimeconfig.dev.json
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\ref\ProyectoFinal.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.pdb
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.Views.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.Views.pdb
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\BlazorInputFile.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\BlazorLeaflet.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Blazor.HttpClient.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Components.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Forms.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Web.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.Identity.Client.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Microsoft.JSInterop.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\MudBlazor.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\Newtonsoft.Json.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\System.Collections.Immutable.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\System.ComponentModel.Annotations.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\System.IO.Pipelines.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\System.Runtime.Caching.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.csprojAssemblyReference.cache
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.AssemblyInfoInputs.cache
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.AssemblyInfo.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.csproj.CoreCompileInputs.cache
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.MvcApplicationPartsAssemblyInfo.cache
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorComponent.input.cache
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\GestionClientes.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\GestionReserva.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\GestionVehiculos.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Mapa.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ObtenerDatos.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\VistaClientes.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\VistaVehiculos.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorComponent.output.cache
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\ProyectoFinal.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.TagHelpers.input.cache
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.TagHelpers.output.cache
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorCoreGenerate.cache
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\App.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\GestionClientes.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\GestionReserva.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\GestionVehiculos.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Mapa.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ObtenerDatos.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\VistaClientes.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\VistaVehiculos.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorAssemblyInfo.cache
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorAssemblyInfo.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\staticwebassets\ProyectoFinal.StaticWebAssets.Manifest.cache
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\staticwebassets\ProyectoFinal.StaticWebAssets.xml
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\scopedcss\bundle\ProyectoFinal.styles.css
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorTargetAssemblyInfo.cache
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorTargetAssemblyInfo.cs
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.Views.pdb
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.csproj.CopyComplete
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ref\ProyectoFinal.dll
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.pdb
-E:\Sexto cuatrimeste\Programacion 3\Final\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.genruntimeconfig.cache
-C:\Users\danny\Desktop\ProyectoFinal\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Mapa.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Mapa.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Beneficios.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Beneficios.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\appsettings.json
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.StaticWebAssets.xml
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.exe
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.deps.json
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.runtimeconfig.json
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.runtimeconfig.dev.json
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\ref\ProyectoFinal.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.pdb
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.Views.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.Views.pdb
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\BlazorInputFile.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\BlazorLeaflet.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Blazor.HttpClient.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Components.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Forms.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Web.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.Identity.Client.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Microsoft.JSInterop.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\MudBlazor.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\System.Collections.Immutable.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\System.ComponentModel.Annotations.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\System.IO.Pipelines.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\System.Runtime.Caching.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.csprojAssemblyReference.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.AssemblyInfoInputs.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.AssemblyInfo.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.csproj.CoreCompileInputs.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorComponent.input.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Beneficios.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\GestionClientes.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\GestionReserva.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\GestionVehiculos.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ListaVehiculos.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Mapa.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ObtenerDatos.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\VistaClientes.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\VistaVehiculos.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorComponent.output.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\ProyectoFinal.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.TagHelpers.input.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.TagHelpers.output.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorCoreGenerate.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\App.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Beneficios.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\GestionClientes.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\GestionReserva.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\GestionVehiculos.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ListaVehiculos.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Mapa.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ObtenerDatos.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\VistaClientes.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\VistaVehiculos.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorAssemblyInfo.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorAssemblyInfo.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\staticwebassets\ProyectoFinal.StaticWebAssets.Manifest.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\staticwebassets\ProyectoFinal.StaticWebAssets.xml
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\scopedcss\bundle\ProyectoFinal.styles.css
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorTargetAssemblyInfo.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorTargetAssemblyInfo.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.Views.pdb
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.csproj.CopyComplete
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ref\ProyectoFinal.dll
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.pdb
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.genruntimeconfig.cache
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ListaVehiculo.razor.g.cs
-C:\Users\Pamela Hernandez\Desktop\ITLA\5- Quinto Cuatrimestre\Programacion III\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ListaVehiculo.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ListaVehiculos.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ListaVehiculos.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\appsettings.json
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.StaticWebAssets.xml
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.exe
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.deps.json
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.runtimeconfig.json
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.runtimeconfig.dev.json
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\ref\ProyectoFinal.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.pdb
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.Views.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\ProyectoFinal.Views.pdb
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\BlazorInputFile.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\BlazorLeaflet.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Blazor.HttpClient.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Components.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Forms.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Web.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.Identity.Client.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Microsoft.JSInterop.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\MudBlazor.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\System.Collections.Immutable.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\System.ComponentModel.Annotations.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\System.IO.Pipelines.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\System.Runtime.Caching.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.csprojAssemblyReference.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.AssemblyInfoInputs.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.AssemblyInfo.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.csproj.CoreCompileInputs.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorComponent.input.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Beneficios.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\GestionClientes.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\GestionReserva.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\GestionVehiculos.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ListaVehiculos.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Mapa.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ObtenerDatos.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\VistaClientes.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\VistaVehiculos.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorComponent.output.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\ProyectoFinal.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.TagHelpers.input.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.TagHelpers.output.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorCoreGenerate.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\App.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Beneficios.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\GestionClientes.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\GestionReserva.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\GestionVehiculos.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ListaVehiculos.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Mapa.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ObtenerDatos.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\VistaClientes.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\VistaVehiculos.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorAssemblyInfo.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorAssemblyInfo.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\staticwebassets\ProyectoFinal.StaticWebAssets.Manifest.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\staticwebassets\ProyectoFinal.StaticWebAssets.xml
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\scopedcss\bundle\ProyectoFinal.styles.css
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorTargetAssemblyInfo.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.RazorTargetAssemblyInfo.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.Views.pdb
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.csproj.CopyComplete
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ref\ProyectoFinal.dll
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.pdb
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.genruntimeconfig.cache
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ListaDebe.razor.g.cs
-C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ListaDebe.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ListaDebe.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ListaDebe.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Login.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Shared\LoginLayout.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Login.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Shared\LoginLayout.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ListaReservas.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ListaReservas.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/appsettings.Development.json
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/appsettings.json
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.StaticWebAssets.xml
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.exe
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.deps.json
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.runtimeconfig.json
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.runtimeconfig.dev.json
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/ref/ProyectoFinal.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.pdb
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.Views.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.Views.pdb
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/BlazorInputFile.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Authorization.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Components.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Components.Forms.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Components.Web.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Metadata.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.Data.SqlClient.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Logging.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Options.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.Identity.Client.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Microsoft.JSInterop.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/MudBlazor.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/System.Collections.Immutable.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/System.ComponentModel.Annotations.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/System.Configuration.ConfigurationManager.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/System.IO.Pipelines.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/System.Runtime.Caching.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.csprojAssemblyReference.cache
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.AssemblyInfoInputs.cache
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.AssemblyInfo.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.csproj.CoreCompileInputs.cache
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorComponent.input.cache
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionClientes.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionReserva.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionVehiculos.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ObtenerDatos.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaClientes.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaVehiculos.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Shared/NavMenu.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorComponent.output.cache
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/ProyectoFinal.dll
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.TagHelpers.input.cache
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.TagHelpers.output.cache
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorCoreGenerate.cache
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/App.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionClientes.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionReserva.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionVehiculos.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ObtenerDatos.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaClientes.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaVehiculos.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Shared/NavMenu.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/_Imports.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorAssemblyInfo.cache
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorAssemblyInfo.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/staticwebassets/ProyectoFinal.StaticWebAssets.Manifest.cache
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/staticwebassets/ProyectoFinal.StaticWebAssets.xml
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/scopedcss/bundle/ProyectoFinal.styles.css
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorTargetAssemblyInfo.cache
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorTargetAssemblyInfo.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.Views.pdb
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.csproj.CopyComplete
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.dll
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ref/ProyectoFinal.dll
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.pdb
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.genruntimeconfig.cache
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/BlazorLeaflet.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/appsettings.Development.json
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/appsettings.json
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.StaticWebAssets.xml
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.exe
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.deps.json
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.runtimeconfig.json
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.runtimeconfig.dev.json
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/ref/ProyectoFinal.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.pdb
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.Views.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.Views.pdb
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/BlazorInputFile.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/BlazorLeaflet.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Authorization.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Blazor.HttpClient.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Components.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Components.Forms.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Components.Web.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Metadata.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.Data.SqlClient.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Caching.Abstractions.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Caching.Memory.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Abstractions.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Logging.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Logging.Abstractions.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Options.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.Identity.Client.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Microsoft.JSInterop.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/MudBlazor.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/Newtonsoft.Json.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/System.Collections.Immutable.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/System.ComponentModel.Annotations.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/System.Configuration.ConfigurationManager.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/System.IO.Pipelines.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/System.Runtime.Caching.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/System.Security.Cryptography.ProtectedData.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.csprojAssemblyReference.cache
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.AssemblyInfoInputs.cache
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.AssemblyInfo.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.csproj.CoreCompileInputs.cache
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.MvcApplicationPartsAssemblyInfo.cache
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorComponent.input.cache
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionClientes.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionReserva.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionVehiculos.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Mapa.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ObtenerDatos.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaClientes.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaVehiculos.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Shared/NavMenu.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorComponent.output.cache
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/ProyectoFinal.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.TagHelpers.input.cache
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.TagHelpers.output.cache
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorCoreGenerate.cache
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/App.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionClientes.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionReserva.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionVehiculos.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Mapa.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ObtenerDatos.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaClientes.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaVehiculos.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/Shared/NavMenu.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/_Imports.razor.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorAssemblyInfo.cache
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorAssemblyInfo.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/staticwebassets/ProyectoFinal.StaticWebAssets.Manifest.cache
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/staticwebassets/ProyectoFinal.StaticWebAssets.xml
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/scopedcss/bundle/ProyectoFinal.styles.css
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorTargetAssemblyInfo.cache
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorTargetAssemblyInfo.cs
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.Views.pdb
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.csproj.CopyComplete
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ref/ProyectoFinal.dll
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.pdb
+E:/Sexto cuatrimeste/Programacion 3/Final/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.genruntimeconfig.cache
+C:/Users/danny/Desktop/ProyectoFinal/bin/Debug/net5.0/Newtonsoft.Json.dll
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Mapa.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Mapa.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Beneficios.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Beneficios.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/appsettings.Development.json
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/appsettings.json
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.StaticWebAssets.xml
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.exe
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.deps.json
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.runtimeconfig.json
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.runtimeconfig.dev.json
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/ref/ProyectoFinal.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.pdb
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.Views.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.Views.pdb
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/BlazorInputFile.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/BlazorLeaflet.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Authorization.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Components.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Components.Forms.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Components.Web.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Metadata.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.Data.SqlClient.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Logging.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Options.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.Identity.Client.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Microsoft.JSInterop.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/MudBlazor.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/Newtonsoft.Json.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/System.Collections.Immutable.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/System.ComponentModel.Annotations.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/System.Configuration.ConfigurationManager.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/System.IO.Pipelines.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/System.Runtime.Caching.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.csprojAssemblyReference.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.AssemblyInfoInputs.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.AssemblyInfo.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.csproj.CoreCompileInputs.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorComponent.input.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Beneficios.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionClientes.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionReserva.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionVehiculos.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ListaVehiculos.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Mapa.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ObtenerDatos.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaClientes.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaVehiculos.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Shared/NavMenu.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorComponent.output.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/ProyectoFinal.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.TagHelpers.input.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.TagHelpers.output.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorCoreGenerate.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/App.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Beneficios.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionClientes.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionReserva.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionVehiculos.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ListaVehiculos.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Mapa.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ObtenerDatos.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaClientes.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaVehiculos.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Shared/NavMenu.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/_Imports.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorAssemblyInfo.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorAssemblyInfo.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/staticwebassets/ProyectoFinal.StaticWebAssets.Manifest.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/staticwebassets/ProyectoFinal.StaticWebAssets.xml
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/scopedcss/bundle/ProyectoFinal.styles.css
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorTargetAssemblyInfo.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorTargetAssemblyInfo.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.Views.pdb
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.csproj.CopyComplete
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ref/ProyectoFinal.dll
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.pdb
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.genruntimeconfig.cache
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ListaVehiculo.razor.g.cs
+C:/Users/Pamela Hernandez/Desktop/ITLA/5- Quinto Cuatrimestre/Programacion III/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ListaVehiculo.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ListaVehiculos.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ListaVehiculos.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/appsettings.Development.json
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/appsettings.json
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.StaticWebAssets.xml
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.exe
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.deps.json
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.runtimeconfig.json
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.runtimeconfig.dev.json
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/ref/ProyectoFinal.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.pdb
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.Views.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/ProyectoFinal.Views.pdb
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/BlazorInputFile.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/BlazorLeaflet.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Authorization.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Components.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Components.Forms.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Components.Web.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.AspNetCore.Metadata.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.Data.SqlClient.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Logging.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Options.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.Identity.Client.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Microsoft.JSInterop.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/MudBlazor.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/Newtonsoft.Json.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/System.Collections.Immutable.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/System.ComponentModel.Annotations.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/System.Configuration.ConfigurationManager.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/System.IO.Pipelines.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/System.Runtime.Caching.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.csprojAssemblyReference.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.AssemblyInfoInputs.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.AssemblyInfo.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.csproj.CoreCompileInputs.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorComponent.input.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Beneficios.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionClientes.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionReserva.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/GestionVehiculos.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ListaVehiculos.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Mapa.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ObtenerDatos.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaClientes.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/VistaVehiculos.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Shared/NavMenu.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorComponent.output.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/ProyectoFinal.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.TagHelpers.input.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.TagHelpers.output.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorCoreGenerate.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/App.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Beneficios.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionClientes.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionReserva.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/GestionVehiculos.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ListaVehiculos.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Mapa.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ObtenerDatos.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaClientes.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/VistaVehiculos.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Shared/NavMenu.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/_Imports.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorAssemblyInfo.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorAssemblyInfo.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/staticwebassets/ProyectoFinal.StaticWebAssets.Manifest.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/staticwebassets/ProyectoFinal.StaticWebAssets.xml
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/scopedcss/bundle/ProyectoFinal.styles.css
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorTargetAssemblyInfo.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.RazorTargetAssemblyInfo.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.Views.pdb
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.csproj.CopyComplete
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ref/ProyectoFinal.dll
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.pdb
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/ProyectoFinal.genruntimeconfig.cache
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ListaDebe.razor.g.cs
+C:/Users/Ronny/Downloads/Proyecto Danny/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ListaDebe.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ListaDebe.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ListaDebe.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Login.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Shared/LoginLayout.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Shared/LoginLayout.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ListaReservas.razor.g.cs
+C:/Users/danny/Desktop/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ListaReservas.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/bin/Debug/net5.0/BlazorLeaflet.dll
+/Users/dannyozuna/Documents/ProyectoFinal/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Beneficios.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ListaDebe.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ListaReservas.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/ListaVehiculos.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Login.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/Mapa.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Shared/LoginLayout.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Beneficios.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ListaDebe.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ListaReservas.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/ListaVehiculos.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/Mapa.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Shared/LoginLayout.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/RazorDeclaration/Pages/AdministracionUsuario.razor.g.cs
+/Users/dannyozuna/Documents/ProyectoFinal/obj/Debug/net5.0/Razor/Pages/AdministracionUsuario.razor.g.cs

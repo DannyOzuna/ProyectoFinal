@@ -1,0 +1,104 @@
+@page "/administrarUsuario"
+
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="alert alert-info">Administración de Usuarios</h1>
+        @if(loading == true){
+            <div class="spinner-border text-primary" style="width: 7rem; height: 7rem; margin-top:10rem;" role="status">
+              <span class="visually-hidden"></span>
+            </div>
+        }
+    </div>
+</div>
+
+@if(loading == false){
+    <div class="row justify-content-center mt-md-2">
+        <div class="col-4">
+            <EditForm Model="oUsuario">
+                <DataAnnotationsValidator/>
+                <MudCard>
+                    <MudCardHeader>
+                        <CardHeaderContent>
+                            <MudText>Cambiar Credenciales</MudText>
+                        </CardHeaderContent>
+                    </MudCardHeader>
+                    <MudCardContent>
+                        <MudGrid>
+                            <MudItem xs="12">
+                                <MudTextField T="string" Label="Usuario" Variant="Variant.Outlined" />
+                            </MudItem>
+                            <MudItem xs="12">
+                                <MudTextField T="string" Label="Contraseña" @bind-Value="prueba" Variant="Variant.Outlined" InputType="InputType.Password" @ref="pwField1" Validation="@(new Func<string, IEnumerable<string>>(PasswordStrength))" Required="true" RequiredError="Se requiere contreseña!" />
+                            </MudItem>
+                            <MudItem xs="12">
+                                <MudTextField T="string" Label="Confimar Contraseña" Variant="Variant.Outlined" InputType="InputType.Password" Validation="@(new Func<string, string>(PasswordMatch))" />
+                            </MudItem>
+                        </MudGrid>
+                    </MudCardContent>
+                    <MudCardActions Class="pb-4 pl-4">
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Cambiar Contraseña</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            </EditForm>
+        </div>
+    </div> 
+}
+
+@code{
+    public bool loading = false;
+    UsuariosDb oUsuario = new UsuariosDb(); 
+    private string prueba {get;set;}
+    public string AvatarImageLink { get; set; } = "images/avatar_jonny.jpg";
+    public string AvatarIcon { get; set; }
+    public string AvatarButtonText { get; set; } = "Delete Picture";
+    public Color AvatarButtonColor { get; set; } = Color.Error;
+    public string FirstName { get; set; } = "Jonny";
+    public string LastName { get; set; } = "Larsson";
+    public string JobTitle { get; set; } = "IT Consultant";
+    public string Email { get; set; } = "Youcanprobably@findout.com";
+    public bool FriendSwitch { get; set; } = true;
+    public bool NotificationEmail_1 { get; set; } = true;
+    public bool NotificationEmail_2 { get; set; }
+    public bool NotificationEmail_3 { get; set; }
+    public bool NotificationEmail_4 { get; set; } = true;
+    public bool NotificationChat_1 { get; set; }
+    public bool NotificationChat_2 { get; set; } = true;
+    public bool NotificationChat_3 { get; set; } = true;
+    public bool NotificationChat_4 { get; set; }
+
+    void DeletePicture()
+    {
+        if(!String.IsNullOrEmpty(AvatarImageLink))
+        {
+            AvatarImageLink = null;
+            AvatarIcon = Icons.Material.Outlined.SentimentVeryDissatisfied;
+            AvatarButtonText = "Upload Picture";
+            AvatarButtonColor = Color.Primary;
+        }
+        else
+        {
+            return;
+        }
+    }
+
+    MudForm form;
+    MudTextField<string> pwField1;
+
+    private IEnumerable<string> PasswordStrength(string pw)
+    {
+        if (string.IsNullOrWhiteSpace(pw))
+        {
+            yield return "Se requiere contraseña!";
+            yield break;
+        }
+        if (pw.Length < 8)
+            yield return "La contraseña debe tener al menos una longitud de 8";
+    }
+
+    private string PasswordMatch(string arg)
+    {
+        if (pwField1.Value != arg)
+            return "Las contraseñas no coinciden";
+        return null;
+    }
+}
