@@ -134,9 +134,13 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 16 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Login.razor"
+#line 20 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Login.razor"
        
-    string Password { get; set; } = "BMWvBPJXZu";
+
+    UsuariosDb oUsuario = new UsuariosDb();
+
+    string user { get; set; } = "";
+    string Password { get; set; } = "";
 
     bool PasswordVisibility;
     InputType PasswordInput = InputType.Password;
@@ -150,7 +154,7 @@ using ProyectoFinal.Services;
 #line hidden
 #nullable disable
 #nullable restore
-#line 25 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Login.razor"
+#line 33 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Login.razor"
          if (PasswordVisibility)
         {
             PasswordVisibility = false;
@@ -168,13 +172,39 @@ using ProyectoFinal.Services;
 #line hidden
 #nullable disable
 #nullable restore
-#line 36 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Login.razor"
+#line 44 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/Login.razor"
          
+
     }
+
+
+    public void BuscarDatos()
+    {
+        oUsuario.user_ = user;
+        oUsuario.pass = Password;
+
+        var validar = usuario.SearchUsuario(oUsuario);
+        if (!validar)
+        {
+            var msj = Js.InvokeAsync<object>("msjAlert", "Usuario Incorrecto", "error");
+        }
+
+        else
+        {
+            var msj = Js.InvokeAsync<object>("msjAlert", "Sección Iniciada", "success");
+            NavigationManager.NavigateTo("/Index");
+        }
+
+    }
+
+
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime Js { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUsuario usuario { get; set; }
     }
 }
 #pragma warning restore 1591

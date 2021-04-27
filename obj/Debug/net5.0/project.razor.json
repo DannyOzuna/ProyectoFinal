@@ -45,6 +45,59 @@
         }
       },
       {
+        "HashCode": 400025537,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.GestionClientes",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GestionClientes"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionClientes"
+        }
+      },
+      {
+        "HashCode": 828852823,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.GestionClientes",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyectoFinal.Pages.GestionClientes"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionClientes",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1480119652,
         "Kind": "Components.Component",
         "Name": "ProyectoFinal.Pages.GestionReserva",
@@ -74,6 +127,92 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "ProyectoFinal.Pages.GestionReserva",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -683445658,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.GestionVehiculos",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GestionVehiculos"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionVehiculos"
+        }
+      },
+      {
+        "HashCode": 608018686,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.GestionVehiculos",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyectoFinal.Pages.GestionVehiculos"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.GestionVehiculos",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1836172413,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.Index",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 744590734,
+        "Kind": "Components.Component",
+        "Name": "ProyectoFinal.Pages.Index",
+        "AssemblyName": "ProyectoFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyectoFinal.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyectoFinal.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -144,35 +283,35 @@
         }
       },
       {
-        "HashCode": -1469572412,
+        "HashCode": 1175878291,
         "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.Login",
+        "Name": "ProyectoFinal.Pages.ListaVehiculos",
         "AssemblyName": "ProyectoFinal",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Login"
+            "TagName": "ListaVehiculos"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.Login"
+          "Common.TypeName": "ProyectoFinal.Pages.ListaVehiculos"
         }
       },
       {
-        "HashCode": -636311704,
+        "HashCode": -263028188,
         "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.Login",
+        "Name": "ProyectoFinal.Pages.ListaVehiculos",
         "AssemblyName": "ProyectoFinal",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ProyectoFinal.Pages.Login"
+            "TagName": "ProyectoFinal.Pages.ListaVehiculos"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.Login",
+          "Common.TypeName": "ProyectoFinal.Pages.ListaVehiculos",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -309,145 +448,6 @@
         }
       },
       {
-        "HashCode": -683445658,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionVehiculos",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GestionVehiculos"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionVehiculos"
-        }
-      },
-      {
-        "HashCode": 608018686,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionVehiculos",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyectoFinal.Pages.GestionVehiculos"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionVehiculos",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1175878291,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.ListaVehiculos",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ListaVehiculos"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.ListaVehiculos"
-        }
-      },
-      {
-        "HashCode": -263028188,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.ListaVehiculos",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyectoFinal.Pages.ListaVehiculos"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.ListaVehiculos",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 400025537,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionClientes",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GestionClientes"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionClientes"
-        }
-      },
-      {
-        "HashCode": 828852823,
-        "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.GestionClientes",
-        "AssemblyName": "ProyectoFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyectoFinal.Pages.GestionClientes"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.GestionClientes",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 721385677,
         "Kind": "Components.Component",
         "Name": "ProyectoFinal.Pages.AdministracionUsuario",
@@ -481,35 +481,35 @@
         }
       },
       {
-        "HashCode": -1836172413,
+        "HashCode": -1469572412,
         "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.Index",
+        "Name": "ProyectoFinal.Pages.Login",
         "AssemblyName": "ProyectoFinal",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "Login"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.Index"
+          "Common.TypeName": "ProyectoFinal.Pages.Login"
         }
       },
       {
-        "HashCode": 744590734,
+        "HashCode": -636311704,
         "Kind": "Components.Component",
-        "Name": "ProyectoFinal.Pages.Index",
+        "Name": "ProyectoFinal.Pages.Login",
         "AssemblyName": "ProyectoFinal",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ProyectoFinal.Pages.Index"
+            "TagName": "ProyectoFinal.Pages.Login"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyectoFinal.Pages.Index",
+          "Common.TypeName": "ProyectoFinal.Pages.Login",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

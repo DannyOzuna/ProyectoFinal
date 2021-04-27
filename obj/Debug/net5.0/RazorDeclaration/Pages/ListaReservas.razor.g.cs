@@ -133,20 +133,63 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 57 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/ListaReservas.razor"
+#line 100 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/ListaReservas.razor"
        
     public bool loading = true;
+    public decimal montoapagar;
+
+
 
     List<JoinReservas> lsRerservas = new List<JoinReservas>();
+    ReservasDb objreservas = new ReservasDb();
 
-    protected async override Task OnInitializedAsync(){
+    protected async override Task OnInitializedAsync()
+    {
         lsRerservas = await reservas.GetReservesActivos();
         loading = false;
     }
 
+
+    private async Task obtenerreserva(int id)
+    {
+        objreservas = await reservas.Getreservasjoin(id);
+    }
+
+    public async Task Pagar()
+    {
+
+        if (objreservas.estado == 0)
+        {
+            await Js.InvokeAsync<object>("msjAlert", "Ya usted pago mio esto", "error");
+        }
+
+        else{
+            if (objreservas.monto > montoapagar)
+            {
+                var msj = await Js.InvokeAsync<object>("msjAlert", "No tiene suficiente dinero", "error");
+            }
+
+            else
+            {
+                await reservas.EditarReservas(objreservas);
+                await Js.InvokeAsync<object>("msjAlert", "Monto Pagado Correctamente", "success");
+                NavigationManager.NavigateTo("/index");
+            }
+        }
+
+
+
+    }
+
+
+
+
+
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime Js { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IReservas reservas { get; set; }
     }
 }

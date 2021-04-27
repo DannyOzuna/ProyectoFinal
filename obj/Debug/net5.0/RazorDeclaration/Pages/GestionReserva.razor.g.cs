@@ -177,6 +177,7 @@ using ProyectoFinal.Services;
                 NavigationManager.NavigateTo("/listaReservas");
             }else{
                 var rs = js.InvokeAsync<object>("msjAlert", "Vehículo No Disponible!", "error");
+                loading = false;
             }
 
 

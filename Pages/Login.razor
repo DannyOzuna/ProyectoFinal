@@ -1,7 +1,7 @@
 
 @page "/"
 @layout LoginLayout
-@inject ILogin login
+@inject IUsuario usuario
 @inject IJSRuntime Js
 @inject NavigationManager NavigationManager
 
@@ -19,13 +19,10 @@
 @*<button Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" FullWidth="true" Class="mt-5" @onclick="BuscarDatos">Sign In</button>*@
 @code {
 
-
+    UsuariosDb oUsuario = new UsuariosDb();
 
     string user { get; set; } = "";
     string Password { get; set; } = "";
-
-    LoginDb objlo = new LoginDb();
-    //List<LoginDb> objlogin = new List<LoginDb>();
 
     bool PasswordVisibility;
     InputType PasswordInput = InputType.Password;
@@ -51,18 +48,18 @@
 
     public void BuscarDatos()
     {
-        objlo.Contrasena = Password;
-        objlo.Usuario = user;
+        oUsuario.user_ = user;
+        oUsuario.pass = Password;
 
-        var buscar = login.buscar(objlo);
-        if (buscar == false)
+        var validar = usuario.SearchUsuario(oUsuario);
+        if (!validar)
         {
-            var msj = Js.InvokeAsync<object>("msjAlert", "Usuario incorecto", "error");
+            var msj = Js.InvokeAsync<object>("msjAlert", "Usuario Incorrecto", "error");
         }
 
         else
         {
-            
+            var msj = Js.InvokeAsync<object>("msjAlert", "Sección Iniciada", "success");
             NavigationManager.NavigateTo("/Index");
         }
 

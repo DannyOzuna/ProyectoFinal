@@ -133,13 +133,36 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 82 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/AdministracionUsuario.razor"
+#line 75 "/Users/dannyozuna/Documents/ProyectoFinal/Pages/AdministracionUsuario.razor"
       
-    public bool loading = false;
-    UsuariosDb oUsuario = new UsuariosDb(); 
-
-
+    public bool loading = false, error = false;
+    UsuariosDb oUsuario = new UsuariosDb();
+    List<UsuariosDb> lsUsuario = new List<UsuariosDb>(); 
     MudTextField<string> pwField1;
+
+    protected async override Task OnInitializedAsync(){
+        lsUsuario = await usuarios.GetUsuarios();
+    }
+
+    
+
+    private async Task GuardarDatos(){
+        if(!error){
+            await usuarios.AddUsuarios(oUsuario);
+            var msj = js.InvokeAsync<object>("msjAlert", "Registro Existo", "success");
+                NavigationManager.NavigateTo("/administrarUsuario", true);
+        }
+    }
+
+    private async Task Delete(int id){
+        var confimacion = await js.InvokeAsync<bool>("msjConfim", "Confimar", "Seguro de borrar el Usuario?", "question");
+        if(confimacion){
+            await usuarios.DeleteUsuario(id);
+            await js.InvokeAsync<object>("msjAlert", "Eliminación Exitosa", "success");
+            lsUsuario = await usuarios.GetUsuarios();
+
+        }
+    }
 
     private IEnumerable<string> PasswordStrength(string pw)
     {
@@ -154,20 +177,22 @@ using ProyectoFinal.Services;
 
     private string PasswordMatch(string arg)
     {
-        if (pwField1.Value != arg)
+        if (pwField1.Value != arg){
+            error = true;
             return "Las contraseñas no coinciden";
+        }else{
+            error = false;
+        }
+            
         return null;
-    }
-
-    private async Task GuardarDatos(){
-        await usuarios.AddUsuarios(oUsuario);
-        var msj = js.InvokeAsync<object>("msjAlert", "Registro Existo", "success");
     } 
+
 
 #line default
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUsuario usuarios { get; set; }
     }
 }

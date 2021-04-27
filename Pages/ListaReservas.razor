@@ -123,17 +123,13 @@
 
         if (objreservas.estado == 0)
         {
-
             await Js.InvokeAsync<object>("msjAlert", "Ya usted pago mio esto", "error");
-
-
         }
 
-        else
-        {
+        else{
             if (objreservas.monto > montoapagar)
             {
-                var msj = await Js.InvokeAsync<object>("msjAlert", "Usted es roto mio, ponga mas dinero", "error");
+                var msj = await Js.InvokeAsync<object>("msjAlert", "No tiene suficiente dinero", "error");
             }
 
             else
