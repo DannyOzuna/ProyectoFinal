@@ -8,6 +8,9 @@ namespace ProyectoFinal.Services {
         public Task<List<ReservasDb>> GetReserves();
         public Task<ReservasDb> AddReserves(ReservasDb oReserves);
         public Task<List<JoinReservas>> GetReservesActivos();
+        public Task<ReservasDb> Getreservasjoin(int id);
+        public Task<ReservasDb> EditarReservas(ReservasDb oReserves);
+
 
     }
 }

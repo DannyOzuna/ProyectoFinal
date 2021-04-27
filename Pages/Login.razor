@@ -1,20 +1,31 @@
-  
+
 @page "/"
 @layout LoginLayout
+@inject ILogin login
+@inject IJSRuntime Js
+@inject NavigationManager NavigationManager
 
 
 
 <MudText Typo="Typo.h4" GutterBottom="true">Iniciar Sección</MudText>
 
-<MudTextField T="string" Value="@("staff@mudblazor.com")" Label="E-mail" Variant="Variant.Outlined" Class="my-6"></MudTextField>
+<MudTextField  @bind-Value="@user" Label="E-mail" Variant="Variant.Outlined" Class="my-6"></MudTextField>
 
 <MudTextField @bind-Value="@Password" Label="Password" Variant="Variant.Outlined" InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="TogglePasswordVisibility" />
 
 
-<MudButton Variant="Variant.Filled" Color="Color.Primary" Link="/index" Size="Size.Large" FullWidth="true" Class="mt-5">Sign In</MudButton>
+<MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="BuscarDatos" Size="Size.Large" FullWidth="true" Class="mt-5">Sign In</MudButton>
 
+@*<button Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" FullWidth="true" Class="mt-5" @onclick="BuscarDatos">Sign In</button>*@
 @code {
-    string Password { get; set; } = "BMWvBPJXZu";
+
+
+
+    string user { get; set; } = "";
+    string Password { get; set; } = "";
+
+    LoginDb objlo = new LoginDb();
+    //List<LoginDb> objlogin = new List<LoginDb>();
 
     bool PasswordVisibility;
     InputType PasswordInput = InputType.Password;
@@ -34,5 +45,28 @@
             PasswordInputIcon = Icons.Material.Filled.Visibility;
             PasswordInput = InputType.Text;
         }
+
     }
+
+
+    public void BuscarDatos()
+    {
+        objlo.Contrasena = Password;
+        objlo.Usuario = user;
+
+        var buscar = login.buscar(objlo);
+        if (buscar == false)
+        {
+            var msj = Js.InvokeAsync<object>("msjAlert", "Usuario incorecto", "error");
+        }
+
+        else
+        {
+            
+            NavigationManager.NavigateTo("/Index");
+        }
+
+    }
+
+
 }

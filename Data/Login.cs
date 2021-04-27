@@ -20,8 +20,9 @@ namespace ProyectoFinal.Data
         {
 
 
-            if (datosLogin.Usuario != "" || datosLogin.Contrasena != "")
+            if (datosLogin.Usuario != "" && datosLogin.Contrasena != "")
             {
+
             var query = context.loginDbs.Where(x => x.Contrasena == datosLogin.Contrasena && x.Usuario ==
             datosLogin.Usuario);
                 if (query == null)

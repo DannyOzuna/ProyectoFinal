@@ -65,5 +65,22 @@ namespace ProyectoFinal.Data{
             return oReserves;
 
         }
+
+
+        public async Task<ReservasDb> Getreservasjoin(int id)
+        {
+         return await context.reservas.FirstOrDefaultAsync(c => c.id == id);
+        }
+
+
+        public async Task<ReservasDb> EditarReservas(ReservasDb oReserves)
+        {
+            var db = await context.reservas.FindAsync(oReserves.id);
+            db.estado = 0;
+            context.SaveChangesAsync();
+
+            return oReserves;
+        }
+
     }
 }
