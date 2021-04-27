@@ -13,119 +13,120 @@ namespace ProyectoFinal.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 1 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 2 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 3 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 4 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 5 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 6 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 7 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 8 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 9 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using ProyectoFinal;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 10 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 11 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 12 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using MudBlazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 13 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Theme;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 14 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 15 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 15 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 16 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 16 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Services;
 
 #line default
 #line hidden
 #nullable disable
+    [Microsoft.AspNetCore.Components.LayoutAttribute(typeof(LoginLayout))]
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class IniciarSeccion : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -133,48 +134,47 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 27 "c:\Users\danny\Desktop\ProyectoFinal\Pages\IniciarSeccion.razor"
+#line 16 "C:\Users\danny\Desktop\ProyectoFinal\Pages\Login.razor"
        
-
-    LoginDb objlo = new LoginDb();
-    List<LoginDb> objlogin = new List<LoginDb>();
-
-    string usuario = "";
-    string contrasena = "";
-
+    string Password { get; set; } = "BMWvBPJXZu";
 
     bool PasswordVisibility;
     InputType PasswordInput = InputType.Password;
     string PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
 
-
-    public void BuscarDatos()
+    void TogglePasswordVisibility()
     {
-        objlo.Contrasena = contrasena;
-        objlo.Usuario = usuario;
-
-        var buscar = login.buscar(objlo);
-        if (buscar == false)
-        {
-            var msj = Js.InvokeAsync<object>("msjAlert", "Usuario incorecto", "error");
-        }
-
-        else
-        {
-            NavigationManager.NavigateTo("/Index");
-        }
-
-    }
-
-
-    
+        
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime Js { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Ilogin login { get; set; }
+#nullable restore
+#line 25 "C:\Users\danny\Desktop\ProyectoFinal\Pages\Login.razor"
+         if (PasswordVisibility)
+        {
+            PasswordVisibility = false;
+            PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
+            PasswordInput = InputType.Password;
+        }
+        else
+        {
+            PasswordVisibility = true;
+            PasswordInputIcon = Icons.Material.Filled.Visibility;
+            PasswordInput = InputType.Text;
+        }
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 36 "C:\Users\danny\Desktop\ProyectoFinal\Pages\Login.razor"
+         
+    }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

@@ -13,118 +13,118 @@ namespace ProyectoFinal.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 1 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 2 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 3 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 4 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 5 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 6 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 7 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 8 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 9 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using ProyectoFinal;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 10 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 11 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 12 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using MudBlazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 13 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Theme;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 14 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 15 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 15 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 16 "c:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
+#line 16 "C:\Users\danny\Desktop\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Services;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/Index")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/index")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -133,31 +133,11 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 143 "c:\Users\danny\Desktop\ProyectoFinal\Pages\Index.razor"
+#line 141 "C:\Users\danny\Desktop\ProyectoFinal\Pages\Index.razor"
        
 
-    List<VehiculosDb> Carros = new List<VehiculosDb>();
-    VehiculosDb vehi = new VehiculosDb();
-    int activos = 0;
-    int enstock = 0;
-    int enuso = 0;
-
-    
-    protected virtual void OnInitialized()
-    {
-        activos = vehiculos.ContarVehiculo();
-        enstock = vehiculos.TotalVehiculos();
-        enuso = vehiculos.VehiculosActivos();
-    }
-
-
-
-
-
-
-
     EarningReport[] earningReports = new EarningReport[]
-{
+    {
         new EarningReport { Name = "Lunees", Title = "Reactor Engineer", Avatar = "https://avatars2.githubusercontent.com/u/71094850?s=460&u=66c16f5bb7d27dc751f6759a82a3a070c8c7fe4b&v=4", Salary = "$0.99", Severity = Color.Success, SeverityTitle = "Low"},
         new EarningReport { Name = "Mikes-gh", Title = "Developer", Avatar = "https://avatars.githubusercontent.com/u/16208742?s=120&v=4", Salary = "$19.12K", Severity = Color.Secondary, SeverityTitle = "Medium"},
         new EarningReport { Name = "Garderoben", Title = "CSS Magician", Avatar = "https://avatars2.githubusercontent.com/u/10367109?s=460&amp;u=2abf95f9e01132e8e2915def42895ffe99c5d2c6&amp;v=4", Salary = "$1337", Severity = Color.Primary, SeverityTitle = "High"},
@@ -176,8 +156,6 @@ using ProyectoFinal.Services;
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos vehiculos { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591

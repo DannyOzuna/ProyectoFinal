@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoFinal.Data
 {
-    public class Login : Ilogin
+    public class Login : ILogin
     {
         private readonly AppDbContext context;
 

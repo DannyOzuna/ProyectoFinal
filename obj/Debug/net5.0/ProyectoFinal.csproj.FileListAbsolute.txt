@@ -567,5 +567,9 @@ C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoF
 C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\ProyectoFinal.genruntimeconfig.cache
 C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ListaDebe.razor.g.cs
 C:\Users\Ronny\Downloads\Proyecto Danny\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ListaDebe.razor.g.cs
-C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\IniciarSeccion.razor.g.cs
 C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ListaDebe.razor.g.cs
+C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ListaDebe.razor.g.cs
+C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Login.razor.g.cs
+C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Shared\LoginLayout.razor.g.cs
+C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Login.razor.g.cs
+C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Shared\LoginLayout.razor.g.cs

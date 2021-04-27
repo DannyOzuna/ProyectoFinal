@@ -87,8 +87,6 @@ namespace ProyectoFinal.Data{
                 await context.SaveChangesAsync();
             }
         }
-
-<<<<<<< HEAD
         public int ContarVehiculo() 
         {
 
@@ -120,9 +118,6 @@ namespace ProyectoFinal.Data{
         }
 
 
-
-=======
-
         public async Task<List<JoinVehiculosReserva>> getRangoVehiculos(DateTime? fechaInicio, DateTime? fechaFinal)
         {
             return await (from v in context.vehiculos
@@ -142,7 +137,6 @@ namespace ProyectoFinal.Data{
                               anio = v.anio
                           }).ToListAsync();
         }
->>>>>>> fc3a66b38d318153df5991e84af4a68a60b20b87
 
 
     }

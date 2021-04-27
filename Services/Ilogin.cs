@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoFinal.Services
 {
-    public interface Ilogin
+    public interface ILogin
     {
         public bool buscar(LoginDb login);
     }
