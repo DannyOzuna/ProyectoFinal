@@ -1,0 +1,116 @@
+@page "/vistaclientes"
+@inject IClientes clientes
+@inject IJSRuntime js
+
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="alert alert-info">Lista de Clientes</h1>
+        @if(loading == true){
+            <div class="spinner-border text-primary" style="width: 7rem; height: 7rem; margin-top:10rem;" role="status">
+              <span class="visually-hidden"></span>
+            </div>
+        }
+    </div>
+</div>
+
+@if(lsClientes != null && loading == false){
+    <MudTable Items="@lsClientes" Hover="true" Breakpoint="Breakpoint.Sm">
+        <HeaderContent>
+            <MudTh>Id</MudTh>
+            <MudTh>Cliente</MudTh>
+            <MudTh>Cédula</MudTh>
+            <MudTh>Estado</MudTh>
+            <MudTh>Tipo Sangre</MudTh>
+            <MudTh>Nacionalidad</MudTh>
+            <MudTh>Licencia</MudTh>
+            <MudTh>Acción</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Id">@context.id</MudTd>
+            <MudTd DataLabel="Cliente">@context.nombre @context.apellido</MudTd>
+            <MudTd DataLabel="Cédula">@context.cedula</MudTd>
+            <MudTd DataLabel="">
+              @if(context.estado == 0){
+                <MudChip Label="true" Color="Color.Error" Size="Size.Small" Class="ml-auto mud-elevation-25">Inactivo</MudChip>
+              }else{
+                <MudChip Label="true" Color="Color.Success" Size="Size.Small" Class="ml-auto mud-elevation-25">Activo</MudChip>
+              }
+
+            </MudTd>
+            <MudTd DataLabel="Tipo Sangre">@context.tipo_sangre</MudTd>
+            <MudTd DataLabel="Nacionalidad">@context.nacionalidad</MudTd>
+            <MudTd DataLabel="Licencia">@context.licencia</MudTd>
+            <MudTd DataLabel="Acción">
+                <button class="btn btn-success" @onclick="(()=>verCliente(context.id))" data-bs-toggle="modal" data-bs-target="#divview"><i class="oi oi-eye"></i></button>
+                <a href="/registrarcliente/editar/@context.id" class="btn btn-primary"><i class="oi oi-pencil"></i></a>
+                <button class="btn btn-danger" @onclick="(() => Delete(context.id))"><i class="oi oi-trash"></i></button>
+            </MudTd>
+        </RowTemplate>
+    </MudTable>
+}
+
+@if(oCliente != null){
+
+@* Modal *@
+<div class="modal fade" id="divview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title col-12 alert alert-primary rounded text-center" id="exampleModalLabel">Datos Personales</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row justify-content-center">
+                <img src="@oCliente.foto_persona" class="col-3 img-thumbnail">
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-8 alert alert-info">
+                <p style="font-size: 13pt;"><span style="font-weight: bold;">Cliente: </span> @oCliente.nombre  @oCliente.apellido</p>  
+                <p style="font-size: 13pt;"><span style="font-weight: bold;">Cédula: </span> @oCliente.cedula</p>  
+                <p style="font-size: 13pt;"><span style="font-weight: bold;">Tipo de Sangre: </span> @oCliente.tipo_sangre</p>  
+                <p style="font-size: 13pt;"><span style="font-weight: bold;">Licencia: </span> @oCliente.licencia</p>  
+                <p style="font-size: 13pt;"><span style="font-weight: bold;">Correo: </span> @oCliente.correo</p>   
+                <p style="font-size: 13pt;"><span style="font-weight: bold;">Nacionalidad: </span> @oCliente.nacionalidad</p>  
+            </div>
+            <div></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+}
+
+
+
+
+
+@code {
+    public bool loading {get; set;} = true;
+    List<ClientesDb> lsClientes = new List<ClientesDb>();
+    ClientesDb oCliente = new ClientesDb();
+
+    protected async override Task OnInitializedAsync(){
+        lsClientes = await clientes.GetClientes();
+        loading = false;
+    }
+
+    private async Task Delete(int id){
+      var confimacion = await js.InvokeAsync<bool>("msjConfim", "Confimar", "Seguro de borrar el Cliente?", "question");
+      if(confimacion){
+        loading = true;
+        await clientes.DeleteCliente(id);
+        await js.InvokeAsync<object>("msjAlert", "Eliminación Exitosa", "success");
+        lsClientes = await clientes.GetClientes();
+        loading = false;
+        
+      }
+    }
+
+    private async Task verCliente(int id){
+      oCliente = await clientes.GetClientes(id);
+    }
+}

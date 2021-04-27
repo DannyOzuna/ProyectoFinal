@@ -1,0 +1,54 @@
+@page "/mapa"
+@using Newtonsoft.Json;
+@inject IJSRuntime JsRuntine
+@inject IVehiculos Vehiculos
+
+
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="alert alert-info">Ubicación de los Vehículos</h1>
+    </div>
+</div>
+
+<div class="row justify-content-center mt-md-2">
+    <div class="col-12 col-sm-8 col-md-10">
+        <MudCard>
+            <MudCardContent>
+              <div id="Map" style="height: 600px;"></div>
+            </MudCardContent>
+        </MudCard>
+    </div>
+</div>
+
+
+@code{
+   List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
+   [JSInvokable]
+   public async Task<string> Marcadores(){
+
+ 
+    lsVehiculos = await Vehiculos.GetVehiculos();
+    string json= JsonConvert.SerializeObject(lsVehiculos);
+    
+     return json;  
+   }
+   protected async Task mostrar(){
+
+   await JsRuntine.InvokeVoidAsync("accessDOMElement", 
+   DotNetObjectReference.Create(this));
+  
+  }
+    
+   protected override async Task OnAfterRenderAsync(bool firstRender){
+    if(firstRender){
+      try{
+         await mostrar();
+      }
+      catch(Exception){
+          throw;
+      }
+
+     }
+   }
+ 
+}

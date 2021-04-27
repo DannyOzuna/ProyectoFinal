@@ -1,0 +1,45 @@
+@page "/listadeben"
+@inject IReservas reservas
+
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="alert alert-info">Lista de Clientes Que Deben</h1>
+        @if(loading == true){
+            <div class="spinner-border text-primary" style="width: 7rem; height: 7rem; margin-top:10rem;" role="status">
+              <span class="visually-hidden"></span>
+            </div>
+        }
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Monto</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(lsFacturacion != null){
+            @foreach (var i in lsFacturacion)
+            {
+                <tr>
+                    <td>@i.id</td>
+                    <td>@i.monto</td>
+                </tr>
+            }
+        }
+    </tbody>
+
+</table>
+
+@code{
+    public bool loading = false;
+    List<FacturacionDb> lsFacturacion = new List<FacturacionDb>(); 
+
+  protected async override Task OnInitializedAsync()
+  {
+      lsFacturacion = await reservas.GetFacturacions();
+      loading = false;
+  }
+}

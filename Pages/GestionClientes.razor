@@ -1,0 +1,206 @@
+@page "/registrarcliente"
+@page "/registrarcliente/editar/{id:int}"
+@inject HttpClient Http
+@inject IJSRuntime Js
+@inject IClientes clientes
+@inject NavigationManager NavigationManager
+
+
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="alert alert-info">Gestión de Clientes</h1>
+        @if(loading == true){
+            <div class="spinner-border text-primary" style="width: 7rem; height: 7rem; margin-top:10rem;" role="status">
+              <span class="visually-hidden"></span>
+            </div>
+        }
+    </div>
+</div>
+
+
+@if(cargarDatos == false && loading ==  false){
+    <div class="row justify-content-center mt-md-2">
+        <div class="col-12 col-sm-6 col-md-4">
+            <MudCard>
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText>Obtener Datos del Cliente</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudGrid>
+                        <MudItem xs="12">
+                            <MudTextField @bind-Value="cedula" Label="Cédula" Variant="Variant.Outlined" />
+                        </MudItem>
+                    </MudGrid>
+                </MudCardContent>
+                <MudCardActions Class="pb-4 pl-4">
+                    <MudItem Class="ml-auto">
+                        <MudButton Variant="Variant.Filled" Color="Color.Error" Class="mr-1" @onclick="@(() => buscarDatos(0))">No, Gracias</MudButton>
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="@(() => buscarDatos(1))">Buscar Datos</MudButton>
+                    </MudItem>
+                </MudCardActions>
+            </MudCard>
+        </div>
+    </div>
+}
+
+@if(cargarDatos == true){
+    <div class="row justify-content-center mt-md-2">
+        <div class="col-8">
+            <EditForm Model="oCliente" OnValidSubmit="(() => GuardarDatos())">
+                <DataAnnotationsValidator/>
+                <MudCard Elevation="25">
+                    <MudCardContent>
+                        <MudGrid>
+                            <MudItem xs="12" sm="6">
+                                <MudTextField @bind-Value="oCliente.nombre" Label="Nombre" Variant="Variant.Outlined" />
+                                 <ValidationMessage For="() => oCliente.nombre"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6">
+                                <MudTextField @bind-Value="oCliente.apellido" Label="Apellido" Variant="Variant.Outlined" />
+                                <ValidationMessage For="() => oCliente.apellido"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6">
+                                <MudTextField @bind-Value="oCliente.cedula" Label="Cédula" Variant="Variant.Outlined" />
+                                <ValidationMessage For="() => oCliente.cedula"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6">
+                                <MudTextField @bind-Value="oCliente.correo" Label="Correo" Variant="Variant.Outlined" InputType="InputType.Email" />
+                                <ValidationMessage For="() => oCliente.correo"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6">
+                                <MudTextField @bind-Value="oCliente.licencia" Label="Licencia de Conducir" Variant="Variant.Outlined" />
+                                <ValidationMessage For="() => oCliente.licencia"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6">
+                                <MudTextField @bind-Value="oCliente.nacionalidad" Label="Nacionalidad" Variant="Variant.Outlined" />
+                                <ValidationMessage For="() => oCliente.nacionalidad"/>
+                            </MudItem>
+                            <MudItem xs="12" sm="6">
+                                <MudSelect T="string" @bind-Value="oCliente.tipo_sangre" Label="Tipo" Variant="Variant.Outlined" OffsetY="true">
+                                    <MudSelectItem Value="@("+A")" />
+                                    <MudSelectItem Value="@("+B")" />
+                                    <MudSelectItem Value="@("+AB")" />
+                                    <MudSelectItem Value="@("+O")" />
+                                    <MudSelectItem Value="@("-A")" />
+                                    <MudSelectItem Value="@("-B")" />
+                                    <MudSelectItem Value="@("-AB")" />
+                                    <MudSelectItem Value="@("-O")" />
+                                </MudSelect>
+                                <ValidationMessage For="() => oCliente.tipo_sangre"/>
+                            </MudItem>
+                            @if(id != 0){
+                                <MudItem xs="12" sm="3">
+                                    <MudSelect T="string" @bind-Value="estado" Label="Estado" Variant="Variant.Outlined" OffsetY="true">
+                                        <MudSelectItem Value="@("Activo")" />
+                                        <MudSelectItem Value="@("Inactivo")" />
+                                    </MudSelect>
+                                </MudItem>
+                            }
+                        </MudGrid>
+                    </MudCardContent>
+                        <div class="row justify-content-center">
+                            <button type="submit" class="btn btn-outline-primary col-8 bn-lg mb-4">Guardar</button>
+                        </div>
+                </MudCard>
+            </EditForm>
+        </div>
+    </div>
+
+}
+
+@code{
+    ClientesDb oCliente = new ClientesDb();
+    DatosCedula oCedula = null;
+
+    [Parameter]
+    public int id {get; set;}
+    public bool cargarDatos {get; set;} = false;
+    public bool loading {get; set;} = false;
+    public string cedula {get; set;}
+
+    public string estado {get; set;}
+
+     protected async override Task OnInitializedAsync(){
+         if(id != 0){
+             loading = true;
+             oCliente = await clientes.GetClientes(id);
+             cargarDatos = true;
+             loading = false;
+
+             if(oCliente.estado == 1){
+                 estado = "Activo";
+             }else{
+                 estado = "Inactivo";
+             }
+         }
+     }
+
+    private async Task buscarDatos(int buscar){
+        if(buscar == 1){
+            if(cedula != null){
+                loading = true;
+                var buscarDb = await clientes.SearchCliente(cedula);
+                if(buscarDb != null){
+                    oCliente = buscarDb;
+                    cargarDatos = true;
+                }else{
+                    var Url = "https://api.adamix.net/apec/cedula/" + cedula;
+                    oCedula = await Http.GetFromJsonAsync<DatosCedula>(Url);
+                    if(oCedula.ok){
+                        cargarDatos = true;
+                        oCliente.nombre = oCedula.Nombres;
+                        oCliente.apellido = oCedula.Apellido1 + " " + oCedula.Apellido2;
+                        oCliente.cedula = oCedula.Cedula;
+                        oCliente.foto_persona = oCedula.foto;
+                    }else{
+                        var msj =  await Js.InvokeAsync<object>("msjAlert", "Cédula no Encotrada", "error");
+                        cargarDatos = true;
+                    }
+                }
+                loading = false;
+            }else{
+                var msj =  await Js.InvokeAsync<object>("msjAlert", "Campo Cédula Vacío", "error");
+            }
+        }else{
+           cargarDatos = true; 
+        }
+        
+    } 
+
+    private async Task GuardarDatos(){
+        cargarDatos = false;
+        loading = true;    
+        
+        oCliente.foto_licencia = "url";
+        if(estado == "Activo"){
+            oCliente.estado = 1;
+        }else{
+            oCliente.estado = 0;
+        }
+
+        var crear = await clientes.AddCliente(oCliente);
+
+        if(crear == null){
+
+            var update = await clientes.UpdateCliente(oCliente.id, oCliente);
+            if(update == null){
+                cargarDatos = true;
+                loading = false;
+                var msj = Js.InvokeAsync<object>("msjAlert", "Registro Existente!   ", "error");
+
+            }else{
+                var msj = Js.InvokeAsync<object>("msjAlert", "Modificación Existosa", "success");
+                NavigationManager.NavigateTo("/vistaclientes");
+            }
+
+        }else{
+
+            var msj = Js.InvokeAsync<object>("msjAlert", "Registro Existo", "success");
+                NavigationManager.NavigateTo("/vistaclientes");
+
+        } 
+
+    }
+}
