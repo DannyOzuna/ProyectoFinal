@@ -13,7 +13,6 @@ namespace ProyectoFinal.Data{
         public DbSet<ClientesDb> clientes {get; set;}
         public DbSet<ReservasDb> reservas {get; set;}
         public DbSet<LoginDb> loginDbs { get; set; }
-        public DbSet<FacturacionDb> facturaciones {get; set;}
 
     }
 }

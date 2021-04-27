@@ -152,6 +152,7 @@ using ProyectoFinal.Services;
     }
     
     private async Task Guardar(){
+        loading = true;
         oReserva.estado = 1;
 
         if(oReserva.id_cliente == 0 || oReserva.id_vehiculo == 0){
@@ -161,11 +162,19 @@ using ProyectoFinal.Services;
         if(error == false){
 
             var validarRegistro = await vehiculos.GetSelect(DateTime.Parse(oReserva.fecha_inicia.Value.ToString("MM/dd/yyyy")), oReserva.id_vehiculo);
+            var vehiculo = await vehiculos.GetVehiculos(oReserva.id_vehiculo);
+
+            //Para calcular los dias trascurrido
+            TimeSpan? diasTrascurrido = oReserva.fecha_fin - oReserva.fecha_inicia;
+            var dia = int.Parse(diasTrascurrido.Value.ToString("dd"));
+
+            //Para hacer el calculo del monto
+            oReserva.monto = vehiculo.precio * dia;
 
             if(validarRegistro == null){
                 var crear = await reservas.AddReserves(oReserva);
                 var rs = js.InvokeAsync<object>("msjAlert", "Registrado Exitoso!", "success");
-                NavigationManager.NavigateTo("/");
+                NavigationManager.NavigateTo("/listaReservas");
             }else{
                 var rs = js.InvokeAsync<object>("msjAlert", "Vehículo No Disponible!", "error");
             }
@@ -174,6 +183,7 @@ using ProyectoFinal.Services;
         }else{
             var rs = js.InvokeAsync<object>("msjAlert", "Campos Vacío!", "error");
             error = false;
+            loading = false;
         }
 
 

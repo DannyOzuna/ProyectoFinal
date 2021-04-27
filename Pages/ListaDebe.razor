@@ -20,26 +20,10 @@
         </tr>
     </thead>
     <tbody>
-        @if(lsFacturacion != null){
-            @foreach (var i in lsFacturacion)
-            {
-                <tr>
-                    <td>@i.id</td>
-                    <td>@i.monto</td>
-                </tr>
-            }
-        }
     </tbody>
 
 </table>
 
 @code{
     public bool loading = false;
-    List<FacturacionDb> lsFacturacion = new List<FacturacionDb>(); 
-
-  protected async override Task OnInitializedAsync()
-  {
-      lsFacturacion = await reservas.GetFacturacions();
-      loading = false;
-  }
 }

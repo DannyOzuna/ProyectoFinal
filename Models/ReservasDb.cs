@@ -13,6 +13,7 @@ namespace ProyectoFinal.Models{
         public DateTime? fecha_inicia {get; set;}
         [Required(ErrorMessage = "Campo Vacio")]
         public DateTime? fecha_fin {get; set;}
+        public decimal monto {get; set;}
         public int estado {get; set;}
     }
 }

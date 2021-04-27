@@ -31,15 +31,22 @@ namespace ProyectoFinal.Data{
             }
         }
 
-        public async Task<List<ReservasDb>> GetReservesActivos()
+        public async Task<List<JoinReservas>> GetReservesActivos()
         {
-
-            var query = await (from x in context.reservas
-                               where x.estado == 1
-                               select x).ToListAsync();
-
-            return query;
-
+            return await (from r in context.reservas
+                                join c in context.clientes
+                                on r.id_cliente equals c.id
+                                join v in context.vehiculos
+                                on r.id_vehiculo equals v.id
+                            select new JoinReservas{
+                                id = r.id,
+                                cliente = c.nombre + " " + c.apellido,
+                                vehiculo = v.marca + " " + v.modelo,
+                                fecha_inicia = r.fecha_inicia,
+                                fecha_fin = r.fecha_fin,
+                                monto = r.monto,
+                                estado = r.estado
+                            }).ToListAsync();
         }
 
         public async Task<ReservasDb> Actualizar(ReservasDb oReserves, int objReservas)
@@ -58,10 +65,5 @@ namespace ProyectoFinal.Data{
             return oReserves;
 
         }
-
-        public async Task<List<FacturacionDb>> GetFacturacions(){
-            return await (from f in context.facturaciones
-                            select f).ToListAsync();
-        } 
     }
 }

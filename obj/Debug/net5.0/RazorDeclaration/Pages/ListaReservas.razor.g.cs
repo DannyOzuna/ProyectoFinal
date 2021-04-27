@@ -124,8 +124,8 @@ using ProyectoFinal.Services;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/listadeben")]
-    public partial class ListaDebe : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/listaReservas")]
+    public partial class ListaReservas : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -133,9 +133,16 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 27 "C:\Users\danny\Desktop\ProyectoFinal\Pages\ListaDebe.razor"
-      
-    public bool loading = false;
+#line 57 "C:\Users\danny\Desktop\ProyectoFinal\Pages\ListaReservas.razor"
+       
+    public bool loading = true;
+
+    List<JoinReservas> lsRerservas = new List<JoinReservas>();
+
+    protected async override Task OnInitializedAsync(){
+        lsRerservas = await reservas.GetReservesActivos();
+        loading = false;
+    }
 
 #line default
 #line hidden

@@ -573,3 +573,5 @@ C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\Log
 C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Shared\LoginLayout.razor.g.cs
 C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\Login.razor.g.cs
 C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Shared\LoginLayout.razor.g.cs
+C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\RazorDeclaration\Pages\ListaReservas.razor.g.cs
+C:\Users\danny\Desktop\ProyectoFinal\obj\Debug\net5.0\Razor\Pages\ListaReservas.razor.g.cs
