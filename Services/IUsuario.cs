@@ -5,10 +5,10 @@ using ProyectoFinal.Models;
 
 namespace ProyectoFinal.Services{
     public interface IUsuario {
-        public Task<List<UsuariosDb>> GetUsuarios();
-        public Task<UsuariosDb> AddUsuarios(UsuariosDb oUsuario);
+        public Task<List<Usuario>> GetUsuarios();
+        public Task<Usuario> AddUsuarios(Usuario oUsuario);
         public Task DeleteUsuario(int i);
 
-        public bool SearchUsuario(UsuariosDb oUsuario);
+        public bool SearchUsuario(Usuario oUsuario);
     }
 }

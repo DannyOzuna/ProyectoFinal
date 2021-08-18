@@ -90,8 +90,8 @@
 
 @code {
     public bool loading {get; set;} = true;
-    List<ClientesDb> lsClientes = new List<ClientesDb>();
-    ClientesDb oCliente = new ClientesDb();
+    List<clientes> lsClientes = new List<clientes>();
+    clientes oCliente = new clientes();
 
     protected async override Task OnInitializedAsync(){
         lsClientes = await clientes.GetClientes();

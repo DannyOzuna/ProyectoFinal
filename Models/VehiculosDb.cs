@@ -1,7 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProyectoFinal.Models{
+    [Table("vehiculos")]
     public class VehiculosDb{
         [Key]
         public int id {get; set;}
@@ -31,8 +33,8 @@ namespace ProyectoFinal.Models{
         [Required(ErrorMessage = "Campo Vacio")]
         public string longitud {get; set;}
         public int estado {get; set;}
+        public string comentarios { get; set;}
+        public string condision { get; set;}
         
-
-
     }
 }

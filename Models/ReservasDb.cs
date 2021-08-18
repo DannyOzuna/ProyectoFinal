@@ -1,7 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ProyectoFinal.Models{
+namespace ProyectoFinal.Models {
+    [Table("reservas")]
     public class ReservasDb{
         [Key]
         public int id {get; set;}

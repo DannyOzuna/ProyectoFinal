@@ -1,25 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dannyozuna/Documents/ProyectoFinal/ProyectoFinal.csproj": {}
+    "C:\\Users\\DELL\\Source\\Repos\\ProyectoFinal\\ProyectoFinal.csproj": {}
   },
   "projects": {
-    "/Users/dannyozuna/Documents/ProyectoFinal/ProyectoFinal.csproj": {
+    "C:\\Users\\DELL\\Source\\Repos\\ProyectoFinal\\ProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dannyozuna/Documents/ProyectoFinal/ProyectoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\ProyectoFinal\\ProyectoFinal.csproj",
         "projectName": "ProyectoFinal",
-        "projectPath": "/Users/dannyozuna/Documents/ProyectoFinal/ProyectoFinal.csproj",
-        "packagesPath": "/Users/dannyozuna/.nuget/packages/",
-        "outputPath": "/Users/dannyozuna/Documents/ProyectoFinal/obj/",
+        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\ProyectoFinal\\ProyectoFinal.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\ProyectoFinal\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/dannyozuna/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -85,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

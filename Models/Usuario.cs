@@ -1,7 +1,9 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProyectoFinal.Models{
-    public class UsuariosDb{
+    [Table("Usuarios")]
+    public class Usuario{
         [Key]
         public int id {get; set;}
         [Required(ErrorMessage = "Campo Vacio")]

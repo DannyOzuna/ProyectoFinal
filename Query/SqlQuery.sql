@@ -1,4 +1,4 @@
-/*create table vehiculos(
+create table vehiculos(
 	id int primary key identity,
 	marca varchar(30),
 	modelo varchar(30),
@@ -13,9 +13,9 @@
 	foto varchar(255),
 	latitud varchar(100),
 	longitud varchar(100)
-)*/
+)
 
-/*create table clientes(
+create table clientes(
 	id int primary key identity, 
 	cedula varchar(13) unique, 
 	nombre varchar(30), 
@@ -27,17 +27,17 @@
 	foto_persona varchar(255), 
 	foto_licencia varchar(255),
 	estado int
-)*/
+)
 
 
-/*create table reservas(
+create table reservas(
 	id int primary key identity(1,1),
 	id_vehiculo int,
 	id_cliente int,
 	fecha_inicia date,
 	fecha_fin date,
 	estado int
-)*/
+)
 
 
 
@@ -65,3 +65,85 @@ update vehiculos set estado = 1;
 select * from reservas where id_cliente = 1
 
 select * from reservas where id_vehiculo = '1' and fecha_fin > '2021-04-25'
+
+select * from vehiculos
+
+create table vehiculos(
+	id int primary key identity,
+	marca varchar(30),
+	modelo varchar(30),
+	anio varchar(10),
+	color varchar(20),
+	precio decimal(16,2),
+	Tipo varchar(30),
+	capacidad float,
+	pasajeros int,
+	matricula varchar(50),
+	nro_seguro varchar(30),
+	foto nvarchar(255),
+	latitud varchar(100),
+	longitud varchar(100),
+	estado int,
+	comentarios varchar(4000),
+	condision varchar(50)
+);
+
+
+create table cliente(
+	id int primary key identity, 
+	cedula varchar(13) unique, 
+	nombre varchar(30), 
+	apellido varchar(30),
+	correo varchar(50),
+	licencia varchar(30),
+	nacionalidad varchar(30),
+	tipo_sangre varchar(5),
+	foto_persona varchar(255), 
+	foto_licencia varchar(255),
+	estado int
+);
+
+
+
+drop table reservas
+
+create table reservas(
+	id int primary key identity(1,1),
+	id_vehiculo int,
+	id_cliente int,
+	fecha_inicia date,
+	fecha_fin date,
+	estado int,
+	monto  decimal(10,2)
+	)
+
+
+
+
+
+create table LoginDb
+(
+Id int identity primary key,
+Usuario varchar(50),
+Contrasena varchar(50)
+)
+
+create table Usuarios
+(
+Id int identity primary key,
+ user_ varchar(50),
+ pass varchar(50),
+ estado int
+)
+
+insert into Usuarios values('Admin','Admin',1);
+
+select * from Usuarios
+
+
+
+insert into LoginDb(Usuario,Contrasena) values('Admin','Admin')
+
+drop table vehiculos
+
+

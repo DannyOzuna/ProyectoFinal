@@ -13,112 +13,112 @@ namespace ProyectoFinal.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 1 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 2 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 3 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 4 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 5 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 6 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 7 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 8 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 9 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using ProyectoFinal;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 10 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 11 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 12 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using MudBlazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 13 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Theme;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 14 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 15 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 15 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 16 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 16 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Services;
 
 #line default
@@ -133,14 +133,21 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 15 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\Pages\ListaVehiculos.razor"
-      
-    private bool loading {get; set;} = false;
-    
+#line 95 "C:\Users\DELL\Source\Repos\ProyectoFinal\Pages\ListaVehiculos.razor"
+       private bool loading { get; set; } = false;
+            private DateTime? fechaInicar = DateTime.Now;
+            private DateTime? fechafinal = DateTime.Now;
+            List<JoinVehiculosReserva> lsVehiculos = new List<JoinVehiculosReserva>();
+
+            private async Task buscarDatos()
+            {
+                lsVehiculos = await vehiculos.getRangoVehiculos(fechaInicar, fechafinal);
+            } 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos vehiculos { get; set; }
     }
 }
 #pragma warning restore 1591

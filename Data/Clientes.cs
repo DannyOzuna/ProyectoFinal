@@ -12,18 +12,18 @@ namespace ProyectoFinal.Data{
         public Clientes(AppDbContext context){
             this.context  = context;
         }
-        public async Task<List<ClientesDb>> GetClientes(){
+        public async Task<List<clientes>> GetClientes(){
             return await context.clientes.ToListAsync();
         }
 
-        public async Task<ClientesDb> GetClientes(int id){
+        public async Task<clientes> GetClientes(int id){
             return await context.clientes.FirstOrDefaultAsync(c => c.id == id);
         }
 
-        public async Task<List<ClientesDb>> GetSelectCliente(){
+        public async Task<List<clientes>> GetSelectCliente(){
             return await context.clientes.Where(c => c.estado == 1).ToListAsync();
         }
-        public async Task<ClientesDb> SearchCliente(string cedula){
+        public async Task<clientes> SearchCliente(string cedula){
             if(cedula != null){
                 var buscar = await context.clientes.FirstOrDefaultAsync(c => c.cedula == cedula);
                 if(buscar != null){
@@ -32,12 +32,12 @@ namespace ProyectoFinal.Data{
                     return null;
                 }
             }else{
-                return new ClientesDb();
+                return new clientes();
             }
         }
 
 
-        public async Task<ClientesDb> AddCliente(ClientesDb oCliente){
+        public async Task<clientes> AddCliente(clientes oCliente){
             if(oCliente != null){
                 var crear = await context.clientes.FirstOrDefaultAsync(c => c.id == oCliente.id || c.cedula == oCliente.cedula);
                 if(crear != null){
@@ -48,11 +48,11 @@ namespace ProyectoFinal.Data{
                     return oCliente;
                 }
             }else{
-                return new ClientesDb();
+                return new clientes();
             }
         }
 
-        public async Task<ClientesDb> UpdateCliente(int id, ClientesDb oCliente){
+        public async Task<clientes> UpdateCliente(int id, clientes oCliente){
             if(id != 0){
                 var clienteDb = await context.clientes.FindAsync(id);
                 clienteDb.nombre = oCliente.nombre;

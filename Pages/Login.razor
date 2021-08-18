@@ -1,4 +1,3 @@
-
 @page "/"
 @layout LoginLayout
 @inject IUsuario usuario
@@ -16,10 +15,12 @@
 
 <MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="BuscarDatos" Size="Size.Large" FullWidth="true" Class="mt-5">Sign In</MudButton>
 
+
+
 @*<button Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" FullWidth="true" Class="mt-5" @onclick="BuscarDatos">Sign In</button>*@
 @code {
 
-    UsuariosDb oUsuario = new UsuariosDb();
+    Usuario oUsuario = new Usuario();
 
     string user { get; set; } = "";
     string Password { get; set; } = "";
@@ -60,6 +61,7 @@
         else
         {
             var msj = Js.InvokeAsync<object>("msjAlert", "Sección Iniciada", "success");
+            Js.InvokeAsync<object>("guarLocalStorage", oUsuario);
             NavigationManager.NavigateTo("/Index");
         }
 

@@ -13,112 +13,112 @@ namespace ProyectoFinal.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 1 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 2 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 3 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 4 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 5 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 6 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 7 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 8 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 9 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using ProyectoFinal;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 10 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 11 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 12 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using MudBlazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 13 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Theme;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 14 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 15 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 15 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 16 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\_Imports.razor"
+#line 16 "C:\Users\DELL\Source\Repos\ProyectoFinal\_Imports.razor"
 using ProyectoFinal.Services;
 
 #line default
@@ -133,11 +133,11 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 69 "C:\Users\Ernest Sanchez\Source\Repos\ProyectoFinal\Pages\GestionReserva.razor"
+#line 69 "C:\Users\DELL\Source\Repos\ProyectoFinal\Pages\GestionReserva.razor"
       
 
     ReservasDb oReserva = new ReservasDb();
-    List<ClientesDb> lsClientes = new List<ClientesDb>();
+    List<clientes> lsClientes = new List<clientes>();
     List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
     public bool loading {get; set;} = false;
 
@@ -152,6 +152,7 @@ using ProyectoFinal.Services;
     }
     
     private async Task Guardar(){
+        loading = true;
         oReserva.estado = 1;
 
         if(oReserva.id_cliente == 0 || oReserva.id_vehiculo == 0){
@@ -161,19 +162,29 @@ using ProyectoFinal.Services;
         if(error == false){
 
             var validarRegistro = await vehiculos.GetSelect(DateTime.Parse(oReserva.fecha_inicia.Value.ToString("MM/dd/yyyy")), oReserva.id_vehiculo);
+            var vehiculo = await vehiculos.GetVehiculos(oReserva.id_vehiculo);
+
+            //Para calcular los dias trascurrido
+            TimeSpan? diasTrascurrido = oReserva.fecha_fin - oReserva.fecha_inicia;
+            var dia = int.Parse(diasTrascurrido.Value.ToString("dd"));
+
+            //Para hacer el calculo del monto
+            oReserva.monto = vehiculo.precio * dia;
 
             if(validarRegistro == null){
                 var crear = await reservas.AddReserves(oReserva);
                 var rs = js.InvokeAsync<object>("msjAlert", "Registrado Exitoso!", "success");
-                NavigationManager.NavigateTo("/");
+                NavigationManager.NavigateTo("/listaReservas");
             }else{
                 var rs = js.InvokeAsync<object>("msjAlert", "Vehículo No Disponible!", "error");
+                loading = false;
             }
 
 
         }else{
             var rs = js.InvokeAsync<object>("msjAlert", "Campos Vacío!", "error");
             error = false;
+            loading = false;
         }
 
 

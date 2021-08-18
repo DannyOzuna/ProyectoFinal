@@ -5,12 +5,12 @@ using ProyectoFinal.Models;
 
 namespace ProyectoFinal.Services{
     public interface IClientes{
-        public Task<List<ClientesDb>> GetClientes();
-        public Task<ClientesDb> GetClientes(int id);
-        public Task<List<ClientesDb>> GetSelectCliente();
-        public Task<ClientesDb> SearchCliente(string cedula);
-        public Task<ClientesDb> AddCliente(ClientesDb oCliente);
-        public Task<ClientesDb> UpdateCliente(int id, ClientesDb oCliente);
+        public Task<List<clientes>> GetClientes();
+        public Task<clientes> GetClientes(int id);
+        public Task<List<clientes>> GetSelectCliente();
+        public Task<clientes> SearchCliente(string cedula);
+        public Task<clientes> AddCliente(clientes oCliente);
+        public Task<clientes> UpdateCliente(int id, clientes oCliente);
         public Task DeleteCliente(int id);
     }
 }

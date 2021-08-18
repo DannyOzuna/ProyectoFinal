@@ -82,11 +82,8 @@
                                     <ValidationMessage For="() => oVehiculos.longitud"/>
                                 </MudItem>
                                 <MudItem xs="12" sm="6" md="4">
-                                    <BlazorInputFile.InputFile id="fileCargar" OnChange="HandleFileSelected" hidden multiple accept=".jpg, .jpeg, .png" />
-                                    <MudFab HtmlTag="label" Color="Color.Success" Icon="@Icons.Filled.AttachFile" for="fileCargar" />
-                                    @if(file != null){
-                                        <label>&nbsp; &nbsp; @file.Name</label>
-                                    }
+                                    <MudTextField @bind-Value="oVehiculos.foto" Label="Foto Url" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentText="Photo" AdornmentColor="Color.Info" />
+                                    <ValidationMessage For="() => oVehiculos.foto" />
                                 </MudItem>
                             </MudGrid>
                         </MudCardContent>
