@@ -42,7 +42,7 @@ namespace ProyectoFinal
             services.AddScoped<ICargarArchivo, CargarArchivo>();
             services.AddScoped<IReservas, Reservas>();
             services.AddScoped<ILogin, Login>();
-
+            services.AddScoped<IComentario, Comentario>();
             services.AddScoped<IUsuario, Usuarios>();
             services.AddMudServices();
         }

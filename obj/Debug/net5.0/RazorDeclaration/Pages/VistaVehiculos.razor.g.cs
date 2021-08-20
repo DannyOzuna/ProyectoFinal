@@ -133,34 +133,59 @@ using ProyectoFinal.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 82 "C:\Users\DELL\Source\Repos\ProyectoFinal\Pages\VistaVehiculos.razor"
+#line 100 "C:\Users\DELL\Source\Repos\ProyectoFinal\Pages\VistaVehiculos.razor"
       
-  public bool loading {get; set;} = true;
-  List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
+    public bool loading {get; set;} = true;
+    List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
+    List<ComentariosV> ComentarioVehiculo = new List<ComentariosV>();
+    ComentariosV lsitacomentarios = new ComentariosV();
+    public string comentary;
+    public int carroId;
 
-  protected async override Task OnInitializedAsync()
-  {
-      lsVehiculos = await Vehiculos.GetVehiculos();
-      loading = false;
-  }
-
-  public async Task Delete(int id){
-    var confimacion = await js.InvokeAsync<bool>("msjConfim", "Confimar", "Seguro de borrar el Vehículo?", "question");
-    if(confimacion){
-      if(id != 0){
-        loading = true;
-        await Vehiculos.DeleteVehiculo(id);
-        await js.InvokeAsync<object>("msjAlert", "Eliminación Exitosa", "success");
+    protected async override Task OnInitializedAsync()
+    {
         lsVehiculos = await Vehiculos.GetVehiculos();
         loading = false;
-      }
     }
-  }
+    public void VerComentarios(int id)
+    {
+        carroId = id;
+        ComentarioVehiculo = Comen.Buscar(id);
+
+    }
+
+    public void agregarcomentario(int id)
+    {
+
+        lsitacomentarios.Comentario = comentary;
+        lsitacomentarios.id_vehiculo = id;
+        var result = Comen.Agregar(lsitacomentarios);
+        if (result == true)
+        {
+            js.InvokeAsync<object>("msjAlert", "Comentario Agregado Correctamente", "success");
+            comentary = "";
+        }
+
+    }
+
+    public async Task Delete(int id){
+        var confimacion = await js.InvokeAsync<bool>("msjConfim", "Confimar", "Seguro de borrar el Vehículo?", "question");
+        if(confimacion){
+            if(id != 0){
+                loading = true;
+                await Vehiculos.DeleteVehiculo(id);
+                await js.InvokeAsync<object>("msjAlert", "Eliminación Exitosa", "success");
+                lsVehiculos = await Vehiculos.GetVehiculos();
+                loading = false;
+            }
+        }
+    }
 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IComentario Comen { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IVehiculos Vehiculos { get; set; }
     }

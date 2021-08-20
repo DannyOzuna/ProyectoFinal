@@ -15,6 +15,8 @@ namespace ProyectoFinal.Services{
         public int VehiculosActivos();
         public int TotalVehiculos();
         public Task<List<JoinVehiculosReserva>> getRangoVehiculos(DateTime? fechaInicio, DateTime? fechaFinal);
+        public Task<List<VehiculosDb>> VehiculoComentario(int id);
+        public bool agregarComentario(VehiculosDb vehiculosDb);
 
     }
 }

@@ -1,6 +1,7 @@
 @page "/vistavehiculos"
 @inject IVehiculos Vehiculos
 @inject IJSRuntime js
+@inject IComentario Comen
 
 <div class="row justify-content-center">
     <div class="col-md-8 text-center">
@@ -46,7 +47,7 @@
                     <h5 class="text-center" style="font-weight: bold;">DOP $@item.precio</h5>
                   </p>
                     <div class="text-center">
-                      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#divview"><i class="oi oi-eye"></i></button>
+                      <button class="btn btn-success" data-bs-toggle="modal" @onclick="(()=>VerComentarios(item.id))"  data-bs-target="#divview"><i class="oi oi-eye"></i></button>
                       <a href="/registrarvehiculo/editarvehiculo/@item.id" class="btn btn-primary"><i class="oi oi-pencil"></i></a>
                       <button class="btn btn-danger" @onclick="(() => Delete(item.id))"><i class="oi oi-trash"></i></button>
                     </div>
@@ -64,42 +65,83 @@
 <!-- Modal -->
 <div class="modal fade" id="divview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Detalle del Vehículos</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Comentarios de acerca del vehiculo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+
+          @foreach (var item in ComentarioVehiculo)
+          {
+              <div class="modal-body">
+                  @if (@item.Comentario == "" || @item.Comentario == null)
+                  {
+                      <p>  No hay Comentarios </p>
+                  }
+                  <p>  @item.Comentario</p>
+                  <hr />
+
+              </div>
+            
+          }
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <input type="text" @bind-value="comentary" class="form-control"  aria-describedby="basic-addon3">
+          <button type="button" class="btn btn-secondary" @onclick="(() => agregarcomentario(carroId))" data-bs-dismiss="modal">Agregar </button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
       </div>
-    </div>
+          
+      </div>
+          
   </div>
 </div>
 
 @code{
-  public bool loading {get; set;} = true;
-  List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
+    public bool loading {get; set;} = true;
+    List<VehiculosDb> lsVehiculos = new List<VehiculosDb>();
+    List<ComentariosV> ComentarioVehiculo = new List<ComentariosV>();
+    ComentariosV lsitacomentarios = new ComentariosV();
+    public string comentary;
+    public int carroId;
 
-  protected async override Task OnInitializedAsync()
-  {
-      lsVehiculos = await Vehiculos.GetVehiculos();
-      loading = false;
-  }
-
-  public async Task Delete(int id){
-    var confimacion = await js.InvokeAsync<bool>("msjConfim", "Confimar", "Seguro de borrar el Vehículo?", "question");
-    if(confimacion){
-      if(id != 0){
-        loading = true;
-        await Vehiculos.DeleteVehiculo(id);
-        await js.InvokeAsync<object>("msjAlert", "Eliminación Exitosa", "success");
+    protected async override Task OnInitializedAsync()
+    {
         lsVehiculos = await Vehiculos.GetVehiculos();
         loading = false;
-      }
     }
-  }
+    public void VerComentarios(int id)
+    {
+        carroId = id;
+        ComentarioVehiculo = Comen.Buscar(id);
+
+    }
+
+    public void agregarcomentario(int id)
+    {
+
+        lsitacomentarios.Comentario = comentary;
+        lsitacomentarios.id_vehiculo = id;
+        var result = Comen.Agregar(lsitacomentarios);
+        if (result == true)
+        {
+            js.InvokeAsync<object>("msjAlert", "Comentario Agregado Correctamente", "success");
+            comentary = "";
+        }
+
+    }
+
+    public async Task Delete(int id){
+        var confimacion = await js.InvokeAsync<bool>("msjConfim", "Confimar", "Seguro de borrar el Vehículo?", "question");
+        if(confimacion){
+            if(id != 0){
+                loading = true;
+                await Vehiculos.DeleteVehiculo(id);
+                await js.InvokeAsync<object>("msjAlert", "Eliminación Exitosa", "success");
+                lsVehiculos = await Vehiculos.GetVehiculos();
+                loading = false;
+            }
+        }
+    }
 
 }            

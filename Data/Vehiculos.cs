@@ -138,6 +138,31 @@ namespace ProyectoFinal.Data{
                           }).ToListAsync();
         }
 
+        public async Task<List<VehiculosDb>> VehiculoComentario(int id)
+        {
+            var query = from x in context.vehiculos
+                        where x.id == id
+                        select x;
 
+            return await query.ToListAsync();
+        }
+
+        public bool agregarComentario(VehiculosDb vehiculosDb)
+        {
+            try
+            {
+                var db = context.vehiculos.Find(vehiculosDb.id);
+                db.comentarios = vehiculosDb.comentarios;
+                context.SaveChanges();
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+                
+            }
+          
+        }
     }
 }

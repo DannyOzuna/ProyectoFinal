@@ -14,6 +14,7 @@ namespace ProyectoFinal.Data{
         public DbSet<ReservasDb> reservas {get; set;}
         public DbSet<LoginDb> loginDbs { get; set; }
         public DbSet<Usuario> usuario {get; set;}
+        public DbSet<ComentariosV> comentarios { get; set; }
 
     }
 }

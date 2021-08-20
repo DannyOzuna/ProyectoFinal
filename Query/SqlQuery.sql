@@ -117,8 +117,14 @@ create table reservas(
 	monto  decimal(10,2)
 	)
 
+	create table ComentariosVehiculos(
+	id int primary key identity,
+	Comentario varchar(4000),
+	id_vehiculo int foreign key references vehiculos(id)
+	)
 
-
+	insert into ComentariosVehiculos values('EL mejor', 1)
+	drop table ComentariosVehiculos
 
 
 create table LoginDb
@@ -147,3 +153,37 @@ insert into LoginDb(Usuario,Contrasena) values('Admin','Admin')
 drop table vehiculos
 
 
+USE [db_a77dba_vahiculos]
+GO
+
+INSERT INTO [dbo].[Vehiculos]
+           ([marca]
+           ,[modelo]
+           ,[anio]
+           ,[color]
+           ,[precio]
+           ,[Tipo]
+           ,[capacidad]
+           ,[pasajeros]
+           ,[matricula]
+           ,[nro_seguro]
+           ,[foto]
+           ,[latitud]
+           ,[longitud]
+		   ,[estado]
+           ,[comentarios]
+           ,[condision]
+		  )
+     VALUES
+           ('Honda',
+           'CR-V',
+          '2017',
+          'Gris',
+		  300.00,
+          'Jeepeta',
+            23.4,
+          4,
+          'DO1001',
+		  'FULL',
+
+           'https://st1.uvnimg.com/d4/4a/006304a74db4902c0b4d8d8026c8/chevrolet-corvette-c8-stingray-2020-1280-08.jpg','123','456', 1,'lo mejor','nuevo');

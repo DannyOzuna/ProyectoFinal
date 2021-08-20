@@ -81,4 +81,53 @@ function mascara(d,sep,pat,nums){
         d.valant = val
     }
 }//Fin de la funcion mascara para los elementos.
-    
+
+
+function accessDOMElement(dotnetHelper) {
+    dotnetHelper.invokeMethodAsync("Marcadores").then(lsVehiculos => {
+        var json = JSON.parse(lsVehiculos);
+        //PARA AGREGAR LA UBICACION INICIAL DEL MAPA
+        var mymap = L.map('Map').setView([18.47186, -69.89232], 8);
+
+        //PARA AGREGAR EL MAPA
+        L.tileLayer('http://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'pk.eyJ1IjoidXN1YXJpb3BhcmF0YXJlYSIsImEiOiJja21oNXl0bjIwMTQwMm5sZmVzMXVndjFlIn0.nfG_MJzF7nZznTEul_-XyQ'
+        }).addTo(mymap);
+
+
+        for (var i in json) {
+
+            L.marker([json[i].latitud, json[i].longitud]).addTo(mymap)
+                .bindPopup(`
+
+                                <img src="img/${json[i].foto}" class="card-img-top" alt="..."><br>
+                                <strong>Marca: </strong>${json[i].marca}<br>
+                                <strong>Modelo: </strong>${json[i].modelo}<br>
+                                <strong>Año: </strong>${json[i].anio}<br>
+                                <strong>Color: </strong>${json[i].color}
+
+                             `).openPopup();
+
+        }
+    })
+}
+
+function guarLocalStorage(nombreUser) {
+    localStorage.setItem('token', nombreUser);
+}
+
+validarToken();
+
+function validarToken() {
+    if (localStorage.length > 0) {
+        window.navigator("/Index");
+    }
+    else {
+        window.navigator("/registrarcliente");
+    }
+}
+
