@@ -49,7 +49,7 @@
                     <div class="text-center">
                       <button class="btn btn-success" data-bs-toggle="modal" @onclick="(()=>VerComentarios(item.id))"  data-bs-target="#divview"><i class="oi oi-eye"></i></button>
                       <a href="/registrarvehiculo/editarvehiculo/@item.id" class="btn btn-primary"><i class="oi oi-pencil"></i></a>
-                      <button class="btn btn-danger" @onclick="(() => Delete(item.id))"><i class="oi oi-trash"></i></button>
+                      <button class="btn btn-danger" @onclick="(() => Delete(item.id))" ><i class="oi oi-trash"></i></button>
                     </div>
                 </div>
               </MudGrid>
@@ -77,13 +77,10 @@
               <div class="modal-body">
                   @if (@item.Comentario == "" || @item.Comentario == null)
                   {
-                      <p>  No hay Comentarios </p>
+                      <p >  No hay Comentarios </p>
                   }
-                  <p>  @item.Comentario</p>
-                  <hr />
-
+                  <p class="alert alert-info">@item.Comentario</p>
               </div>
-            
           }
       <div class="modal-footer">
           <input type="text" @bind-value="comentary" class="form-control"  aria-describedby="basic-addon3">
@@ -119,15 +116,24 @@
 
     public void agregarcomentario(int id)
     {
-
-        lsitacomentarios.Comentario = comentary;
-        lsitacomentarios.id_vehiculo = id;
-        var result = Comen.Agregar(lsitacomentarios);
-        if (result == true)
+        if (comentary.Trim() == "")
         {
-            js.InvokeAsync<object>("msjAlert", "Comentario Agregado Correctamente", "success");
-            comentary = "";
+            var msj = js.InvokeAsync<object>("msjAlert", "Tiene que escribir mas de una letras", "error");
+
         }
+        else
+        {
+            lsitacomentarios.Comentario = comentary;
+            lsitacomentarios.id_vehiculo = id;
+            var result = Comen.Agregar(lsitacomentarios);
+            if (result == true)
+            {
+                js.InvokeAsync<object>("msjAlert", "Comentario Agregado Correctamente", "success");
+                comentary = "";
+            }
+        }
+
+
 
     }
 
@@ -143,5 +149,8 @@
             }
         }
     }
+
+
+    bool botonnes = true;
 
 }            

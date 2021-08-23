@@ -104,7 +104,7 @@ function accessDOMElement(dotnetHelper) {
             L.marker([json[i].latitud, json[i].longitud]).addTo(mymap)
                 .bindPopup(`
 
-                                <img src="img/${json[i].foto}" class="card-img-top" alt="..."><br>
+                                <img src="${json[i].foto}" class="card-img-top" alt="..."><br>
                                 <strong>Marca: </strong>${json[i].marca}<br>
                                 <strong>Modelo: </strong>${json[i].modelo}<br>
                                 <strong>Año: </strong>${json[i].anio}<br>

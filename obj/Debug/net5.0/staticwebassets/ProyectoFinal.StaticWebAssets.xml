@@ -1,5 +1,5 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="_content/BlazorInputFile" Path="C:\Users\DELL\.nuget\packages\blazorinputfile\0.2.0\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/BlazorLeaflet" Path="C:\Users\DELL\.nuget\packages\blazorleaflet\0.4.0-alpha\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/MudBlazor" Path="C:\Users\DELL\.nuget\packages\mudblazor\5.0.7\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/BlazorInputFile" Path="C:\Users\Ernest Work\.nuget\packages\blazorinputfile\0.2.0\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/BlazorLeaflet" Path="C:\Users\Ernest Work\.nuget\packages\blazorleaflet\0.4.0-alpha\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/MudBlazor" Path="C:\Users\Ernest Work\.nuget\packages\mudblazor\5.0.7\build\..\staticwebassets\" />
 </StaticWebAssets>
